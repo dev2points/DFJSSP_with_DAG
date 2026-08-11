@@ -1,0 +1,57 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			ap-Precision-7550
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	600 seconds
+[runlim] space limit:		8000 MB
+[runlim] argv[0]:		python3
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		main.py
+[runlim] argv[3]:		--input
+[runlim] argv[4]:		datasets/fmj/mfjs03
+[runlim] argv[5]:		--factories
+[runlim] argv[6]:		2
+[runlim] argv[7]:		--sb
+[runlim] start:			Tue Aug 11 01:33:47 2026
+[runlim] child:			23297
+[*] Running D-FJSSP SAT Solver with 2 factories, Symmetry Breaking = ON, Full Transitive E* = OFF
+===========================================================================
+ D-FJSSP SAT SOLVER - PARALLEL FACTORIES SCHEDULING
+===========================================================================
+[*] Loading data from file: datasets/fmj/mfjs03
+  -> Operations: 18 | Jobs: 18 | Machines: 7 | Factories: 2
+
+[*] Running Greedy Heuristic...
+  -> Greedy Solution: Makespan = 397 (0.0001s)
+
+[*] Initializing and solving the SAT model...
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 397...
+  SAT ! Makespan = 397
+  Schedule is valid with Makespan = 397
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 396...
+  SAT ! Makespan = 396
+  Schedule is valid with Makespan = 396
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 395...
+   UNSAT
+
+ Optimal Makespan = 396
+
+ Summary:
+  - Optimal Makespan   : 396
+  - Greedy Time        : 0.0001s
+  - SAT Time           : 0.0256s
+  - Total Time         : 0.0259s
+  - Schedule Status    : VALID
+===========================================================================
+[runlim] end:			Tue Aug 11 01:33:47 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] processes:		0
+[runlim] real:			0.06 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0 MB
+[runlim] load:			0.91 maximum
+[runlim] samples:		1

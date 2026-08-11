@@ -1,0 +1,765 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			ap-Precision-7550
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	600 seconds
+[runlim] space limit:		8000 MB
+[runlim] argv[0]:		python3
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		main.py
+[runlim] argv[3]:		--input
+[runlim] argv[4]:		datasets/fmj/mfjs09
+[runlim] argv[5]:		--factories
+[runlim] argv[6]:		2
+[runlim] argv[7]:		--sb
+[runlim] start:			Tue Aug 11 01:33:49 2026
+[runlim] child:			23315
+[*] Running D-FJSSP SAT Solver with 2 factories, Symmetry Breaking = ON, Full Transitive E* = OFF
+===========================================================================
+ D-FJSSP SAT SOLVER - PARALLEL FACTORIES SCHEDULING
+===========================================================================
+[*] Loading data from file: datasets/fmj/mfjs09
+  -> Operations: 44 | Jobs: 44 | Machines: 8 | Factories: 2
+
+[*] Running Greedy Heuristic...
+  -> Greedy Solution: Makespan = 942 (0.0003s)
+
+[*] Initializing and solving the SAT model...
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 942...
+  SAT ! Makespan = 942
+  Schedule is valid with Makespan = 942
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 941...
+  SAT ! Makespan = 941
+  Schedule is valid with Makespan = 941
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 940...
+  SAT ! Makespan = 940
+  Schedule is valid with Makespan = 940
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 939...
+  SAT ! Makespan = 939
+  Schedule is valid with Makespan = 939
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 938...
+  SAT ! Makespan = 938
+  Schedule is valid with Makespan = 938
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 937...
+  SAT ! Makespan = 937
+  Schedule is valid with Makespan = 937
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 936...
+  SAT ! Makespan = 936
+  Schedule is valid with Makespan = 936
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 935...
+  SAT ! Makespan = 935
+  Schedule is valid with Makespan = 935
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 934...
+  SAT ! Makespan = 934
+  Schedule is valid with Makespan = 934
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 933...
+  SAT ! Makespan = 933
+  Schedule is valid with Makespan = 933
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 932...
+  SAT ! Makespan = 932
+  Schedule is valid with Makespan = 932
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 931...
+  SAT ! Makespan = 931
+  Schedule is valid with Makespan = 931
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 930...
+  SAT ! Makespan = 930
+  Schedule is valid with Makespan = 930
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 929...
+  SAT ! Makespan = 929
+  Schedule is valid with Makespan = 929
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 928...
+  SAT ! Makespan = 928
+  Schedule is valid with Makespan = 928
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 927...
+  SAT ! Makespan = 927
+  Schedule is valid with Makespan = 927
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 926...
+  SAT ! Makespan = 926
+  Schedule is valid with Makespan = 926
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 925...
+  SAT ! Makespan = 925
+  Schedule is valid with Makespan = 925
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 924...
+  SAT ! Makespan = 924
+  Schedule is valid with Makespan = 924
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 923...
+  SAT ! Makespan = 923
+  Schedule is valid with Makespan = 923
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 922...
+  SAT ! Makespan = 922
+  Schedule is valid with Makespan = 922
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 921...
+  SAT ! Makespan = 921
+  Schedule is valid with Makespan = 921
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 920...
+  SAT ! Makespan = 920
+  Schedule is valid with Makespan = 920
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 919...
+  SAT ! Makespan = 919
+  Schedule is valid with Makespan = 919
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 918...
+  SAT ! Makespan = 918
+  Schedule is valid with Makespan = 918
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 917...
+  SAT ! Makespan = 917
+  Schedule is valid with Makespan = 917
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 916...
+  SAT ! Makespan = 916
+  Schedule is valid with Makespan = 916
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 915...
+  SAT ! Makespan = 915
+  Schedule is valid with Makespan = 915
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 914...
+  SAT ! Makespan = 914
+  Schedule is valid with Makespan = 914
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 913...
+  SAT ! Makespan = 913
+  Schedule is valid with Makespan = 913
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 912...
+  SAT ! Makespan = 912
+  Schedule is valid with Makespan = 912
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 911...
+  SAT ! Makespan = 911
+  Schedule is valid with Makespan = 911
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 910...
+  SAT ! Makespan = 910
+  Schedule is valid with Makespan = 910
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 909...
+  SAT ! Makespan = 909
+  Schedule is valid with Makespan = 909
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 908...
+  SAT ! Makespan = 908
+  Schedule is valid with Makespan = 908
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 907...
+  SAT ! Makespan = 907
+  Schedule is valid with Makespan = 907
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 906...
+  SAT ! Makespan = 906
+  Schedule is valid with Makespan = 906
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 905...
+  SAT ! Makespan = 905
+  Schedule is valid with Makespan = 905
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 904...
+  SAT ! Makespan = 904
+  Schedule is valid with Makespan = 904
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 903...
+  SAT ! Makespan = 903
+  Schedule is valid with Makespan = 903
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 902...
+  SAT ! Makespan = 902
+  Schedule is valid with Makespan = 902
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 901...
+  SAT ! Makespan = 901
+  Schedule is valid with Makespan = 901
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 900...
+  SAT ! Makespan = 900
+  Schedule is valid with Makespan = 900
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 899...
+  SAT ! Makespan = 899
+  Schedule is valid with Makespan = 899
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 898...
+  SAT ! Makespan = 898
+  Schedule is valid with Makespan = 898
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 897...
+  SAT ! Makespan = 897
+  Schedule is valid with Makespan = 897
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 896...
+  SAT ! Makespan = 896
+  Schedule is valid with Makespan = 896
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 895...
+  SAT ! Makespan = 895
+  Schedule is valid with Makespan = 895
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 894...
+  SAT ! Makespan = 894
+  Schedule is valid with Makespan = 894
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 893...
+  SAT ! Makespan = 893
+  Schedule is valid with Makespan = 893
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 892...
+  SAT ! Makespan = 892
+  Schedule is valid with Makespan = 892
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 891...
+  SAT ! Makespan = 891
+  Schedule is valid with Makespan = 891
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 890...
+  SAT ! Makespan = 890
+  Schedule is valid with Makespan = 890
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 889...
+  SAT ! Makespan = 889
+  Schedule is valid with Makespan = 889
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 888...
+  SAT ! Makespan = 888
+  Schedule is valid with Makespan = 888
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 887...
+  SAT ! Makespan = 887
+  Schedule is valid with Makespan = 887
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 886...
+  SAT ! Makespan = 886
+  Schedule is valid with Makespan = 886
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 885...
+  SAT ! Makespan = 885
+  Schedule is valid with Makespan = 885
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 884...
+  SAT ! Makespan = 884
+  Schedule is valid with Makespan = 884
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 883...
+  SAT ! Makespan = 883
+  Schedule is valid with Makespan = 883
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 882...
+  SAT ! Makespan = 882
+  Schedule is valid with Makespan = 882
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 881...
+  SAT ! Makespan = 881
+  Schedule is valid with Makespan = 881
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 880...
+  SAT ! Makespan = 880
+  Schedule is valid with Makespan = 880
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 879...
+  SAT ! Makespan = 879
+  Schedule is valid with Makespan = 879
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 878...
+  SAT ! Makespan = 878
+  Schedule is valid with Makespan = 878
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 877...
+  SAT ! Makespan = 877
+  Schedule is valid with Makespan = 877
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 876...
+  SAT ! Makespan = 876
+  Schedule is valid with Makespan = 876
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 875...
+  SAT ! Makespan = 875
+  Schedule is valid with Makespan = 875
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 874...
+  SAT ! Makespan = 874
+  Schedule is valid with Makespan = 874
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 873...
+  SAT ! Makespan = 873
+  Schedule is valid with Makespan = 873
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 872...
+  SAT ! Makespan = 872
+  Schedule is valid with Makespan = 872
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 871...
+  SAT ! Makespan = 871
+  Schedule is valid with Makespan = 871
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 870...
+  SAT ! Makespan = 870
+  Schedule is valid with Makespan = 870
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 869...
+  SAT ! Makespan = 869
+  Schedule is valid with Makespan = 869
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 868...
+  SAT ! Makespan = 868
+  Schedule is valid with Makespan = 868
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 867...
+  SAT ! Makespan = 867
+  Schedule is valid with Makespan = 867
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 866...
+  SAT ! Makespan = 866
+  Schedule is valid with Makespan = 866
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 865...
+  SAT ! Makespan = 865
+  Schedule is valid with Makespan = 865
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 864...
+  SAT ! Makespan = 864
+  Schedule is valid with Makespan = 864
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 863...
+  SAT ! Makespan = 863
+  Schedule is valid with Makespan = 863
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 862...
+  SAT ! Makespan = 862
+  Schedule is valid with Makespan = 862
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 861...
+  SAT ! Makespan = 861
+  Schedule is valid with Makespan = 861
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 860...
+  SAT ! Makespan = 860
+  Schedule is valid with Makespan = 860
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 859...
+  SAT ! Makespan = 859
+  Schedule is valid with Makespan = 859
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 858...
+  SAT ! Makespan = 858
+  Schedule is valid with Makespan = 858
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 857...
+  SAT ! Makespan = 857
+  Schedule is valid with Makespan = 857
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 856...
+  SAT ! Makespan = 856
+  Schedule is valid with Makespan = 856
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 855...
+  SAT ! Makespan = 855
+  Schedule is valid with Makespan = 855
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 854...
+  SAT ! Makespan = 854
+  Schedule is valid with Makespan = 854
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 853...
+  SAT ! Makespan = 853
+  Schedule is valid with Makespan = 853
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 852...
+  SAT ! Makespan = 852
+  Schedule is valid with Makespan = 852
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 851...
+  SAT ! Makespan = 851
+  Schedule is valid with Makespan = 851
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 850...
+  SAT ! Makespan = 850
+  Schedule is valid with Makespan = 850
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 849...
+  SAT ! Makespan = 849
+  Schedule is valid with Makespan = 849
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 848...
+  SAT ! Makespan = 848
+  Schedule is valid with Makespan = 848
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 847...
+  SAT ! Makespan = 847
+  Schedule is valid with Makespan = 847
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 846...
+  SAT ! Makespan = 846
+  Schedule is valid with Makespan = 846
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 845...
+  SAT ! Makespan = 845
+  Schedule is valid with Makespan = 845
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 844...
+  SAT ! Makespan = 844
+  Schedule is valid with Makespan = 844
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 843...
+  SAT ! Makespan = 843
+  Schedule is valid with Makespan = 843
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 842...
+  SAT ! Makespan = 842
+  Schedule is valid with Makespan = 842
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 841...
+  SAT ! Makespan = 841
+  Schedule is valid with Makespan = 841
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 840...
+  SAT ! Makespan = 840
+  Schedule is valid with Makespan = 840
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 839...
+  SAT ! Makespan = 839
+  Schedule is valid with Makespan = 839
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 838...
+  SAT ! Makespan = 838
+  Schedule is valid with Makespan = 838
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 837...
+  SAT ! Makespan = 837
+  Schedule is valid with Makespan = 837
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 836...
+  SAT ! Makespan = 836
+  Schedule is valid with Makespan = 836
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 835...
+  SAT ! Makespan = 835
+  Schedule is valid with Makespan = 835
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 834...
+  SAT ! Makespan = 834
+  Schedule is valid with Makespan = 834
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 833...
+  SAT ! Makespan = 833
+  Schedule is valid with Makespan = 833
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 832...
+  SAT ! Makespan = 832
+  Schedule is valid with Makespan = 832
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 831...
+  SAT ! Makespan = 831
+  Schedule is valid with Makespan = 831
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 830...
+  SAT ! Makespan = 830
+  Schedule is valid with Makespan = 830
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 829...
+  SAT ! Makespan = 829
+  Schedule is valid with Makespan = 829
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 828...
+  SAT ! Makespan = 828
+  Schedule is valid with Makespan = 828
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 827...
+  SAT ! Makespan = 827
+  Schedule is valid with Makespan = 827
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 826...
+  SAT ! Makespan = 826
+  Schedule is valid with Makespan = 826
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 825...
+  SAT ! Makespan = 825
+  Schedule is valid with Makespan = 825
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 824...
+  SAT ! Makespan = 824
+  Schedule is valid with Makespan = 824
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 823...
+  SAT ! Makespan = 823
+  Schedule is valid with Makespan = 823
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 822...
+  SAT ! Makespan = 822
+  Schedule is valid with Makespan = 822
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 821...
+  SAT ! Makespan = 821
+  Schedule is valid with Makespan = 821
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 820...
+  SAT ! Makespan = 820
+  Schedule is valid with Makespan = 820
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 819...
+  SAT ! Makespan = 819
+  Schedule is valid with Makespan = 819
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 818...
+  SAT ! Makespan = 818
+  Schedule is valid with Makespan = 818
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 817...
+  SAT ! Makespan = 817
+  Schedule is valid with Makespan = 817
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 816...
+  SAT ! Makespan = 816
+  Schedule is valid with Makespan = 816
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 815...
+  SAT ! Makespan = 815
+  Schedule is valid with Makespan = 815
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 814...
+  SAT ! Makespan = 814
+  Schedule is valid with Makespan = 814
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 813...
+  SAT ! Makespan = 813
+  Schedule is valid with Makespan = 813
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 812...
+  SAT ! Makespan = 812
+  Schedule is valid with Makespan = 812
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 811...
+  SAT ! Makespan = 811
+  Schedule is valid with Makespan = 811
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 810...
+  SAT ! Makespan = 810
+  Schedule is valid with Makespan = 810
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 809...
+  SAT ! Makespan = 809
+  Schedule is valid with Makespan = 809
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 808...
+  SAT ! Makespan = 808
+  Schedule is valid with Makespan = 808
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 807...
+  SAT ! Makespan = 807
+  Schedule is valid with Makespan = 807
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 806...
+  SAT ! Makespan = 806
+  Schedule is valid with Makespan = 806
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 805...
+  SAT ! Makespan = 805
+  Schedule is valid with Makespan = 805
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 804...
+  SAT ! Makespan = 804
+  Schedule is valid with Makespan = 804
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 803...
+  SAT ! Makespan = 803
+  Schedule is valid with Makespan = 803
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 802...
+  SAT ! Makespan = 802
+  Schedule is valid with Makespan = 802
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 801...
+  SAT ! Makespan = 801
+  Schedule is valid with Makespan = 801
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 800...
+  SAT ! Makespan = 800
+  Schedule is valid with Makespan = 800
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 799...
+  SAT ! Makespan = 799
+  Schedule is valid with Makespan = 799
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 798...
+  SAT ! Makespan = 798
+  Schedule is valid with Makespan = 798
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 797...
+  SAT ! Makespan = 797
+  Schedule is valid with Makespan = 797
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 796...
+  SAT ! Makespan = 796
+  Schedule is valid with Makespan = 796
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 795...
+  SAT ! Makespan = 795
+  Schedule is valid with Makespan = 795
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 794...
+  SAT ! Makespan = 794
+  Schedule is valid with Makespan = 794
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 793...
+  SAT ! Makespan = 793
+  Schedule is valid with Makespan = 793
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 792...
+  SAT ! Makespan = 792
+  Schedule is valid with Makespan = 792
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 791...
+  SAT ! Makespan = 791
+  Schedule is valid with Makespan = 791
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 790...
+  SAT ! Makespan = 790
+  Schedule is valid with Makespan = 790
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 789...
+  SAT ! Makespan = 789
+  Schedule is valid with Makespan = 789
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 788...
+  SAT ! Makespan = 788
+  Schedule is valid with Makespan = 788
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 787...
+  SAT ! Makespan = 787
+  Schedule is valid with Makespan = 787
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 786...
+  SAT ! Makespan = 786
+  Schedule is valid with Makespan = 786
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 785...
+  SAT ! Makespan = 785
+  Schedule is valid with Makespan = 785
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 784...
+  SAT ! Makespan = 784
+  Schedule is valid with Makespan = 784
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 783...
+  SAT ! Makespan = 783
+  Schedule is valid with Makespan = 783
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 782...
+  SAT ! Makespan = 782
+  Schedule is valid with Makespan = 782
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 781...
+  SAT ! Makespan = 781
+  Schedule is valid with Makespan = 781
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 780...
+  SAT ! Makespan = 780
+  Schedule is valid with Makespan = 780
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 779...
+  SAT ! Makespan = 779
+  Schedule is valid with Makespan = 779
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 778...
+  SAT ! Makespan = 778
+  Schedule is valid with Makespan = 778
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 777...
+  SAT ! Makespan = 777
+  Schedule is valid with Makespan = 777
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 776...
+  SAT ! Makespan = 776
+  Schedule is valid with Makespan = 776
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 775...
+  SAT ! Makespan = 775
+  Schedule is valid with Makespan = 775
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 774...
+  SAT ! Makespan = 774
+  Schedule is valid with Makespan = 774
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 773...
+  SAT ! Makespan = 773
+  Schedule is valid with Makespan = 773
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 772...
+  SAT ! Makespan = 772
+  Schedule is valid with Makespan = 772
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 771...
+  SAT ! Makespan = 771
+  Schedule is valid with Makespan = 771
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 770...
+  SAT ! Makespan = 770
+  Schedule is valid with Makespan = 770
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 769...
+  SAT ! Makespan = 769
+  Schedule is valid with Makespan = 769
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 768...
+  SAT ! Makespan = 768
+  Schedule is valid with Makespan = 768
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 767...
+  SAT ! Makespan = 767
+  Schedule is valid with Makespan = 767
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 766...
+  SAT ! Makespan = 766
+  Schedule is valid with Makespan = 766
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 765...
+  SAT ! Makespan = 765
+  Schedule is valid with Makespan = 765
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 764...
+  SAT ! Makespan = 764
+  Schedule is valid with Makespan = 764
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 763...
+   UNSAT
+
+ Optimal Makespan = 764
+
+ Summary:
+  - Optimal Makespan   : 764
+  - Greedy Time        : 0.0003s
+  - SAT Time           : 2.6595s
+  - Total Time         : 2.6601s
+  - Schedule Status    : VALID
+===========================================================================
+[runlim] end:			Tue Aug 11 01:33:51 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] processes:		2
+[runlim] real:			2.70 seconds
+[runlim] time:			2.60 seconds
+[runlim] space:			128 MB
+[runlim] load:			0.91 maximum
+[runlim] samples:		27

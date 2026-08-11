@@ -1,0 +1,85 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			ap-Precision-7550
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	600 seconds
+[runlim] space limit:		8000 MB
+[runlim] argv[0]:		python3
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		main.py
+[runlim] argv[3]:		--input
+[runlim] argv[4]:		datasets/rdata/la16.txt
+[runlim] argv[5]:		--factories
+[runlim] argv[6]:		3
+[runlim] argv[7]:		--sb
+[runlim] start:			Tue Aug 11 03:41:49 2026
+[runlim] child:			26190
+[*] Running D-FJSSP SAT Solver with 3 factories, Symmetry Breaking = ON, Full Transitive E* = OFF
+===========================================================================
+ D-FJSSP SAT SOLVER - PARALLEL FACTORIES SCHEDULING
+===========================================================================
+[*] Loading data from file: datasets/rdata/la16.txt
+  -> Operations: 100 | Jobs: 10 | Machines: 10 | Factories: 3
+
+[*] Running Greedy Heuristic...
+  -> Greedy Solution: Makespan = 725 (0.0004s)
+
+[*] Initializing and solving the SAT model...
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 725...
+  SAT ! Makespan = 725
+  Schedule is valid with Makespan = 725
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 724...
+  SAT ! Makespan = 724
+  Schedule is valid with Makespan = 724
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 723...
+  SAT ! Makespan = 723
+  Schedule is valid with Makespan = 723
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 722...
+  SAT ! Makespan = 722
+  Schedule is valid with Makespan = 722
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 721...
+  SAT ! Makespan = 721
+  Schedule is valid with Makespan = 721
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 720...
+  SAT ! Makespan = 720
+  Schedule is valid with Makespan = 720
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 719...
+  SAT ! Makespan = 719
+  Schedule is valid with Makespan = 719
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 718...
+  SAT ! Makespan = 718
+  Schedule is valid with Makespan = 718
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 717...
+  SAT ! Makespan = 717
+  Schedule is valid with Makespan = 717
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 716...
+   UNSAT
+
+ Optimal Makespan = 717
+
+ Summary:
+  - Optimal Makespan   : 717
+  - Greedy Time        : 0.0004s
+  - SAT Time           : 0.5865s
+  - Total Time         : 0.5874s
+  - Schedule Status    : VALID
+===========================================================================
+[runlim] end:			Tue Aug 11 03:41:50 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] processes:		2
+[runlim] real:			0.63 seconds
+[runlim] time:			0.60 seconds
+[runlim] space:			93 MB
+[runlim] load:			1.04 maximum
+[runlim] samples:		7

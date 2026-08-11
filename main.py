@@ -98,7 +98,7 @@ def load_data(file_path):
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"Can not find file: {file_path}")
 
-    if 'brandimarte' in file_path.lower() or 'fmj' in file_path.lower() or 'yfjs' in file_path.lower():
+    if 'brandimarte' in file_path.lower() or 'fmj' in file_path.lower() or 'yfjs' in file_path.lower() or 'dafjs' in file_path.lower():
         return read_edge_format(file_path)
     return read_job_format(file_path)
 
