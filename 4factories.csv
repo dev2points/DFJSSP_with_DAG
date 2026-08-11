@@ -1,0 +1,24 @@
+name,upper bound,best makespan,status,total time
+la01.txt,418,413,OPT,0.23
+la02.txt,448,394,OPT,0.53
+la03.txt,428,349,OPT,0.67
+la04.txt,369,369,OPT,0.22
+la05.txt,380,380,OPT,0.31
+la06.txt,450,413,OPT,0.87
+la07.txt,376,376,OPT,0.45
+la08.txt,454,369,OPT,1.28
+la09.txt,447,382,OPT,0.93
+la10.txt,501,443,OPT,1.42
+la11.txt,591,413,OPT,6.04
+la12.txt,470,408,OPT,2.45
+la13.txt,530,382,OPT,4.2
+la14.txt,564,443,OPT,4.21
+la15.txt,460,378,OPT,2.73
+la16.txt,725,717,OPT,0.64
+la17.txt,686,646,OPT,1.0
+la18.txt,663,663,OPT,0.4
+la19.txt,617,617,OPT,0.19
+la20.txt,800,756,OPT,1.24
+mt06.txt,47,47,OPT,0.05
+mt10.txt,662,655,OPT,0.45
+mt20.txt,575,387,OPT,6.0

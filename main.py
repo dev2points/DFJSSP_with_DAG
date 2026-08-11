@@ -7,44 +7,189 @@ from pysat.formula import CNF
 from pysat.solvers import Solver
 
 
+
 def read_edge_format(file_path):
+    with open(file_path, "r", encoding="utf-8") as f:
+        lines = [
+            line.strip()
+            for line in f
+            if line.strip() and not line.lstrip().startswith("#")
+        ]
 
-    with open(file_path, 'r', encoding='utf-8') as f:
-        lines = [line.strip() for line in f if line.strip() and not line.startswith('#')]
+    if not lines:
+        raise ValueError(f"Empty dataset: {file_path}")
 
-    # Header: [num_operations, num_edges, num_machines]
     header = list(map(int, lines[0].split()))
-    num_operations, num_edges, num_machines = header[0], header[1], header[2]
+
+    if len(header) < 3:
+        raise ValueError(
+            f"Invalid header in {file_path}: {lines[0]}"
+        )
+
+    num_operations = header[0]
+    num_edges = header[1]
+    num_machines = header[2]
 
     idx = 1
-    # 1. Đọc danh sách precedence
+
     precedence_list = []
-    for _ in range(num_edges):
-        u, v = map(int, lines[idx].split())
+
+    for edge_id in range(num_edges):
+
+        if idx >= len(lines):
+            raise ValueError(
+                f"Unexpected EOF while reading precedence "
+                f"edges in {file_path}"
+            )
+
+        data = list(map(int, lines[idx].split()))
+
+        if len(data) != 2:
+            raise ValueError(
+                f"Invalid precedence edge at line {idx + 1}: "
+                f"{lines[idx]}"
+            )
+
+        u, v = data
+
+        if not (0 <= u < num_operations):
+            raise ValueError(
+                f"Invalid operation {u} in edge ({u}, {v})"
+            )
+
+        if not (0 <= v < num_operations):
+            raise ValueError(
+                f"Invalid operation {v} in edge ({u}, {v})"
+            )
+
         precedence_list.append((u, v))
+
         idx += 1
 
-    # 2. Đọc danh sách máy & thời gian gia công cho từng Op
     request_list = []
-    for _ in range(num_operations):
+
+    for op in range(num_operations):
+
+        if idx >= len(lines):
+            raise ValueError(
+                f"Unexpected EOF while reading operation "
+                f"{op}"
+            )
+
         data = list(map(int, lines[idx].split()))
         idx += 1
+
+        if not data:
+            raise ValueError(
+                f"Empty operation description for operation {op}"
+            )
+
         num_resources = data[0]
+
+        expected_length = 1 + 2 * num_resources
+
+        if len(data) != expected_length:
+            raise ValueError(
+                f"Invalid operation {op}: "
+                f"expected {expected_length} integers, "
+                f"got {len(data)}\n"
+                f"Line: {lines[idx - 1]}"
+            )
+
         map_machine = {}
+
         for i in range(num_resources):
+
             machine = data[1 + 2 * i]
             process_time = data[2 + 2 * i]
+
+            if not (0 <= machine < num_machines):
+                raise ValueError(
+                    f"Invalid machine {machine} "
+                    f"for operation {op}. "
+                    f"Valid range: 0..{num_machines - 1}"
+                )
+
+            if process_time <= 0:
+                raise ValueError(
+                    f"Invalid processing time {process_time} "
+                    f"for operation {op}"
+                )
+
             map_machine[machine] = process_time
-        
-        # Sắp xếp máy theo thời gian gia công tăng dần
-        sorted_map = dict(sorted(map_machine.items(), key=lambda x: x[1]))
+
+        sorted_map = dict(
+            sorted(
+                map_machine.items(),
+                key=lambda x: x[1]
+            )
+        )
+
         request_list.append(sorted_map)
 
-    # Trong DAG thuần, mỗi Op mặc định xem như 1 Job độc lập
-    job_of = {i: i for i in range(num_operations)}
-    num_jobs = len(job_of)
+    if idx != len(lines):
+        print(
+            f"[Warning] {len(lines) - idx} extra lines "
+            f"at the end of {file_path}"
+        )
 
-    return num_operations, num_machines, precedence_list, request_list, num_jobs, job_of
+    parent = list(range(num_operations))
+
+    def find(x):
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+
+    def union(a, b):
+        root_a = find(a)
+        root_b = find(b)
+
+        if root_a != root_b:
+            parent[root_b] = root_a
+
+    for u, v in precedence_list:
+        union(u, v)
+
+    root_to_job = {}
+    job_of = {}
+
+    next_job = 0
+
+    for op in range(num_operations):
+
+        root = find(op)
+
+        if root not in root_to_job:
+            root_to_job[root] = next_job
+            next_job += 1
+
+        job_of[op] = root_to_job[root]
+
+    num_jobs = next_job
+
+    if len(request_list) != num_operations:
+        raise AssertionError(
+            f"request_list has {len(request_list)} operations, "
+            f"expected {num_operations}"
+        )
+
+    if len(precedence_list) != num_edges:
+        raise AssertionError(
+            f"precedence_list has {len(precedence_list)} edges, "
+            f"expected {num_edges}"
+        )
+
+    return (
+        num_operations,
+        num_machines,
+        precedence_list,
+        request_list,
+        num_jobs,
+        job_of,
+    )
+
+
 
 
 def read_job_format(file_path):
