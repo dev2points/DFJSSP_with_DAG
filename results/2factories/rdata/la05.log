@@ -10,10 +10,9 @@
 [runlim] argv[4]:		datasets/rdata/la05.txt
 [runlim] argv[5]:		--factories
 [runlim] argv[6]:		2
-[runlim] argv[7]:		--sb
-[runlim] start:			Tue Aug 11 02:30:50 2026
-[runlim] child:			24808
-[*] Running D-FJSSP SAT Solver with 2 factories, Symmetry Breaking = ON, Full Transitive E* = OFF
+[runlim] start:			Tue Aug 11 12:20:54 2026
+[runlim] child:			6132
+[*] Running D-FJSSP SAT Solver with 2 factories, Symmetry Breaking = OFF, Full Transitive E* = OFF
 ===========================================================================
  D-FJSSP SAT SOLVER - PARALLEL FACTORIES SCHEDULING
 ===========================================================================
@@ -37,17 +36,17 @@
  Summary:
   - Optimal Makespan   : 380
   - Greedy Time        : 0.0002s
-  - SAT Time           : 0.2556s
-  - Total Time         : 0.2561s
+  - SAT Time           : 0.2538s
+  - Total Time         : 0.2588s
   - Schedule Status    : VALID
 ===========================================================================
-[runlim] end:			Tue Aug 11 02:30:50 2026
+[runlim] end:			Tue Aug 11 12:20:54 2026
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		1
 [runlim] processes:		2
 [runlim] real:			0.30 seconds
 [runlim] time:			0.20 seconds
-[runlim] space:			56 MB
-[runlim] load:			1.89 maximum
+[runlim] space:			55 MB
+[runlim] load:			1.14 maximum
 [runlim] samples:		3

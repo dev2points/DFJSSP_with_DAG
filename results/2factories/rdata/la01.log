@@ -10,10 +10,9 @@
 [runlim] argv[4]:		datasets/rdata/la01.txt
 [runlim] argv[5]:		--factories
 [runlim] argv[6]:		2
-[runlim] argv[7]:		--sb
-[runlim] start:			Tue Aug 11 02:30:47 2026
-[runlim] child:			24796
-[*] Running D-FJSSP SAT Solver with 2 factories, Symmetry Breaking = ON, Full Transitive E* = OFF
+[runlim] start:			Tue Aug 11 12:20:51 2026
+[runlim] child:			6120
+[*] Running D-FJSSP SAT Solver with 2 factories, Symmetry Breaking = OFF, Full Transitive E* = OFF
 ===========================================================================
  D-FJSSP SAT SOLVER - PARALLEL FACTORIES SCHEDULING
 ===========================================================================
@@ -21,7 +20,7 @@
   -> Operations: 50 | Jobs: 10 | Machines: 5 | Factories: 2
 
 [*] Running Greedy Heuristic...
-  -> Greedy Solution: Makespan = 477 (0.0002s)
+  -> Greedy Solution: Makespan = 477 (0.0003s)
 
 [*] Initializing and solving the SAT model...
 ------------------------------------------------------------------
@@ -292,18 +291,18 @@
 
  Summary:
   - Optimal Makespan   : 413
-  - Greedy Time        : 0.0002s
-  - SAT Time           : 0.5855s
-  - Total Time         : 0.5859s
+  - Greedy Time        : 0.0003s
+  - SAT Time           : 0.5622s
+  - Total Time         : 0.5676s
   - Schedule Status    : VALID
 ===========================================================================
-[runlim] end:			Tue Aug 11 02:30:48 2026
+[runlim] end:			Tue Aug 11 12:20:52 2026
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		1
 [runlim] processes:		2
-[runlim] real:			0.63 seconds
-[runlim] time:			0.60 seconds
+[runlim] real:			0.61 seconds
+[runlim] time:			0.50 seconds
 [runlim] space:			63 MB
-[runlim] load:			1.97 maximum
-[runlim] samples:		7
+[runlim] load:			1.15 maximum
+[runlim] samples:		6

@@ -10,20 +10,23 @@
 [runlim] argv[4]:		datasets/brandimarte/MK01
 [runlim] argv[5]:		--factories
 [runlim] argv[6]:		2
-[runlim] argv[7]:		--sb
-[runlim] start:			Tue Aug 11 01:33:54 2026
-[runlim] child:			23321
-[*] Running D-FJSSP SAT Solver with 2 factories, Symmetry Breaking = ON, Full Transitive E* = OFF
+[runlim] start:			Tue Aug 11 11:39:38 2026
+[runlim] child:			5280
+[*] Running D-FJSSP SAT Solver with 2 factories, Symmetry Breaking = OFF, Full Transitive E* = OFF
 ===========================================================================
  D-FJSSP SAT SOLVER - PARALLEL FACTORIES SCHEDULING
 ===========================================================================
 [*] Loading data from file: datasets/brandimarte/MK01
-  -> Operations: 55 | Jobs: 55 | Machines: 6 | Factories: 2
+  -> Operations: 55 | Jobs: 10 | Machines: 6 | Factories: 2
 
 [*] Running Greedy Heuristic...
-  -> Greedy Solution: Makespan = 32 (0.0003s)
+  -> Greedy Solution: Makespan = 33 (0.0003s)
 
 [*] Initializing and solving the SAT model...
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 33...
+  SAT ! Makespan = 33
+  Schedule is valid with Makespan = 33
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 32...
   SAT ! Makespan = 32
@@ -69,17 +72,17 @@
  Summary:
   - Optimal Makespan   : 24
   - Greedy Time        : 0.0003s
-  - SAT Time           : 0.0871s
-  - Total Time         : 0.0877s
+  - SAT Time           : 0.0776s
+  - Total Time         : 0.0830s
   - Schedule Status    : VALID
 ===========================================================================
-[runlim] end:			Tue Aug 11 01:33:54 2026
+[runlim] end:			Tue Aug 11 11:39:38 2026
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		1
 [runlim] processes:		2
-[runlim] real:			0.13 seconds
-[runlim] time:			0.10 seconds
-[runlim] space:			30 MB
-[runlim] load:			0.92 maximum
+[runlim] real:			0.12 seconds
+[runlim] time:			0.09 seconds
+[runlim] space:			29 MB
+[runlim] load:			0.67 maximum
 [runlim] samples:		2

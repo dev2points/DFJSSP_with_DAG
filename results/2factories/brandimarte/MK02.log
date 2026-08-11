@@ -10,24 +10,19 @@
 [runlim] argv[4]:		datasets/brandimarte/MK02
 [runlim] argv[5]:		--factories
 [runlim] argv[6]:		2
-[runlim] argv[7]:		--sb
-[runlim] start:			Tue Aug 11 01:33:54 2026
-[runlim] child:			23324
-[*] Running D-FJSSP SAT Solver with 2 factories, Symmetry Breaking = ON, Full Transitive E* = OFF
+[runlim] start:			Tue Aug 11 11:39:38 2026
+[runlim] child:			5283
+[*] Running D-FJSSP SAT Solver with 2 factories, Symmetry Breaking = OFF, Full Transitive E* = OFF
 ===========================================================================
  D-FJSSP SAT SOLVER - PARALLEL FACTORIES SCHEDULING
 ===========================================================================
 [*] Loading data from file: datasets/brandimarte/MK02
-  -> Operations: 58 | Jobs: 58 | Machines: 6 | Factories: 2
+  -> Operations: 58 | Jobs: 10 | Machines: 6 | Factories: 2
 
 [*] Running Greedy Heuristic...
-  -> Greedy Solution: Makespan = 24 (0.0004s)
+  -> Greedy Solution: Makespan = 23 (0.0003s)
 
 [*] Initializing and solving the SAT model...
-------------------------------------------------------------------
-[*] Trying with Upper Bound = 24...
-  SAT ! Makespan = 24
-  Schedule is valid with Makespan = 24
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 23...
   SAT ! Makespan = 23
@@ -50,28 +45,24 @@
   Schedule is valid with Makespan = 19
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 18...
-  SAT ! Makespan = 18
-  Schedule is valid with Makespan = 18
-------------------------------------------------------------------
-[*] Trying with Upper Bound = 17...
    UNSAT
 
- Optimal Makespan = 18
+ Optimal Makespan = 19
 
  Summary:
-  - Optimal Makespan   : 18
-  - Greedy Time        : 0.0004s
-  - SAT Time           : 0.1516s
-  - Total Time         : 0.1525s
+  - Optimal Makespan   : 19
+  - Greedy Time        : 0.0003s
+  - SAT Time           : 0.1311s
+  - Total Time         : 0.1363s
   - Schedule Status    : VALID
 ===========================================================================
-[runlim] end:			Tue Aug 11 01:33:54 2026
+[runlim] end:			Tue Aug 11 11:39:38 2026
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		1
 [runlim] processes:		2
-[runlim] real:			0.19 seconds
+[runlim] real:			0.18 seconds
 [runlim] time:			0.10 seconds
-[runlim] space:			33 MB
-[runlim] load:			0.92 maximum
+[runlim] space:			32 MB
+[runlim] load:			0.67 maximum
 [runlim] samples:		2

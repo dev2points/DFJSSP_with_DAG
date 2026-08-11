@@ -10,20 +10,123 @@
 [runlim] argv[4]:		datasets/fmj/mfjs10
 [runlim] argv[5]:		--factories
 [runlim] argv[6]:		2
-[runlim] argv[7]:		--sb
-[runlim] start:			Tue Aug 11 01:33:51 2026
-[runlim] child:			23318
-[*] Running D-FJSSP SAT Solver with 2 factories, Symmetry Breaking = ON, Full Transitive E* = OFF
+[runlim] start:			Tue Aug 11 11:39:33 2026
+[runlim] child:			5277
+[*] Running D-FJSSP SAT Solver with 2 factories, Symmetry Breaking = OFF, Full Transitive E* = OFF
 ===========================================================================
  D-FJSSP SAT SOLVER - PARALLEL FACTORIES SCHEDULING
 ===========================================================================
 [*] Loading data from file: datasets/fmj/mfjs10
-  -> Operations: 48 | Jobs: 48 | Machines: 8 | Factories: 2
+  -> Operations: 48 | Jobs: 12 | Machines: 8 | Factories: 2
 
 [*] Running Greedy Heuristic...
-  -> Greedy Solution: Makespan = 1067 (0.0003s)
+  -> Greedy Solution: Makespan = 1093 (0.0002s)
 
 [*] Initializing and solving the SAT model...
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 1093...
+  SAT ! Makespan = 1093
+  Schedule is valid with Makespan = 1093
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 1092...
+  SAT ! Makespan = 1092
+  Schedule is valid with Makespan = 1092
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 1091...
+  SAT ! Makespan = 1091
+  Schedule is valid with Makespan = 1091
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 1090...
+  SAT ! Makespan = 1090
+  Schedule is valid with Makespan = 1090
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 1089...
+  SAT ! Makespan = 1089
+  Schedule is valid with Makespan = 1089
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 1088...
+  SAT ! Makespan = 1088
+  Schedule is valid with Makespan = 1088
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 1087...
+  SAT ! Makespan = 1087
+  Schedule is valid with Makespan = 1087
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 1086...
+  SAT ! Makespan = 1086
+  Schedule is valid with Makespan = 1086
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 1085...
+  SAT ! Makespan = 1085
+  Schedule is valid with Makespan = 1085
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 1084...
+  SAT ! Makespan = 1084
+  Schedule is valid with Makespan = 1084
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 1083...
+  SAT ! Makespan = 1083
+  Schedule is valid with Makespan = 1083
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 1082...
+  SAT ! Makespan = 1082
+  Schedule is valid with Makespan = 1082
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 1081...
+  SAT ! Makespan = 1081
+  Schedule is valid with Makespan = 1081
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 1080...
+  SAT ! Makespan = 1080
+  Schedule is valid with Makespan = 1080
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 1079...
+  SAT ! Makespan = 1079
+  Schedule is valid with Makespan = 1079
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 1078...
+  SAT ! Makespan = 1078
+  Schedule is valid with Makespan = 1078
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 1077...
+  SAT ! Makespan = 1077
+  Schedule is valid with Makespan = 1077
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 1076...
+  SAT ! Makespan = 1076
+  Schedule is valid with Makespan = 1076
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 1075...
+  SAT ! Makespan = 1075
+  Schedule is valid with Makespan = 1075
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 1074...
+  SAT ! Makespan = 1074
+  Schedule is valid with Makespan = 1074
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 1073...
+  SAT ! Makespan = 1073
+  Schedule is valid with Makespan = 1073
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 1072...
+  SAT ! Makespan = 1072
+  Schedule is valid with Makespan = 1072
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 1071...
+  SAT ! Makespan = 1071
+  Schedule is valid with Makespan = 1071
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 1070...
+  SAT ! Makespan = 1070
+  Schedule is valid with Makespan = 1070
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 1069...
+  SAT ! Makespan = 1069
+  Schedule is valid with Makespan = 1069
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 1068...
+  SAT ! Makespan = 1068
+  Schedule is valid with Makespan = 1068
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 1067...
   SAT ! Makespan = 1067
@@ -528,18 +631,18 @@
 
  Summary:
   - Optimal Makespan   : 944
-  - Greedy Time        : 0.0003s
-  - SAT Time           : 2.2796s
-  - Total Time         : 2.2804s
+  - Greedy Time        : 0.0002s
+  - SAT Time           : 5.0010s
+  - Total Time         : 5.0060s
   - Schedule Status    : VALID
 ===========================================================================
-[runlim] end:			Tue Aug 11 01:33:54 2026
+[runlim] end:			Tue Aug 11 11:39:38 2026
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		1
 [runlim] processes:		2
-[runlim] real:			2.32 seconds
-[runlim] time:			2.30 seconds
-[runlim] space:			182 MB
-[runlim] load:			0.92 maximum
-[runlim] samples:		24
+[runlim] real:			5.05 seconds
+[runlim] time:			4.99 seconds
+[runlim] space:			187 MB
+[runlim] load:			0.67 maximum
+[runlim] samples:		51

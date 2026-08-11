@@ -10,10 +10,9 @@
 [runlim] argv[4]:		datasets/rdata/la11.txt
 [runlim] argv[5]:		--factories
 [runlim] argv[6]:		2
-[runlim] argv[7]:		--sb
-[runlim] start:			Tue Aug 11 02:38:47 2026
-[runlim] child:			25868
-[*] Running D-FJSSP SAT Solver with 2 factories, Symmetry Breaking = ON, Full Transitive E* = OFF
+[runlim] start:			Tue Aug 11 12:28:42 2026
+[runlim] child:			6162
+[*] Running D-FJSSP SAT Solver with 2 factories, Symmetry Breaking = OFF, Full Transitive E* = OFF
 ===========================================================================
  D-FJSSP SAT SOLVER - PARALLEL FACTORIES SCHEDULING
 ===========================================================================
@@ -210,7 +209,7 @@
   Schedule is valid with Makespan = 643
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 642...
-[runlim] sample:		9.99 time, 10.01 real, 370 MB, 1.02 load
+[runlim] sample:		9.99 time, 10.01 real, 368 MB, 1.11 load
   SAT ! Makespan = 642
   Schedule is valid with Makespan = 642
 ------------------------------------------------------------------
@@ -247,7 +246,7 @@
   Schedule is valid with Makespan = 634
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 633...
-[runlim] sample:		19.99 time, 20.01 real, 361 MB, 1.02 load
+[runlim] sample:		19.98 time, 20.01 real, 361 MB, 1.09 load
   SAT ! Makespan = 633
   Schedule is valid with Makespan = 633
 ------------------------------------------------------------------
@@ -284,11 +283,11 @@
   Schedule is valid with Makespan = 625
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 624...
-[runlim] sample:		29.98 time, 30.01 real, 360 MB, 1.01 load
   SAT ! Makespan = 624
   Schedule is valid with Makespan = 624
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 623...
+[runlim] sample:		29.98 time, 30.01 real, 360 MB, 1.08 load
   SAT ! Makespan = 623
   Schedule is valid with Makespan = 623
 ------------------------------------------------------------------
@@ -373,11 +372,11 @@
   Schedule is valid with Makespan = 603
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 602...
-[runlim] sample:		39.98 time, 40.01 real, 357 MB, 1.01 load
   SAT ! Makespan = 602
   Schedule is valid with Makespan = 602
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 601...
+[runlim] sample:		39.98 time, 40.01 real, 324 MB, 1.07 load
   SAT ! Makespan = 601
   Schedule is valid with Makespan = 601
 ------------------------------------------------------------------
@@ -410,7 +409,7 @@
   Schedule is valid with Makespan = 594
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 593...
-[runlim] sample:		49.97 time, 50.01 real, 306 MB, 1.01 load
+[runlim] sample:		49.96 time, 50.01 real, 283 MB, 1.06 load
   SAT ! Makespan = 593
   Schedule is valid with Makespan = 593
 ------------------------------------------------------------------
@@ -427,11 +426,11 @@
   Schedule is valid with Makespan = 590
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 589...
-[runlim] sample:		59.96 time, 60.01 real, 329 MB, 1.01 load
   SAT ! Makespan = 589
   Schedule is valid with Makespan = 589
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 588...
+[runlim] sample:		59.96 time, 60.01 real, 283 MB, 1.05 load
   SAT ! Makespan = 588
   Schedule is valid with Makespan = 588
 ------------------------------------------------------------------
@@ -448,11 +447,11 @@
   Schedule is valid with Makespan = 585
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 584...
-[runlim] sample:		69.96 time, 70.01 real, 320 MB, 1.00 load
   SAT ! Makespan = 584
   Schedule is valid with Makespan = 584
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 583...
+[runlim] sample:		69.96 time, 70.01 real, 318 MB, 1.04 load
   SAT ! Makespan = 583
   Schedule is valid with Makespan = 583
 ------------------------------------------------------------------
@@ -473,7 +472,7 @@
   Schedule is valid with Makespan = 579
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 578...
-[runlim] sample:		79.95 time, 80.01 real, 284 MB, 1.00 load
+[runlim] sample:		79.95 time, 80.01 real, 299 MB, 1.11 load
   SAT ! Makespan = 578
   Schedule is valid with Makespan = 578
 ------------------------------------------------------------------
@@ -482,7 +481,6 @@
   Schedule is valid with Makespan = 577
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 576...
-[runlim] sample:		89.94 time, 90.01 real, 328 MB, 1.00 load
   SAT ! Makespan = 576
   Schedule is valid with Makespan = 576
 ------------------------------------------------------------------
@@ -491,6 +489,7 @@
   Schedule is valid with Makespan = 575
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 574...
+[runlim] sample:		89.94 time, 90.01 real, 281 MB, 1.09 load
   SAT ! Makespan = 574
   Schedule is valid with Makespan = 574
 ------------------------------------------------------------------
@@ -499,11 +498,11 @@
   Schedule is valid with Makespan = 573
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 572...
-[runlim] sample:		99.92 time, 100.01 real, 292 MB, 1.00 load
   SAT ! Makespan = 572
   Schedule is valid with Makespan = 572
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 571...
+[runlim] sample:		99.95 time, 100.01 real, 298 MB, 1.08 load
   SAT ! Makespan = 571
   Schedule is valid with Makespan = 571
 ------------------------------------------------------------------
@@ -516,29 +515,29 @@
   Schedule is valid with Makespan = 569
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 568...
-[runlim] sample:		109.91 time, 110.01 real, 283 MB, 1.00 load
   SAT ! Makespan = 568
   Schedule is valid with Makespan = 568
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 567...
+[runlim] sample:		109.94 time, 110.01 real, 297 MB, 1.06 load
   SAT ! Makespan = 567
   Schedule is valid with Makespan = 567
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 566...
-[runlim] sample:		119.90 time, 120.01 real, 308 MB, 1.00 load
-[runlim] sample:		129.90 time, 130.01 real, 328 MB, 1.00 load
-[runlim] sample:		139.90 time, 140.01 real, 328 MB, 1.00 load
-[runlim] sample:		149.89 time, 150.01 real, 330 MB, 1.00 load
+[runlim] sample:		119.93 time, 120.01 real, 321 MB, 1.05 load
+[runlim] sample:		129.93 time, 130.01 real, 327 MB, 1.04 load
+[runlim] sample:		139.92 time, 140.01 real, 325 MB, 1.04 load
+[runlim] sample:		149.92 time, 150.01 real, 328 MB, 1.10 load
   SAT ! Makespan = 566
   Schedule is valid with Makespan = 566
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 565...
-[runlim] sample:		159.88 time, 160.01 real, 334 MB, 1.00 load
+[runlim] sample:		159.91 time, 160.01 real, 330 MB, 1.09 load
   SAT ! Makespan = 565
   Schedule is valid with Makespan = 565
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 564...
-[runlim] sample:		169.88 time, 170.01 real, 317 MB, 1.00 load
+[runlim] sample:		169.92 time, 170.01 real, 319 MB, 1.07 load
   SAT ! Makespan = 564
   Schedule is valid with Makespan = 564
 ------------------------------------------------------------------
@@ -547,14 +546,14 @@
   Schedule is valid with Makespan = 563
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 562...
-[runlim] sample:		179.87 time, 180.01 real, 285 MB, 1.00 load
-[runlim] sample:		189.86 time, 190.01 real, 285 MB, 1.00 load
-[runlim] sample:		199.85 time, 200.01 real, 323 MB, 1.00 load
-[runlim] sample:		209.85 time, 210.01 real, 323 MB, 1.00 load
+[runlim] sample:		179.91 time, 180.01 real, 328 MB, 1.06 load
+[runlim] sample:		189.90 time, 190.01 real, 329 MB, 1.05 load
+[runlim] sample:		199.89 time, 200.01 real, 331 MB, 1.12 load
   SAT ! Makespan = 562
   Schedule is valid with Makespan = 562
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 561...
+[runlim] sample:		209.90 time, 210.01 real, 340 MB, 1.10 load
   SAT ! Makespan = 561
   Schedule is valid with Makespan = 561
 ------------------------------------------------------------------
@@ -567,88 +566,88 @@
   Schedule is valid with Makespan = 559
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 558...
-[runlim] sample:		219.85 time, 220.01 real, 292 MB, 1.00 load
   SAT ! Makespan = 558
   Schedule is valid with Makespan = 558
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 557...
-[runlim] sample:		229.84 time, 230.01 real, 323 MB, 1.00 load
-[runlim] sample:		239.83 time, 240.01 real, 328 MB, 1.00 load
-[runlim] sample:		249.82 time, 250.01 real, 322 MB, 1.00 load
-[runlim] sample:		259.82 time, 260.01 real, 323 MB, 1.00 load
+[runlim] sample:		219.89 time, 220.01 real, 333 MB, 1.09 load
+[runlim] sample:		229.88 time, 230.01 real, 332 MB, 1.07 load
+[runlim] sample:		239.88 time, 240.01 real, 331 MB, 1.06 load
+[runlim] sample:		249.88 time, 250.01 real, 332 MB, 1.05 load
   SAT ! Makespan = 557
   Schedule is valid with Makespan = 557
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 556...
-[runlim] sample:		269.81 time, 270.01 real, 288 MB, 1.00 load
-[runlim] sample:		279.80 time, 280.01 real, 287 MB, 1.00 load
-[runlim] sample:		289.79 time, 290.01 real, 286 MB, 1.00 load
-[runlim] sample:		299.79 time, 300.01 real, 319 MB, 1.00 load
+[runlim] sample:		259.88 time, 260.01 real, 336 MB, 1.04 load
+[runlim] sample:		269.87 time, 270.01 real, 336 MB, 1.04 load
+[runlim] sample:		279.86 time, 280.01 real, 334 MB, 1.03 load
+[runlim] sample:		289.85 time, 290.01 real, 334 MB, 1.02 load
   SAT ! Makespan = 556
   Schedule is valid with Makespan = 556
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 555...
+[runlim] sample:		299.85 time, 300.01 real, 298 MB, 1.02 load
   SAT ! Makespan = 555
   Schedule is valid with Makespan = 555
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 554...
-[runlim] sample:		309.78 time, 310.01 real, 289 MB, 1.08 load
+[runlim] sample:		309.84 time, 310.01 real, 295 MB, 1.10 load
   SAT ! Makespan = 554
   Schedule is valid with Makespan = 554
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 553...
-[runlim] sample:		319.78 time, 320.01 real, 287 MB, 1.07 load
-[runlim] sample:		329.77 time, 330.01 real, 322 MB, 1.14 load
-[runlim] sample:		339.75 time, 340.01 real, 321 MB, 1.12 load
+[runlim] sample:		319.83 time, 320.01 real, 294 MB, 1.08 load
+[runlim] sample:		329.82 time, 330.01 real, 329 MB, 1.07 load
+[runlim] sample:		339.83 time, 340.01 real, 327 MB, 1.06 load
   SAT ! Makespan = 553
   Schedule is valid with Makespan = 553
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 552...
-[runlim] sample:		349.76 time, 350.01 real, 287 MB, 1.10 load
   SAT ! Makespan = 552
   Schedule is valid with Makespan = 552
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 551...
-[runlim] sample:		359.74 time, 360.01 real, 288 MB, 1.08 load
-[runlim] sample:		369.73 time, 370.01 real, 324 MB, 1.07 load
-[runlim] sample:		379.73 time, 380.01 real, 324 MB, 1.21 load
-[runlim] sample:		389.72 time, 390.01 real, 320 MB, 1.18 load
+[runlim] sample:		349.82 time, 350.01 real, 294 MB, 1.05 load
+[runlim] sample:		359.81 time, 360.01 real, 294 MB, 1.11 load
+[runlim] sample:		369.81 time, 370.01 real, 330 MB, 1.17 load
+[runlim] sample:		379.81 time, 380.01 real, 326 MB, 1.14 load
   SAT ! Makespan = 551
   Schedule is valid with Makespan = 551
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 550...
-[runlim] sample:		399.71 time, 400.01 real, 291 MB, 1.15 load
-[runlim] sample:		409.71 time, 410.01 real, 291 MB, 1.13 load
-[runlim] sample:		419.71 time, 420.01 real, 326 MB, 1.11 load
-[runlim] sample:		429.70 time, 430.01 real, 321 MB, 1.09 load
-[runlim] sample:		439.69 time, 440.01 real, 327 MB, 1.16 load
-[runlim] sample:		449.69 time, 450.01 real, 327 MB, 1.13 load
-[runlim] sample:		459.68 time, 460.01 real, 329 MB, 1.19 load
-[runlim] sample:		469.66 time, 470.01 real, 322 MB, 1.16 load
-[runlim] sample:		479.66 time, 480.01 real, 322 MB, 1.14 load
-[runlim] sample:		489.66 time, 490.01 real, 323 MB, 1.12 load
-[runlim] sample:		499.64 time, 500.01 real, 323 MB, 1.10 load
-[runlim] sample:		509.64 time, 510.01 real, 323 MB, 1.08 load
-[runlim] sample:		519.63 time, 520.01 real, 324 MB, 1.07 load
-[runlim] sample:		529.63 time, 530.01 real, 324 MB, 1.06 load
-[runlim] sample:		539.63 time, 540.01 real, 325 MB, 1.05 load
+[runlim] sample:		389.80 time, 390.01 real, 297 MB, 1.12 load
+[runlim] sample:		399.80 time, 400.01 real, 297 MB, 1.10 load
+[runlim] sample:		409.79 time, 410.01 real, 332 MB, 1.09 load
+[runlim] sample:		419.78 time, 420.01 real, 332 MB, 1.07 load
+[runlim] sample:		429.78 time, 430.01 real, 334 MB, 1.06 load
+[runlim] sample:		439.78 time, 440.01 real, 334 MB, 1.21 load
+[runlim] sample:		449.77 time, 450.01 real, 335 MB, 1.17 load
+[runlim] sample:		459.77 time, 460.01 real, 335 MB, 1.15 load
+[runlim] sample:		469.77 time, 470.01 real, 329 MB, 1.12 load
+[runlim] sample:		479.76 time, 480.01 real, 329 MB, 1.10 load
+[runlim] sample:		489.75 time, 490.01 real, 329 MB, 1.09 load
+[runlim] sample:		499.75 time, 500.01 real, 330 MB, 1.15 load
+[runlim] sample:		509.75 time, 510.01 real, 330 MB, 1.20 load
+[runlim] sample:		519.73 time, 520.01 real, 331 MB, 1.17 load
+[runlim] sample:		529.74 time, 530.01 real, 331 MB, 1.15 load
   SAT ! Makespan = 550
   Schedule is valid with Makespan = 550
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 549...
-[runlim] sample:		549.61 time, 550.01 real, 298 MB, 1.04 load
-[runlim] sample:		559.61 time, 560.01 real, 294 MB, 1.03 load
-[runlim] sample:		569.60 time, 570.01 real, 294 MB, 1.03 load
-[runlim] sample:		579.60 time, 580.01 real, 328 MB, 1.02 load
-[runlim] sample:		589.58 time, 590.01 real, 330 MB, 1.10 load
-[runlim] sample:		599.58 time, 600.01 real, 336 MB, 1.08 load
-[runlim] end:			Tue Aug 11 02:48:48 2026
+[runlim] sample:		539.72 time, 540.01 real, 296 MB, 1.12 load
+[runlim] sample:		549.72 time, 550.01 real, 296 MB, 1.10 load
+[runlim] sample:		559.71 time, 560.01 real, 292 MB, 1.09 load
+[runlim] sample:		569.71 time, 570.01 real, 326 MB, 1.07 load
+[runlim] sample:		579.71 time, 580.01 real, 326 MB, 1.06 load
+[runlim] sample:		589.70 time, 590.01 real, 328 MB, 1.13 load
+[runlim] sample:		599.70 time, 600.01 real, 334 MB, 1.11 load
+[runlim] end:			Tue Aug 11 12:38:43 2026
 [runlim] status:		out of time
 [runlim] result:		2
 [runlim] children:		1
 [runlim] processes:		2
-[runlim] real:			601.05 seconds
-[runlim] time:			599.58 seconds
-[runlim] space:			507 MB
-[runlim] load:			1.21 maximum
+[runlim] real:			601.06 seconds
+[runlim] time:			599.70 seconds
+[runlim] space:			511 MB
+[runlim] load:			1.22 maximum
 [runlim] samples:		6000
