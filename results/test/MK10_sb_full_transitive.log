@@ -1,0 +1,230 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			ap-Precision-7550
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	600 seconds
+[runlim] space limit:		14000 MB
+[runlim] argv[0]:		python3
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		main.py
+[runlim] argv[3]:		--input
+[runlim] argv[4]:		datasets/brandimarte/MK10
+[runlim] argv[5]:		--factories
+[runlim] argv[6]:		2
+[runlim] argv[7]:		--sb
+[runlim] argv[8]:		--full_transitive
+[runlim] start:			Wed Aug 12 19:44:53 2026
+[runlim] child:			5306
+[*] Running D-FJSSP SAT Solver with 2 factories, Symmetry Breaking = ON, Full Transitive E* = ON
+===========================================================================
+ D-FJSSP SAT SOLVER - PARALLEL FACTORIES SCHEDULING
+===========================================================================
+[*] Loading data from file: datasets/brandimarte/MK10
+  -> Operations: 240 | Jobs: 20 | Machines: 15 | Factories: 2
+
+[*] Running Greedy Heuristic...
+  -> Greedy Solution: Makespan = 159 (0.0011s)
+
+[*] Initializing and solving the SAT model...
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 159...
+  SAT ! Makespan = 159
+  Schedule is valid with Makespan = 159
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 158...
+  SAT ! Makespan = 158
+  Schedule is valid with Makespan = 158
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 157...
+  SAT ! Makespan = 157
+  Schedule is valid with Makespan = 157
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 156...
+  SAT ! Makespan = 156
+  Schedule is valid with Makespan = 156
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 155...
+[runlim] sample:		9.99 time, 10.01 real, 351 MB, 1.05 load
+  SAT ! Makespan = 155
+  Schedule is valid with Makespan = 155
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 154...
+  SAT ! Makespan = 154
+  Schedule is valid with Makespan = 154
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 153...
+  SAT ! Makespan = 153
+  Schedule is valid with Makespan = 153
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 152...
+  SAT ! Makespan = 152
+  Schedule is valid with Makespan = 152
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 151...
+  SAT ! Makespan = 151
+  Schedule is valid with Makespan = 151
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 150...
+  SAT ! Makespan = 150
+  Schedule is valid with Makespan = 150
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 149...
+  SAT ! Makespan = 149
+  Schedule is valid with Makespan = 149
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 148...
+  SAT ! Makespan = 148
+  Schedule is valid with Makespan = 148
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 147...
+[runlim] sample:		19.98 time, 20.01 real, 325 MB, 1.04 load
+  SAT ! Makespan = 147
+  Schedule is valid with Makespan = 147
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 146...
+  SAT ! Makespan = 146
+  Schedule is valid with Makespan = 146
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 145...
+  SAT ! Makespan = 145
+  Schedule is valid with Makespan = 145
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 144...
+  SAT ! Makespan = 144
+  Schedule is valid with Makespan = 144
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 143...
+  SAT ! Makespan = 143
+  Schedule is valid with Makespan = 143
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 142...
+  SAT ! Makespan = 142
+  Schedule is valid with Makespan = 142
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 141...
+  SAT ! Makespan = 141
+  Schedule is valid with Makespan = 141
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 140...
+  SAT ! Makespan = 140
+  Schedule is valid with Makespan = 140
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 139...
+  SAT ! Makespan = 139
+  Schedule is valid with Makespan = 139
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 138...
+  SAT ! Makespan = 138
+  Schedule is valid with Makespan = 138
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 137...
+  SAT ! Makespan = 137
+  Schedule is valid with Makespan = 137
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 136...
+  SAT ! Makespan = 136
+  Schedule is valid with Makespan = 136
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 135...
+[runlim] sample:		29.98 time, 30.01 real, 247 MB, 1.04 load
+  SAT ! Makespan = 135
+  Schedule is valid with Makespan = 135
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 134...
+  SAT ! Makespan = 134
+  Schedule is valid with Makespan = 134
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 133...
+  SAT ! Makespan = 133
+  Schedule is valid with Makespan = 133
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 132...
+[runlim] sample:		39.96 time, 40.01 real, 268 MB, 1.03 load
+  SAT ! Makespan = 132
+  Schedule is valid with Makespan = 132
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 131...
+  SAT ! Makespan = 131
+  Schedule is valid with Makespan = 131
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 130...
+[runlim] sample:		49.96 time, 50.01 real, 262 MB, 1.02 load
+[runlim] sample:		59.93 time, 60.01 real, 278 MB, 1.02 load
+  SAT ! Makespan = 130
+  Schedule is valid with Makespan = 130
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 129...
+[runlim] sample:		69.93 time, 70.01 real, 289 MB, 1.02 load
+[runlim] sample:		79.92 time, 80.01 real, 289 MB, 1.01 load
+[runlim] sample:		89.91 time, 90.01 real, 267 MB, 1.01 load
+[runlim] sample:		99.90 time, 100.01 real, 289 MB, 1.01 load
+[runlim] sample:		109.89 time, 110.01 real, 289 MB, 1.01 load
+[runlim] sample:		119.89 time, 120.01 real, 291 MB, 1.01 load
+[runlim] sample:		129.89 time, 130.01 real, 295 MB, 1.08 load
+  SAT ! Makespan = 129
+  Schedule is valid with Makespan = 129
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 128...
+[runlim] sample:		139.88 time, 140.01 real, 258 MB, 1.07 load
+  SAT ! Makespan = 128
+  Schedule is valid with Makespan = 128
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 127...
+  SAT ! Makespan = 127
+  Schedule is valid with Makespan = 127
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 126...
+[runlim] sample:		149.87 time, 150.01 real, 290 MB, 1.06 load
+[runlim] sample:		159.86 time, 160.01 real, 258 MB, 1.05 load
+  SAT ! Makespan = 126
+  Schedule is valid with Makespan = 126
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 125...
+[runlim] sample:		169.86 time, 170.01 real, 290 MB, 1.04 load
+[runlim] sample:		179.86 time, 180.01 real, 258 MB, 1.12 load
+[runlim] sample:		189.85 time, 190.01 real, 258 MB, 1.17 load
+  SAT ! Makespan = 125
+  Schedule is valid with Makespan = 125
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 124...
+[runlim] sample:		199.85 time, 200.01 real, 258 MB, 1.15 load
+[runlim] sample:		209.84 time, 210.01 real, 258 MB, 1.12 load
+[runlim] sample:		219.83 time, 220.01 real, 285 MB, 1.10 load
+[runlim] sample:		229.82 time, 230.01 real, 285 MB, 1.09 load
+[runlim] sample:		239.82 time, 240.01 real, 285 MB, 1.07 load
+[runlim] sample:		249.81 time, 250.01 real, 285 MB, 1.06 load
+[runlim] sample:		259.81 time, 260.01 real, 285 MB, 1.05 load
+[runlim] sample:		269.80 time, 270.01 real, 285 MB, 1.04 load
+[runlim] sample:		279.81 time, 280.01 real, 289 MB, 1.04 load
+[runlim] sample:		289.80 time, 290.01 real, 289 MB, 1.03 load
+[runlim] sample:		299.79 time, 300.01 real, 233 MB, 1.02 load
+[runlim] sample:		309.79 time, 310.01 real, 230 MB, 1.02 load
+[runlim] sample:		319.78 time, 320.01 real, 232 MB, 1.02 load
+[runlim] sample:		329.78 time, 330.01 real, 231 MB, 1.01 load
+[runlim] sample:		339.77 time, 340.01 real, 233 MB, 1.01 load
+[runlim] sample:		349.77 time, 350.01 real, 231 MB, 1.01 load
+[runlim] sample:		359.76 time, 360.01 real, 223 MB, 1.01 load
+[runlim] sample:		369.75 time, 370.01 real, 282 MB, 1.01 load
+[runlim] sample:		379.75 time, 380.01 real, 282 MB, 1.00 load
+[runlim] sample:		389.75 time, 390.01 real, 217 MB, 1.00 load
+[runlim] sample:		399.74 time, 400.01 real, 239 MB, 1.00 load
+   UNSAT
+
+ Optimal Makespan = 125
+
+ Summary:
+  - Optimal Makespan   : 125
+  - Greedy Time        : 0.0011s
+  - SAT Time           : 402.6411s
+  - Total Time         : 402.6442s
+  - Schedule Status    : VALID
+===========================================================================
+[runlim] end:			Wed Aug 12 19:51:36 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] processes:		2
+[runlim] real:			402.69 seconds
+[runlim] time:			402.34 seconds
+[runlim] space:			432 MB
+[runlim] load:			1.19 maximum
+[runlim] samples:		4027
