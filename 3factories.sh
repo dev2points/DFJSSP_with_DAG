@@ -11,7 +11,7 @@ RDATA_DIR=datasets/rdata
 # YRESULT_DIR=results/yfjs
 # DARESULT_DIR=results/dafjs
 # FMJRESULT_DIR=results/3factories/fmj
-# MKRESULT_DIR=results/3factories/brandimarte
+MKRESULT_DIR=results/3factories/brandimarte
 RRESULT_DIR=results/3factories/rdata
 
 mkdir -p $YRESULT_DIR
@@ -95,16 +95,16 @@ mkdir -p $RRESULT_DIR
 # ./runlim -r $TO -s $MO  python3 -u main.py --input $FMJDATA_DIR/mfjs09 --factories $NUM_FACTORIES  2>&1 | tee $FMJRESULT_DIR/mfjs09.log
 # ./runlim -r $TO -s $MO  python3 -u main.py --input $FMJDATA_DIR/mfjs10 --factories $NUM_FACTORIES  2>&1 | tee $FMJRESULT_DIR/mfjs10.log
 
-# ./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK01 --factories $NUM_FACTORIES  2>&1 | tee $MKRESULT_DIR/MK01.log
-# ./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK02 --factories $NUM_FACTORIES  2>&1 | tee $MKRESULT_DIR/MK02.log
-# ./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK03 --factories $NUM_FACTORIES  2>&1 | tee $MKRESULT_DIR/MK03.log
-# ./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK04 --factories $NUM_FACTORIES  2>&1 | tee $MKRESULT_DIR/MK04.log
-# ./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK05 --factories $NUM_FACTORIES  2>&1 | tee $MKRESULT_DIR/MK05.log
-# ./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK06 --factories $NUM_FACTORIES  2>&1 | tee $MKRESULT_DIR/MK06.log
-# ./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK07 --factories $NUM_FACTORIES  2>&1 | tee $MKRESULT_DIR/MK07.log
-# ./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK08 --factories $NUM_FACTORIES  2>&1 | tee $MKRESULT_DIR/MK08.log
-# ./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK09 --factories $NUM_FACTORIES  2>&1 | tee $MKRESULT_DIR/MK09.log
-# ./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK10 --factories $NUM_FACTORIES  2>&1 | tee $MKRESULT_DIR/MK10.log
+./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK01 --factories $NUM_FACTORIES  2>&1 | tee $MKRESULT_DIR/MK01.log
+./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK02 --factories $NUM_FACTORIES  2>&1 | tee $MKRESULT_DIR/MK02.log
+./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK03 --factories $NUM_FACTORIES  2>&1 | tee $MKRESULT_DIR/MK03.log
+./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK04 --factories $NUM_FACTORIES  2>&1 | tee $MKRESULT_DIR/MK04.log
+./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK05 --factories $NUM_FACTORIES  2>&1 | tee $MKRESULT_DIR/MK05.log
+./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK06 --factories $NUM_FACTORIES  2>&1 | tee $MKRESULT_DIR/MK06.log
+./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK07 --factories $NUM_FACTORIES  2>&1 | tee $MKRESULT_DIR/MK07.log
+./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK08 --factories $NUM_FACTORIES  2>&1 | tee $MKRESULT_DIR/MK08.log
+./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK09 --factories $NUM_FACTORIES  2>&1 | tee $MKRESULT_DIR/MK09.log
+./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK10 --factories $NUM_FACTORIES  2>&1 | tee $MKRESULT_DIR/MK10.log
 # ./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK11 --factories $NUM_FACTORIES  2>&1 | tee $MKRESULT_DIR/MK11.log
 # ./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK12 --factories $NUM_FACTORIES  2>&1 | tee $MKRESULT_DIR/MK12.log
 # ./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK13 --factories $NUM_FACTORIES  2>&1 | tee $MKRESULT_DIR/MK13.log
@@ -112,26 +112,26 @@ mkdir -p $RRESULT_DIR
 # ./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK15 --factories $NUM_FACTORIES  2>&1 | tee $MKRESULT_DIR/MK15.log
 
 
-./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la01.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la01.log
-./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la02.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la02.log
-./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la03.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la03.log
-./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la04.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la04.log
-./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la05.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la05.log
-./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la06.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la06.log
-./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la07.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la07.log
-./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la08.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la08.log
-./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la09.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la09.log
-./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la10.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la10.log
-./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la11.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la11.log
-./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la12.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la12.log
-./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la13.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la13.log
-./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la14.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la14.log
-./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la15.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la15.log
-./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la16.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la16.log
-./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la17.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la17.log
-./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la18.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la18.log
-./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la19.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la19.log
-./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la20.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la20.log
-./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/mt06.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/mt06.log
-./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/mt10.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/mt10.log
-./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/mt20.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/mt20.log
+# ./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la01.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la01.log
+# ./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la02.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la02.log
+# ./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la03.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la03.log
+# ./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la04.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la04.log
+# ./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la05.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la05.log
+# ./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la06.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la06.log
+# ./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la07.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la07.log
+# ./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la08.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la08.log
+# ./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la09.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la09.log
+# ./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la10.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la10.log
+# ./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la11.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la11.log
+# ./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la12.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la12.log
+# ./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la13.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la13.log
+# ./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la14.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la14.log
+# ./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la15.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la15.log
+# ./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la16.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la16.log
+# ./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la17.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la17.log
+# ./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la18.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la18.log
+# ./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la19.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la19.log
+# ./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/la20.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/la20.log
+# ./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/mt06.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/mt06.log
+# ./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/mt10.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/mt10.log
+# ./runlim -r $TO -s $MO  python3 -u main.py --input $RDATA_DIR/mt20.txt --factories $NUM_FACTORIES  2>&1 | tee $RRESULT_DIR/mt20.log
