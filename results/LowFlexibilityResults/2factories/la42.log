@@ -1,0 +1,34 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			fjssp-instance1
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	3600 seconds
+[runlim] space limit:		1400 MB
+[runlim] argv[0]:		python3
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		main.py
+[runlim] argv[3]:		--input
+[runlim] argv[4]:		datasets/LowFlexibilityData/AllInstances/la42.fjs
+[runlim] argv[5]:		--half_transitive
+[runlim] start:			Thu Aug 13 22:28:33 2026
+[runlim] child:			28528
+[*] Loading data from file: datasets/LowFlexibilityData/AllInstances/la42.fjs
+[*] Running D-FJSSP SAT Solver with 2 factories, Symmetry Breaking = OFF, Transitive E* = HALF
+===========================================================================
+ D-FJSSP SAT SOLVER - PARALLEL FACTORIES SCHEDULING
+===========================================================================
+  -> Operations: 600 | Jobs: 60 | Machines: 10 | Factories: 2
+
+[*] Running Greedy Heuristic...
+  -> Greedy Solution: Makespan = 1736 (0.0042s)
+
+[*] Initializing and solving the SAT model...
+[runlim] end:			Thu Aug 13 22:28:41 2026
+[runlim] status:		out of memory
+[runlim] result:		3
+[runlim] children:		1
+[runlim] processes:		2
+[runlim] real:			8.24 seconds
+[runlim] time:			7.20 seconds
+[runlim] space:			1405 MB
+[runlim] load:			0.97 maximum
+[runlim] samples:		72

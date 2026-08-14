@@ -1,0 +1,277 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			fjssp-instance1
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	3600 seconds
+[runlim] space limit:		1400 MB
+[runlim] argv[0]:		python3
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		main.py
+[runlim] argv[3]:		--input
+[runlim] argv[4]:		datasets/LowFlexibilityData/AllInstances/la47.fjs
+[runlim] argv[5]:		--half_transitive
+[runlim] start:			Thu Aug 13 22:29:08 2026
+[runlim] child:			28554
+[*] Loading data from file: datasets/LowFlexibilityData/AllInstances/la47.fjs
+[*] Running D-FJSSP SAT Solver with 3 factories, Symmetry Breaking = OFF, Transitive E* = HALF
+===========================================================================
+ D-FJSSP SAT SOLVER - PARALLEL FACTORIES SCHEDULING
+===========================================================================
+  -> Operations: 75 | Jobs: 15 | Machines: 5 | Factories: 3
+
+[*] Running Greedy Heuristic...
+  -> Greedy Solution: Makespan = 421 (0.0002s)
+
+[*] Initializing and solving the SAT model...
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 421...
+  SAT ! Makespan = 421
+  Schedule is valid with Makespan = 421
+  Total time: 0.4057 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 420...
+  SAT ! Makespan = 420
+  Schedule is valid with Makespan = 420
+  Total time: 0.4116 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 419...
+  SAT ! Makespan = 419
+  Schedule is valid with Makespan = 419
+  Total time: 0.4161 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 418...
+  SAT ! Makespan = 418
+  Schedule is valid with Makespan = 418
+  Total time: 0.4204 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 417...
+  SAT ! Makespan = 417
+  Schedule is valid with Makespan = 417
+  Total time: 0.4247 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 416...
+  SAT ! Makespan = 416
+  Schedule is valid with Makespan = 416
+  Total time: 0.4301 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 415...
+  SAT ! Makespan = 415
+  Schedule is valid with Makespan = 415
+  Total time: 0.4345 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 414...
+  SAT ! Makespan = 414
+  Schedule is valid with Makespan = 414
+  Total time: 0.4389 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 413...
+  SAT ! Makespan = 413
+  Schedule is valid with Makespan = 413
+  Total time: 0.4433 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 412...
+  SAT ! Makespan = 412
+  Schedule is valid with Makespan = 412
+  Total time: 0.4476 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 411...
+  SAT ! Makespan = 411
+  Schedule is valid with Makespan = 411
+  Total time: 0.4519 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 410...
+  SAT ! Makespan = 410
+  Schedule is valid with Makespan = 410
+  Total time: 0.4563 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 409...
+  SAT ! Makespan = 409
+  Schedule is valid with Makespan = 409
+  Total time: 0.4606 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 408...
+  SAT ! Makespan = 408
+  Schedule is valid with Makespan = 408
+  Total time: 0.4649 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 407...
+  SAT ! Makespan = 407
+  Schedule is valid with Makespan = 407
+  Total time: 0.4691 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 406...
+  SAT ! Makespan = 406
+  Schedule is valid with Makespan = 406
+  Total time: 0.4732 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 405...
+  SAT ! Makespan = 405
+  Schedule is valid with Makespan = 405
+  Total time: 0.4774 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 404...
+  SAT ! Makespan = 404
+  Schedule is valid with Makespan = 404
+  Total time: 0.4826 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 403...
+  SAT ! Makespan = 403
+  Schedule is valid with Makespan = 403
+  Total time: 0.4869 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 402...
+  SAT ! Makespan = 402
+  Schedule is valid with Makespan = 402
+  Total time: 0.4910 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 401...
+  SAT ! Makespan = 401
+  Schedule is valid with Makespan = 401
+  Total time: 0.4951 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 400...
+  SAT ! Makespan = 400
+  Schedule is valid with Makespan = 400
+  Total time: 0.4994 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 399...
+  SAT ! Makespan = 399
+  Schedule is valid with Makespan = 399
+  Total time: 0.5036 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 398...
+  SAT ! Makespan = 398
+  Schedule is valid with Makespan = 398
+  Total time: 0.5078 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 397...
+  SAT ! Makespan = 397
+  Schedule is valid with Makespan = 397
+  Total time: 0.5120 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 396...
+  SAT ! Makespan = 396
+  Schedule is valid with Makespan = 396
+  Total time: 0.5162 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 395...
+  SAT ! Makespan = 395
+  Schedule is valid with Makespan = 395
+  Total time: 0.5205 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 394...
+  SAT ! Makespan = 394
+  Schedule is valid with Makespan = 394
+  Total time: 0.5248 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 393...
+  SAT ! Makespan = 393
+  Schedule is valid with Makespan = 393
+  Total time: 0.5290 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 392...
+  SAT ! Makespan = 392
+  Schedule is valid with Makespan = 392
+  Total time: 0.5333 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 391...
+  SAT ! Makespan = 391
+  Schedule is valid with Makespan = 391
+  Total time: 0.5376 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 390...
+  SAT ! Makespan = 390
+  Schedule is valid with Makespan = 390
+  Total time: 0.5419 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 389...
+  SAT ! Makespan = 389
+  Schedule is valid with Makespan = 389
+  Total time: 0.5463 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 388...
+  SAT ! Makespan = 388
+  Schedule is valid with Makespan = 388
+  Total time: 0.5504 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 387...
+  SAT ! Makespan = 387
+  Schedule is valid with Makespan = 387
+  Total time: 0.5545 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 386...
+  SAT ! Makespan = 386
+  Schedule is valid with Makespan = 386
+  Total time: 0.5584 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 385...
+  SAT ! Makespan = 385
+  Schedule is valid with Makespan = 385
+  Total time: 0.5626 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 384...
+  SAT ! Makespan = 384
+  Schedule is valid with Makespan = 384
+  Total time: 0.5666 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 383...
+  SAT ! Makespan = 383
+  Schedule is valid with Makespan = 383
+  Total time: 0.5714 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 382...
+  SAT ! Makespan = 382
+  Schedule is valid with Makespan = 382
+  Total time: 0.5757 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 381...
+  SAT ! Makespan = 381
+  Schedule is valid with Makespan = 381
+  Total time: 0.5799 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 380...
+  SAT ! Makespan = 380
+  Schedule is valid with Makespan = 380
+  Total time: 0.5839 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 379...
+  SAT ! Makespan = 379
+  Schedule is valid with Makespan = 379
+  Total time: 0.5882 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 378...
+  SAT ! Makespan = 378
+  Schedule is valid with Makespan = 378
+  Total time: 0.5924 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 377...
+  SAT ! Makespan = 377
+  Schedule is valid with Makespan = 377
+  Total time: 0.6083 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 376...
+  SAT ! Makespan = 376
+  Schedule is valid with Makespan = 376
+  Total time: 0.6123 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 375...
+   UNSAT
+
+ Optimal Makespan = 376
+
+ Summary:
+  - Optimal Makespan   : 376
+  - Greedy Time        : 0.0002s
+  - SAT Time           : 0.6228s
+  - Total Time         : 0.6240s
+  - Schedule Status    : VALID
+===========================================================================
+[runlim] end:			Thu Aug 13 22:29:09 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] processes:		2
+[runlim] real:			0.66 seconds
+[runlim] time:			0.60 seconds
+[runlim] space:			103 MB
+[runlim] load:			0.98 maximum
+[runlim] samples:		7
