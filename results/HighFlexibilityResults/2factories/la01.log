@@ -2,14 +2,16 @@
 [runlim] host:			fjssp-instance
 [runlim] time limit:		311040000 seconds
 [runlim] real time limit:	3600 seconds
-[runlim] space limit:		1400 MB
+[runlim] space limit:		14000 MB
 [runlim] argv[0]:		python3
-[runlim] argv[1]:		main_linear.py
-[runlim] argv[2]:		--input
-[runlim] argv[3]:		datasets/HighFlexibilityData/AllInstances/la01.fjs
-[runlim] argv[4]:		--half_transitive
-[runlim] start:			Thu Aug 13 10:29:51 2026
-[runlim] child:			209343
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		-u
+[runlim] argv[3]:		main.py
+[runlim] argv[4]:		--input
+[runlim] argv[5]:		datasets/HighFlexibilityData/AllInstances/la01.fjs
+[runlim] argv[6]:		--half_transitive
+[runlim] start:			Fri Aug 14 00:08:22 2026
+[runlim] child:			233749
 [*] Loading data from file: datasets/HighFlexibilityData/AllInstances/la01.fjs
 [*] Running D-FJSSP SAT Solver with 2 factories, Symmetry Breaking = OFF, Transitive E* = HALF
 ===========================================================================
@@ -25,47 +27,47 @@
 [*] Trying with Upper Bound = 425...
   SAT ! Makespan = 425
   Schedule is valid with Makespan = 425
-  Total time: 0.2504 seconds
+  Total time: 0.2474 seconds
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 424...
   SAT ! Makespan = 424
   Schedule is valid with Makespan = 424
-  Total time: 0.2546 seconds
+  Total time: 0.2518 seconds
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 423...
   SAT ! Makespan = 423
   Schedule is valid with Makespan = 423
-  Total time: 0.2570 seconds
+  Total time: 0.2543 seconds
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 422...
   SAT ! Makespan = 422
   Schedule is valid with Makespan = 422
-  Total time: 0.2591 seconds
+  Total time: 0.2566 seconds
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 421...
   SAT ! Makespan = 421
   Schedule is valid with Makespan = 421
-  Total time: 0.2612 seconds
+  Total time: 0.2589 seconds
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 420...
   SAT ! Makespan = 420
   Schedule is valid with Makespan = 420
-  Total time: 0.2633 seconds
+  Total time: 0.2611 seconds
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 419...
   SAT ! Makespan = 419
   Schedule is valid with Makespan = 419
-  Total time: 0.2653 seconds
+  Total time: 0.2633 seconds
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 418...
   SAT ! Makespan = 418
   Schedule is valid with Makespan = 418
-  Total time: 0.2674 seconds
+  Total time: 0.2670 seconds
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 417...
   SAT ! Makespan = 417
   Schedule is valid with Makespan = 417
-  Total time: 0.2694 seconds
+  Total time: 0.2692 seconds
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 416...
   SAT ! Makespan = 416
@@ -80,12 +82,12 @@
 [*] Trying with Upper Bound = 414...
   SAT ! Makespan = 414
   Schedule is valid with Makespan = 414
-  Total time: 0.2756 seconds
+  Total time: 0.2758 seconds
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 413...
   SAT ! Makespan = 413
   Schedule is valid with Makespan = 413
-  Total time: 0.2776 seconds
+  Total time: 0.2780 seconds
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 412...
    UNSAT
@@ -95,17 +97,17 @@
  Summary:
   - Optimal Makespan   : 413
   - Greedy Time        : 0.0002s
-  - SAT Time           : 0.2834s
-  - Total Time         : 0.2838s
+  - SAT Time           : 0.2840s
+  - Total Time         : 0.2847s
   - Schedule Status    : VALID
 ===========================================================================
-[runlim] end:			Thu Aug 13 10:29:51 2026
+[runlim] end:			Fri Aug 14 00:08:23 2026
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		1
 [runlim] processes:		2
-[runlim] real:			0.32 seconds
-[runlim] time:			0.30 seconds
+[runlim] real:			0.33 seconds
+[runlim] time:			0.29 seconds
 [runlim] space:			72 MB
-[runlim] load:			0.89 maximum
+[runlim] load:			1.26 maximum
 [runlim] samples:		4
