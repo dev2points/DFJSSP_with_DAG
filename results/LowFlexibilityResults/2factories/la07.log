@@ -2,9 +2,10 @@
 [runlim] host:			fjssp-instance1
 [runlim] time limit:		311040000 seconds
 [runlim] real time limit:	3600 seconds
-[runlim] space limit:		1400 MB
+[runlim] space limit:		14000 MB
 [runlim] argv[0]:		python3
 [runlim] argv[1]:		-u
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
 [runlim] argv[2]:		main.py
 [runlim] argv[3]:		--input
 [runlim] argv[4]:		datasets/LowFlexibilityData/AllInstances/la07.fjs
@@ -12,6 +13,16 @@
 [runlim] start:			Thu Aug 13 17:15:25 2026
 [runlim] child:			21228
 [*] Loading data from file: datasets/LowFlexibilityData/AllInstances/la07.fjs
+=======
+[runlim] argv[2]:		-u
+[runlim] argv[3]:		main.py
+[runlim] argv[4]:		--input
+[runlim] argv[5]:		datasets/HighFlexibilityData/AllInstances/la02.fjs
+[runlim] argv[6]:		--half_transitive
+[runlim] start:			Fri Aug 14 00:08:23 2026
+[runlim] child:			233757
+[*] Loading data from file: datasets/HighFlexibilityData/AllInstances/la02.fjs
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 [*] Running D-FJSSP SAT Solver with 2 factories, Symmetry Breaking = OFF, Transitive E* = HALF
 ===========================================================================
  D-FJSSP SAT SOLVER - PARALLEL FACTORIES SCHEDULING
@@ -23,637 +34,1209 @@
 
 [*] Initializing and solving the SAT model...
 ------------------------------------------------------------------
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
 [*] Trying with Upper Bound = 519...
   SAT ! Makespan = 519
   Schedule is valid with Makespan = 519
   Total time: 0.6981 seconds
+=======
+[*] Trying with Upper Bound = 532...
+  SAT ! Makespan = 532
+  Schedule is valid with Makespan = 532
+  Total time: 0.4863 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 531...
+  SAT ! Makespan = 531
+  Schedule is valid with Makespan = 531
+  Total time: 0.4927 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 530...
+  SAT ! Makespan = 530
+  Schedule is valid with Makespan = 530
+  Total time: 0.4972 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 529...
+  SAT ! Makespan = 529
+  Schedule is valid with Makespan = 529
+  Total time: 0.5014 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 528...
+  SAT ! Makespan = 528
+  Schedule is valid with Makespan = 528
+  Total time: 0.5055 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 527...
+  SAT ! Makespan = 527
+  Schedule is valid with Makespan = 527
+  Total time: 0.5098 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 526...
+  SAT ! Makespan = 526
+  Schedule is valid with Makespan = 526
+  Total time: 0.5143 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 525...
+  SAT ! Makespan = 525
+  Schedule is valid with Makespan = 525
+  Total time: 0.5189 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 524...
+  SAT ! Makespan = 524
+  Schedule is valid with Makespan = 524
+  Total time: 0.5231 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 523...
+  SAT ! Makespan = 523
+  Schedule is valid with Makespan = 523
+  Total time: 0.5271 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 522...
+  SAT ! Makespan = 522
+  Schedule is valid with Makespan = 522
+  Total time: 0.5314 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 521...
+  SAT ! Makespan = 521
+  Schedule is valid with Makespan = 521
+  Total time: 0.5357 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 520...
+  SAT ! Makespan = 520
+  Schedule is valid with Makespan = 520
+  Total time: 0.5398 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 519...
+  SAT ! Makespan = 519
+  Schedule is valid with Makespan = 519
+  Total time: 0.5440 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 518...
   SAT ! Makespan = 518
   Schedule is valid with Makespan = 518
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.7071 seconds
+=======
+  Total time: 0.5481 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 517...
   SAT ! Makespan = 517
   Schedule is valid with Makespan = 517
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.7138 seconds
+=======
+  Total time: 0.5522 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 516...
   SAT ! Makespan = 516
   Schedule is valid with Makespan = 516
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.7201 seconds
+=======
+  Total time: 0.5563 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 515...
   SAT ! Makespan = 515
   Schedule is valid with Makespan = 515
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.7265 seconds
+=======
+  Total time: 0.5605 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 514...
   SAT ! Makespan = 514
   Schedule is valid with Makespan = 514
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.7327 seconds
+=======
+  Total time: 0.5646 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 513...
   SAT ! Makespan = 513
   Schedule is valid with Makespan = 513
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.7389 seconds
+=======
+  Total time: 0.5688 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 512...
   SAT ! Makespan = 512
   Schedule is valid with Makespan = 512
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.7450 seconds
+=======
+  Total time: 0.5729 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 511...
   SAT ! Makespan = 511
   Schedule is valid with Makespan = 511
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.7542 seconds
+=======
+  Total time: 0.5770 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 510...
   SAT ! Makespan = 510
   Schedule is valid with Makespan = 510
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.7617 seconds
+=======
+  Total time: 0.5812 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 509...
   SAT ! Makespan = 509
   Schedule is valid with Makespan = 509
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.7676 seconds
+=======
+  Total time: 0.5852 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 508...
   SAT ! Makespan = 508
   Schedule is valid with Makespan = 508
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.7733 seconds
+=======
+  Total time: 0.5892 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 507...
   SAT ! Makespan = 507
   Schedule is valid with Makespan = 507
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.7790 seconds
+=======
+  Total time: 0.5934 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 506...
   SAT ! Makespan = 506
   Schedule is valid with Makespan = 506
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.7875 seconds
+=======
+  Total time: 0.5977 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 505...
   SAT ! Makespan = 505
   Schedule is valid with Makespan = 505
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.7941 seconds
+=======
+  Total time: 0.6021 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 504...
   SAT ! Makespan = 504
   Schedule is valid with Makespan = 504
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.8006 seconds
+=======
+  Total time: 0.6064 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 503...
   SAT ! Makespan = 503
   Schedule is valid with Makespan = 503
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.8069 seconds
+=======
+  Total time: 0.6105 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 502...
   SAT ! Makespan = 502
   Schedule is valid with Makespan = 502
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.8131 seconds
+=======
+  Total time: 0.6146 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 501...
   SAT ! Makespan = 501
   Schedule is valid with Makespan = 501
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.8195 seconds
+=======
+  Total time: 0.6188 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 500...
   SAT ! Makespan = 500
   Schedule is valid with Makespan = 500
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.8257 seconds
+=======
+  Total time: 0.6231 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 499...
   SAT ! Makespan = 499
   Schedule is valid with Makespan = 499
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.8318 seconds
+=======
+  Total time: 0.6273 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 498...
   SAT ! Makespan = 498
   Schedule is valid with Makespan = 498
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.8378 seconds
+=======
+  Total time: 0.6315 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 497...
   SAT ! Makespan = 497
   Schedule is valid with Makespan = 497
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.8438 seconds
+=======
+  Total time: 0.6357 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 496...
   SAT ! Makespan = 496
   Schedule is valid with Makespan = 496
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.8497 seconds
+=======
+  Total time: 0.6397 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 495...
   SAT ! Makespan = 495
   Schedule is valid with Makespan = 495
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.8587 seconds
+=======
+  Total time: 0.6439 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 494...
   SAT ! Makespan = 494
   Schedule is valid with Makespan = 494
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.8648 seconds
+=======
+  Total time: 0.6484 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 493...
   SAT ! Makespan = 493
   Schedule is valid with Makespan = 493
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.8708 seconds
+=======
+  Total time: 0.6531 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 492...
   SAT ! Makespan = 492
   Schedule is valid with Makespan = 492
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.8766 seconds
+=======
+  Total time: 0.6573 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 491...
   SAT ! Makespan = 491
   Schedule is valid with Makespan = 491
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.8825 seconds
+=======
+  Total time: 0.6609 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 490...
   SAT ! Makespan = 490
   Schedule is valid with Makespan = 490
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.8963 seconds
+=======
+  Total time: 0.6645 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 489...
   SAT ! Makespan = 489
   Schedule is valid with Makespan = 489
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.9027 seconds
+=======
+  Total time: 0.6682 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 488...
   SAT ! Makespan = 488
   Schedule is valid with Makespan = 488
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.9090 seconds
+=======
+  Total time: 0.6719 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 487...
   SAT ! Makespan = 487
   Schedule is valid with Makespan = 487
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.9150 seconds
+=======
+  Total time: 0.6755 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 486...
   SAT ! Makespan = 486
   Schedule is valid with Makespan = 486
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.9209 seconds
+=======
+  Total time: 0.6795 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 485...
   SAT ! Makespan = 485
   Schedule is valid with Makespan = 485
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.9269 seconds
+=======
+  Total time: 0.6837 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 484...
   SAT ! Makespan = 484
   Schedule is valid with Makespan = 484
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.9330 seconds
+=======
+  Total time: 0.6878 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 483...
   SAT ! Makespan = 483
   Schedule is valid with Makespan = 483
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.9390 seconds
+=======
+  Total time: 0.6919 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 482...
   SAT ! Makespan = 482
   Schedule is valid with Makespan = 482
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.9450 seconds
+=======
+  Total time: 0.6966 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 481...
   SAT ! Makespan = 481
   Schedule is valid with Makespan = 481
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.9509 seconds
+=======
+  Total time: 0.7008 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 480...
   SAT ! Makespan = 480
   Schedule is valid with Makespan = 480
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.9568 seconds
+=======
+  Total time: 0.7050 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 479...
   SAT ! Makespan = 479
   Schedule is valid with Makespan = 479
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.9628 seconds
+=======
+  Total time: 0.7089 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 478...
   SAT ! Makespan = 478
   Schedule is valid with Makespan = 478
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.9761 seconds
+=======
+  Total time: 0.7128 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 477...
   SAT ! Makespan = 477
   Schedule is valid with Makespan = 477
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.9823 seconds
+=======
+  Total time: 0.7167 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 476...
   SAT ! Makespan = 476
   Schedule is valid with Makespan = 476
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 0.9886 seconds
+=======
+  Total time: 0.7213 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 475...
   SAT ! Makespan = 475
   Schedule is valid with Makespan = 475
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 1.2365 seconds
+=======
+  Total time: 0.7251 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 474...
   SAT ! Makespan = 474
   Schedule is valid with Makespan = 474
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 1.2586 seconds
+=======
+  Total time: 0.7290 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 473...
   SAT ! Makespan = 473
   Schedule is valid with Makespan = 473
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 1.2660 seconds
+=======
+  Total time: 0.7329 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 472...
   SAT ! Makespan = 472
   Schedule is valid with Makespan = 472
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 1.3063 seconds
+=======
+  Total time: 0.7370 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 471...
   SAT ! Makespan = 471
   Schedule is valid with Makespan = 471
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 1.3134 seconds
+=======
+  Total time: 0.7408 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 470...
   SAT ! Makespan = 470
   Schedule is valid with Makespan = 470
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 1.3197 seconds
+=======
+  Total time: 0.7444 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 469...
   SAT ! Makespan = 469
   Schedule is valid with Makespan = 469
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 1.3258 seconds
+=======
+  Total time: 0.7481 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 468...
   SAT ! Makespan = 468
   Schedule is valid with Makespan = 468
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 1.3317 seconds
+=======
+  Total time: 0.7519 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 467...
   SAT ! Makespan = 467
   Schedule is valid with Makespan = 467
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 1.3376 seconds
+=======
+  Total time: 0.7556 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 466...
   SAT ! Makespan = 466
   Schedule is valid with Makespan = 466
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 1.3435 seconds
+=======
+  Total time: 0.7595 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 465...
   SAT ! Makespan = 465
   Schedule is valid with Makespan = 465
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 1.3494 seconds
+=======
+  Total time: 0.7631 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 464...
   SAT ! Makespan = 464
   Schedule is valid with Makespan = 464
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 1.3552 seconds
+=======
+  Total time: 0.7670 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 463...
   SAT ! Makespan = 463
   Schedule is valid with Makespan = 463
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 1.3613 seconds
+=======
+  Total time: 0.7708 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 462...
   SAT ! Makespan = 462
   Schedule is valid with Makespan = 462
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 1.3673 seconds
+=======
+  Total time: 0.7746 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 461...
   SAT ! Makespan = 461
   Schedule is valid with Makespan = 461
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 1.6393 seconds
+=======
+  Total time: 0.7783 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 460...
   SAT ! Makespan = 460
   Schedule is valid with Makespan = 460
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 2.6667 seconds
+=======
+  Total time: 0.7820 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 459...
   SAT ! Makespan = 459
   Schedule is valid with Makespan = 459
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 2.7156 seconds
+=======
+  Total time: 0.8047 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 458...
   SAT ! Makespan = 458
   Schedule is valid with Makespan = 458
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 2.7431 seconds
+=======
+  Total time: 0.8094 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 457...
   SAT ! Makespan = 457
   Schedule is valid with Makespan = 457
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 2.7656 seconds
+=======
+  Total time: 0.8136 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 456...
   SAT ! Makespan = 456
   Schedule is valid with Makespan = 456
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 2.7859 seconds
+=======
+  Total time: 0.8175 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 455...
   SAT ! Makespan = 455
   Schedule is valid with Makespan = 455
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 2.8063 seconds
+=======
+  Total time: 0.8214 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 454...
   SAT ! Makespan = 454
   Schedule is valid with Makespan = 454
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 2.9438 seconds
+=======
+  Total time: 0.8253 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 453...
   SAT ! Makespan = 453
   Schedule is valid with Makespan = 453
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 3.1027 seconds
+=======
+  Total time: 0.8291 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 452...
   SAT ! Makespan = 452
   Schedule is valid with Makespan = 452
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 3.2452 seconds
+=======
+  Total time: 0.8329 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 451...
   SAT ! Makespan = 451
   Schedule is valid with Makespan = 451
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 3.4056 seconds
+=======
+  Total time: 0.8368 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 450...
   SAT ! Makespan = 450
   Schedule is valid with Makespan = 450
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 3.4714 seconds
+=======
+  Total time: 0.8407 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 449...
   SAT ! Makespan = 449
   Schedule is valid with Makespan = 449
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 3.8579 seconds
+=======
+  Total time: 0.8446 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 448...
   SAT ! Makespan = 448
   Schedule is valid with Makespan = 448
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 4.0747 seconds
+=======
+  Total time: 0.8485 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 447...
   SAT ! Makespan = 447
   Schedule is valid with Makespan = 447
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 4.4172 seconds
+=======
+  Total time: 0.8524 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 446...
   SAT ! Makespan = 446
   Schedule is valid with Makespan = 446
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 4.5686 seconds
+=======
+  Total time: 0.8563 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 445...
   SAT ! Makespan = 445
   Schedule is valid with Makespan = 445
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 5.0850 seconds
+=======
+  Total time: 0.8602 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 444...
   SAT ! Makespan = 444
   Schedule is valid with Makespan = 444
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 5.1294 seconds
+=======
+  Total time: 0.8641 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 443...
   SAT ! Makespan = 443
   Schedule is valid with Makespan = 443
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 5.1634 seconds
+=======
+  Total time: 0.8679 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 442...
   SAT ! Makespan = 442
   Schedule is valid with Makespan = 442
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 5.3096 seconds
+=======
+  Total time: 0.8718 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 441...
   SAT ! Makespan = 441
   Schedule is valid with Makespan = 441
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 5.4239 seconds
+=======
+  Total time: 0.8756 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 440...
   SAT ! Makespan = 440
   Schedule is valid with Makespan = 440
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 5.8978 seconds
+=======
+  Total time: 0.8797 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 439...
   SAT ! Makespan = 439
   Schedule is valid with Makespan = 439
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 6.0614 seconds
+=======
+  Total time: 0.8836 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 438...
   SAT ! Makespan = 438
   Schedule is valid with Makespan = 438
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 6.0993 seconds
+=======
+  Total time: 0.8875 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 437...
   SAT ! Makespan = 437
   Schedule is valid with Makespan = 437
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 6.1229 seconds
+=======
+  Total time: 0.8914 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 436...
   SAT ! Makespan = 436
   Schedule is valid with Makespan = 436
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 6.1418 seconds
+=======
+  Total time: 0.8953 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 435...
   SAT ! Makespan = 435
   Schedule is valid with Makespan = 435
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 6.1604 seconds
+=======
+  Total time: 0.8990 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 434...
   SAT ! Makespan = 434
   Schedule is valid with Makespan = 434
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 6.2903 seconds
+=======
+  Total time: 0.9030 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 433...
   SAT ! Makespan = 433
   Schedule is valid with Makespan = 433
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 6.4484 seconds
+=======
+  Total time: 0.9070 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 432...
   SAT ! Makespan = 432
   Schedule is valid with Makespan = 432
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 6.4760 seconds
+=======
+  Total time: 0.9109 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 431...
   SAT ! Makespan = 431
   Schedule is valid with Makespan = 431
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 6.7030 seconds
+=======
+  Total time: 0.9146 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 430...
   SAT ! Makespan = 430
   Schedule is valid with Makespan = 430
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 6.8801 seconds
+=======
+  Total time: 0.9185 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 429...
   SAT ! Makespan = 429
   Schedule is valid with Makespan = 429
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 6.9996 seconds
+=======
+  Total time: 0.9222 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 428...
   SAT ! Makespan = 428
   Schedule is valid with Makespan = 428
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 7.0575 seconds
+=======
+  Total time: 0.9260 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 427...
   SAT ! Makespan = 427
   Schedule is valid with Makespan = 427
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 7.2236 seconds
+=======
+  Total time: 0.9297 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 426...
   SAT ! Makespan = 426
   Schedule is valid with Makespan = 426
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 7.3958 seconds
+=======
+  Total time: 0.9336 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 425...
   SAT ! Makespan = 425
   Schedule is valid with Makespan = 425
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 7.5253 seconds
+=======
+  Total time: 0.9377 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 424...
   SAT ! Makespan = 424
   Schedule is valid with Makespan = 424
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 7.6685 seconds
+=======
+  Total time: 0.9420 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 423...
   SAT ! Makespan = 423
   Schedule is valid with Makespan = 423
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 7.7227 seconds
+=======
+  Total time: 0.9459 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 422...
   SAT ! Makespan = 422
   Schedule is valid with Makespan = 422
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 8.1129 seconds
+=======
+  Total time: 0.9497 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 421...
   SAT ! Makespan = 421
   Schedule is valid with Makespan = 421
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 8.1218 seconds
+=======
+  Total time: 0.9535 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 420...
   SAT ! Makespan = 420
   Schedule is valid with Makespan = 420
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 8.9010 seconds
+=======
+  Total time: 0.9574 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 419...
   SAT ! Makespan = 419
   Schedule is valid with Makespan = 419
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 8.9328 seconds
+=======
+  Total time: 0.9612 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 418...
   SAT ! Makespan = 418
   Schedule is valid with Makespan = 418
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 9.1222 seconds
+=======
+  Total time: 0.9651 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 417...
   SAT ! Makespan = 417
   Schedule is valid with Makespan = 417
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 9.7030 seconds
+=======
+  Total time: 0.9689 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 416...
   SAT ! Makespan = 416
   Schedule is valid with Makespan = 416
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 9.8443 seconds
+=======
+  Total time: 0.9727 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 415...
 [runlim] sample:		10.00 time, 10.01 real, 156 MB, 1.03 load
   SAT ! Makespan = 415
   Schedule is valid with Makespan = 415
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 10.0175 seconds
+=======
+  Total time: 0.9765 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 414...
   SAT ! Makespan = 414
   Schedule is valid with Makespan = 414
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 10.5969 seconds
+=======
+  Total time: 0.9803 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 413...
   SAT ! Makespan = 413
   Schedule is valid with Makespan = 413
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 10.7467 seconds
+=======
+  Total time: 0.9842 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 412...
   SAT ! Makespan = 412
   Schedule is valid with Makespan = 412
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 11.2211 seconds
+=======
+  Total time: 0.9882 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 411...
   SAT ! Makespan = 411
   Schedule is valid with Makespan = 411
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 11.2480 seconds
+=======
+  Total time: 0.9919 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 410...
   SAT ! Makespan = 410
   Schedule is valid with Makespan = 410
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 11.2713 seconds
+=======
+  Total time: 0.9957 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 409...
   SAT ! Makespan = 409
   Schedule is valid with Makespan = 409
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 11.4250 seconds
+=======
+  Total time: 0.9994 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 408...
   SAT ! Makespan = 408
   Schedule is valid with Makespan = 408
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 11.6855 seconds
+=======
+  Total time: 1.0032 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 407...
   SAT ! Makespan = 407
   Schedule is valid with Makespan = 407
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 11.8634 seconds
+=======
+  Total time: 1.0070 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 406...
   SAT ! Makespan = 406
   Schedule is valid with Makespan = 406
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 12.0634 seconds
+=======
+  Total time: 1.0108 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 405...
   SAT ! Makespan = 405
   Schedule is valid with Makespan = 405
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 12.0866 seconds
+=======
+  Total time: 1.0159 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 404...
   SAT ! Makespan = 404
   Schedule is valid with Makespan = 404
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 12.7466 seconds
+=======
+  Total time: 1.0198 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 403...
   SAT ! Makespan = 403
   Schedule is valid with Makespan = 403
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 12.8526 seconds
+=======
+  Total time: 1.0354 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 402...
   SAT ! Makespan = 402
   Schedule is valid with Makespan = 402
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 14.9154 seconds
+=======
+  Total time: 1.0397 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 401...
   SAT ! Makespan = 401
   Schedule is valid with Makespan = 401
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 17.3088 seconds
+=======
+  Total time: 1.0435 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 400...
   SAT ! Makespan = 400
   Schedule is valid with Makespan = 400
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 17.4831 seconds
+=======
+  Total time: 1.0475 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 399...
   SAT ! Makespan = 399
   Schedule is valid with Makespan = 399
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 18.5993 seconds
+=======
+  Total time: 1.0514 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 398...
   SAT ! Makespan = 398
   Schedule is valid with Makespan = 398
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 18.8721 seconds
+=======
+  Total time: 1.0552 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 397...
   SAT ! Makespan = 397
   Schedule is valid with Makespan = 397
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 19.5092 seconds
+=======
+  Total time: 1.0605 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 396...
 [runlim] sample:		19.99 time, 20.01 real, 113 MB, 1.03 load
   SAT ! Makespan = 396
   Schedule is valid with Makespan = 396
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 23.1294 seconds
+=======
+  Total time: 1.0646 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 395...
   SAT ! Makespan = 395
   Schedule is valid with Makespan = 395
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 23.8595 seconds
+=======
+  Total time: 1.0683 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 394...
   SAT ! Makespan = 394
   Schedule is valid with Makespan = 394
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   Total time: 24.0604 seconds
+=======
+  Total time: 1.0718 seconds
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 393...
   SAT ! Makespan = 393
@@ -713,17 +1296,33 @@
  Summary:
   - Optimal Makespan   : 386
   - Greedy Time        : 0.0002s
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
   - SAT Time           : 121.1600s
   - Total Time         : 121.1606s
   - Schedule Status    : VALID
 ===========================================================================
 [runlim] end:			Thu Aug 13 17:17:26 2026
+=======
+  - SAT Time           : 1.0848s
+  - Total Time         : 1.0853s
+  - Schedule Status    : VALID
+===========================================================================
+[runlim] end:			Fri Aug 14 00:08:24 2026
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		1
 [runlim] processes:		2
+<<<<<<< HEAD:results/LowFlexibilityResults/2factories/la07.log
 [runlim] real:			121.20 seconds
 [runlim] time:			121.09 seconds
 [runlim] space:			180 MB
 [runlim] load:			1.09 maximum
 [runlim] samples:		1212
+=======
+[runlim] real:			1.12 seconds
+[runlim] time:			1.10 seconds
+[runlim] space:			130 MB
+[runlim] load:			1.26 maximum
+[runlim] samples:		12
+>>>>>>> 8881c4c611bda01e9087aa053fd9d402867ed68b:results/HighFlexibilityResults/2factories/la02.log
