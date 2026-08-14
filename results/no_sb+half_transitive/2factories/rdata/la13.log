@@ -1,0 +1,1173 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			fjssp-instance
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	3600 seconds
+[runlim] space limit:		14000 MB
+[runlim] argv[0]:		python3
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		main.py
+[runlim] argv[3]:		--input
+[runlim] argv[4]:		datasets/rdata/la13.txt
+[runlim] argv[5]:		--factories
+[runlim] argv[6]:		2
+[runlim] argv[7]:		--half_transitive
+[runlim] start:			Fri Aug 14 10:53:00 2026
+[runlim] child:			252386
+[*] Loading data from file: datasets/rdata/la13.txt
+[*] Running D-FJSSP SAT Solver with 2 factories, Symmetry Breaking = OFF, Transitive E* = HALF
+===========================================================================
+ D-FJSSP SAT SOLVER - PARALLEL FACTORIES SCHEDULING
+===========================================================================
+  -> Operations: 100 | Jobs: 20 | Machines: 5 | Factories: 2
+
+[*] Running Greedy Heuristic...
+  -> Greedy Solution: Makespan = 678 (0.0003s)
+
+[*] Initializing and solving the SAT model...
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 678...
+  SAT ! Makespan = 678
+  Schedule is valid with Makespan = 678
+  Total time: 2.5176 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 677...
+  SAT ! Makespan = 677
+  Schedule is valid with Makespan = 677
+  Total time: 2.5523 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 676...
+  SAT ! Makespan = 676
+  Schedule is valid with Makespan = 676
+  Total time: 2.5708 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 675...
+  SAT ! Makespan = 675
+  Schedule is valid with Makespan = 675
+  Total time: 2.5957 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 674...
+  SAT ! Makespan = 674
+  Schedule is valid with Makespan = 674
+  Total time: 2.6152 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 673...
+  SAT ! Makespan = 673
+  Schedule is valid with Makespan = 673
+  Total time: 2.6318 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 672...
+  SAT ! Makespan = 672
+  Schedule is valid with Makespan = 672
+  Total time: 2.6474 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 671...
+  SAT ! Makespan = 671
+  Schedule is valid with Makespan = 671
+  Total time: 2.6636 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 670...
+  SAT ! Makespan = 670
+  Schedule is valid with Makespan = 670
+  Total time: 2.6812 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 669...
+  SAT ! Makespan = 669
+  Schedule is valid with Makespan = 669
+  Total time: 2.7026 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 668...
+  SAT ! Makespan = 668
+  Schedule is valid with Makespan = 668
+  Total time: 2.7214 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 667...
+  SAT ! Makespan = 667
+  Schedule is valid with Makespan = 667
+  Total time: 2.7378 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 666...
+  SAT ! Makespan = 666
+  Schedule is valid with Makespan = 666
+  Total time: 2.7567 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 665...
+  SAT ! Makespan = 665
+  Schedule is valid with Makespan = 665
+  Total time: 2.7727 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 664...
+  SAT ! Makespan = 664
+  Schedule is valid with Makespan = 664
+  Total time: 2.7881 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 663...
+  SAT ! Makespan = 663
+  Schedule is valid with Makespan = 663
+  Total time: 2.8037 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 662...
+  SAT ! Makespan = 662
+  Schedule is valid with Makespan = 662
+  Total time: 2.8202 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 661...
+  SAT ! Makespan = 661
+  Schedule is valid with Makespan = 661
+  Total time: 2.8969 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 660...
+  SAT ! Makespan = 660
+  Schedule is valid with Makespan = 660
+  Total time: 3.2388 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 659...
+  SAT ! Makespan = 659
+  Schedule is valid with Makespan = 659
+  Total time: 3.2905 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 658...
+  SAT ! Makespan = 658
+  Schedule is valid with Makespan = 658
+  Total time: 3.3149 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 657...
+  SAT ! Makespan = 657
+  Schedule is valid with Makespan = 657
+  Total time: 3.3453 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 656...
+  SAT ! Makespan = 656
+  Schedule is valid with Makespan = 656
+  Total time: 3.3740 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 655...
+  SAT ! Makespan = 655
+  Schedule is valid with Makespan = 655
+  Total time: 3.3945 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 654...
+  SAT ! Makespan = 654
+  Schedule is valid with Makespan = 654
+  Total time: 3.7851 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 653...
+  SAT ! Makespan = 653
+  Schedule is valid with Makespan = 653
+  Total time: 4.3205 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 652...
+  SAT ! Makespan = 652
+  Schedule is valid with Makespan = 652
+  Total time: 4.4226 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 651...
+  SAT ! Makespan = 651
+  Schedule is valid with Makespan = 651
+  Total time: 4.4425 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 650...
+  SAT ! Makespan = 650
+  Schedule is valid with Makespan = 650
+  Total time: 4.4625 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 649...
+  SAT ! Makespan = 649
+  Schedule is valid with Makespan = 649
+  Total time: 4.4824 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 648...
+  SAT ! Makespan = 648
+  Schedule is valid with Makespan = 648
+  Total time: 4.5029 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 647...
+  SAT ! Makespan = 647
+  Schedule is valid with Makespan = 647
+  Total time: 4.5250 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 646...
+  SAT ! Makespan = 646
+  Schedule is valid with Makespan = 646
+  Total time: 4.5468 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 645...
+  SAT ! Makespan = 645
+  Schedule is valid with Makespan = 645
+  Total time: 4.5683 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 644...
+  SAT ! Makespan = 644
+  Schedule is valid with Makespan = 644
+  Total time: 4.5995 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 643...
+  SAT ! Makespan = 643
+  Schedule is valid with Makespan = 643
+  Total time: 4.6203 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 642...
+  SAT ! Makespan = 642
+  Schedule is valid with Makespan = 642
+  Total time: 4.6415 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 641...
+  SAT ! Makespan = 641
+  Schedule is valid with Makespan = 641
+  Total time: 4.6615 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 640...
+  SAT ! Makespan = 640
+  Schedule is valid with Makespan = 640
+  Total time: 4.6817 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 639...
+  SAT ! Makespan = 639
+  Schedule is valid with Makespan = 639
+  Total time: 4.7100 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 638...
+  SAT ! Makespan = 638
+  Schedule is valid with Makespan = 638
+  Total time: 4.7333 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 637...
+  SAT ! Makespan = 637
+  Schedule is valid with Makespan = 637
+  Total time: 4.7558 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 636...
+  SAT ! Makespan = 636
+  Schedule is valid with Makespan = 636
+  Total time: 4.8965 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 635...
+  SAT ! Makespan = 635
+  Schedule is valid with Makespan = 635
+  Total time: 5.4894 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 634...
+  SAT ! Makespan = 634
+  Schedule is valid with Makespan = 634
+  Total time: 5.6363 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 633...
+  SAT ! Makespan = 633
+  Schedule is valid with Makespan = 633
+  Total time: 5.6720 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 632...
+  SAT ! Makespan = 632
+  Schedule is valid with Makespan = 632
+  Total time: 5.7443 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 631...
+  SAT ! Makespan = 631
+  Schedule is valid with Makespan = 631
+  Total time: 9.6397 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 630...
+  SAT ! Makespan = 630
+  Schedule is valid with Makespan = 630
+  Total time: 9.7928 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 629...
+  SAT ! Makespan = 629
+  Schedule is valid with Makespan = 629
+  Total time: 9.9298 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 628...
+[runlim] sample:		9.99 time, 10.01 real, 304 MB, 1.67 load
+  SAT ! Makespan = 628
+  Schedule is valid with Makespan = 628
+  Total time: 10.0494 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 627...
+  SAT ! Makespan = 627
+  Schedule is valid with Makespan = 627
+  Total time: 10.1720 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 626...
+  SAT ! Makespan = 626
+  Schedule is valid with Makespan = 626
+  Total time: 10.2939 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 625...
+  SAT ! Makespan = 625
+  Schedule is valid with Makespan = 625
+  Total time: 10.4182 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 624...
+  SAT ! Makespan = 624
+  Schedule is valid with Makespan = 624
+  Total time: 10.5352 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 623...
+  SAT ! Makespan = 623
+  Schedule is valid with Makespan = 623
+  Total time: 10.6486 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 622...
+  SAT ! Makespan = 622
+  Schedule is valid with Makespan = 622
+  Total time: 10.7583 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 621...
+  SAT ! Makespan = 621
+  Schedule is valid with Makespan = 621
+  Total time: 10.8693 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 620...
+  SAT ! Makespan = 620
+  Schedule is valid with Makespan = 620
+  Total time: 10.9800 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 619...
+  SAT ! Makespan = 619
+  Schedule is valid with Makespan = 619
+  Total time: 11.0937 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 618...
+  SAT ! Makespan = 618
+  Schedule is valid with Makespan = 618
+  Total time: 11.7476 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 617...
+  SAT ! Makespan = 617
+  Schedule is valid with Makespan = 617
+  Total time: 12.4396 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 616...
+  SAT ! Makespan = 616
+  Schedule is valid with Makespan = 616
+  Total time: 12.5865 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 615...
+  SAT ! Makespan = 615
+  Schedule is valid with Makespan = 615
+  Total time: 13.6133 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 614...
+  SAT ! Makespan = 614
+  Schedule is valid with Makespan = 614
+  Total time: 14.0406 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 613...
+  SAT ! Makespan = 613
+  Schedule is valid with Makespan = 613
+  Total time: 14.6501 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 612...
+  SAT ! Makespan = 612
+  Schedule is valid with Makespan = 612
+  Total time: 15.3103 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 611...
+  SAT ! Makespan = 611
+  Schedule is valid with Makespan = 611
+  Total time: 15.9273 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 610...
+  SAT ! Makespan = 610
+  Schedule is valid with Makespan = 610
+  Total time: 16.4814 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 609...
+  SAT ! Makespan = 609
+  Schedule is valid with Makespan = 609
+  Total time: 19.9557 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 608...
+[runlim] sample:		19.99 time, 20.01 real, 346 MB, 1.57 load
+  SAT ! Makespan = 608
+  Schedule is valid with Makespan = 608
+  Total time: 21.0431 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 607...
+  SAT ! Makespan = 607
+  Schedule is valid with Makespan = 607
+  Total time: 21.1950 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 606...
+  SAT ! Makespan = 606
+  Schedule is valid with Makespan = 606
+  Total time: 21.7550 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 605...
+  SAT ! Makespan = 605
+  Schedule is valid with Makespan = 605
+  Total time: 22.3498 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 604...
+  SAT ! Makespan = 604
+  Schedule is valid with Makespan = 604
+  Total time: 22.7097 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 603...
+  SAT ! Makespan = 603
+  Schedule is valid with Makespan = 603
+  Total time: 22.8099 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 602...
+  SAT ! Makespan = 602
+  Schedule is valid with Makespan = 602
+  Total time: 22.8996 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 601...
+  SAT ! Makespan = 601
+  Schedule is valid with Makespan = 601
+  Total time: 23.2726 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 600...
+  SAT ! Makespan = 600
+  Schedule is valid with Makespan = 600
+  Total time: 23.7692 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 599...
+  SAT ! Makespan = 599
+  Schedule is valid with Makespan = 599
+  Total time: 25.3414 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 598...
+  SAT ! Makespan = 598
+  Schedule is valid with Makespan = 598
+  Total time: 25.7856 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 597...
+  SAT ! Makespan = 597
+  Schedule is valid with Makespan = 597
+  Total time: 25.9021 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 596...
+  SAT ! Makespan = 596
+  Schedule is valid with Makespan = 596
+  Total time: 26.3430 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 595...
+  SAT ! Makespan = 595
+  Schedule is valid with Makespan = 595
+  Total time: 28.5408 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 594...
+  SAT ! Makespan = 594
+  Schedule is valid with Makespan = 594
+  Total time: 29.0308 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 593...
+  SAT ! Makespan = 593
+  Schedule is valid with Makespan = 593
+  Total time: 29.2400 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 592...
+  SAT ! Makespan = 592
+  Schedule is valid with Makespan = 592
+  Total time: 29.7962 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 591...
+  SAT ! Makespan = 591
+  Schedule is valid with Makespan = 591
+  Total time: 29.9257 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 590...
+[runlim] sample:		29.99 time, 30.01 real, 308 MB, 1.48 load
+  SAT ! Makespan = 590
+  Schedule is valid with Makespan = 590
+  Total time: 30.0336 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 589...
+  SAT ! Makespan = 589
+  Schedule is valid with Makespan = 589
+  Total time: 30.1301 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 588...
+  SAT ! Makespan = 588
+  Schedule is valid with Makespan = 588
+  Total time: 30.4811 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 587...
+  SAT ! Makespan = 587
+  Schedule is valid with Makespan = 587
+  Total time: 31.1689 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 586...
+  SAT ! Makespan = 586
+  Schedule is valid with Makespan = 586
+  Total time: 33.0346 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 585...
+  SAT ! Makespan = 585
+  Schedule is valid with Makespan = 585
+  Total time: 33.1470 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 584...
+  SAT ! Makespan = 584
+  Schedule is valid with Makespan = 584
+  Total time: 33.3025 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 583...
+  SAT ! Makespan = 583
+  Schedule is valid with Makespan = 583
+  Total time: 33.4063 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 582...
+  SAT ! Makespan = 582
+  Schedule is valid with Makespan = 582
+  Total time: 33.4967 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 581...
+  SAT ! Makespan = 581
+  Schedule is valid with Makespan = 581
+  Total time: 34.1725 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 580...
+  SAT ! Makespan = 580
+  Schedule is valid with Makespan = 580
+  Total time: 36.0693 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 579...
+  SAT ! Makespan = 579
+  Schedule is valid with Makespan = 579
+  Total time: 36.5275 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 578...
+[runlim] sample:		39.99 time, 40.01 real, 333 MB, 1.41 load
+  SAT ! Makespan = 578
+  Schedule is valid with Makespan = 578
+  Total time: 40.0003 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 577...
+  SAT ! Makespan = 577
+  Schedule is valid with Makespan = 577
+  Total time: 40.4974 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 576...
+  SAT ! Makespan = 576
+  Schedule is valid with Makespan = 576
+  Total time: 42.6304 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 575...
+  SAT ! Makespan = 575
+  Schedule is valid with Makespan = 575
+  Total time: 43.1661 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 574...
+  SAT ! Makespan = 574
+  Schedule is valid with Makespan = 574
+  Total time: 44.7962 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 573...
+  SAT ! Makespan = 573
+  Schedule is valid with Makespan = 573
+  Total time: 45.3061 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 572...
+  SAT ! Makespan = 572
+  Schedule is valid with Makespan = 572
+  Total time: 45.9345 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 571...
+  SAT ! Makespan = 571
+  Schedule is valid with Makespan = 571
+  Total time: 47.4833 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 570...
+  SAT ! Makespan = 570
+  Schedule is valid with Makespan = 570
+  Total time: 49.5754 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 569...
+[runlim] sample:		49.99 time, 50.01 real, 334 MB, 1.34 load
+  SAT ! Makespan = 569
+  Schedule is valid with Makespan = 569
+  Total time: 57.5502 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 568...
+  SAT ! Makespan = 568
+  Schedule is valid with Makespan = 568
+  Total time: 58.1138 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 567...
+[runlim] sample:		59.99 time, 60.01 real, 334 MB, 1.29 load
+  SAT ! Makespan = 567
+  Schedule is valid with Makespan = 567
+  Total time: 60.6951 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 566...
+  SAT ! Makespan = 566
+  Schedule is valid with Makespan = 566
+  Total time: 62.1343 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 565...
+  SAT ! Makespan = 565
+  Schedule is valid with Makespan = 565
+  Total time: 62.2493 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 564...
+  SAT ! Makespan = 564
+  Schedule is valid with Makespan = 564
+  Total time: 63.7363 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 563...
+  SAT ! Makespan = 563
+  Schedule is valid with Makespan = 563
+  Total time: 63.8645 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 562...
+  SAT ! Makespan = 562
+  Schedule is valid with Makespan = 562
+  Total time: 67.3450 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 561...
+  SAT ! Makespan = 561
+  Schedule is valid with Makespan = 561
+  Total time: 69.3525 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 560...
+[runlim] sample:		69.99 time, 70.01 real, 333 MB, 1.24 load
+  SAT ! Makespan = 560
+  Schedule is valid with Makespan = 560
+  Total time: 71.5315 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 559...
+  SAT ! Makespan = 559
+  Schedule is valid with Makespan = 559
+  Total time: 71.9328 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 558...
+  SAT ! Makespan = 558
+  Schedule is valid with Makespan = 558
+  Total time: 74.4534 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 557...
+  SAT ! Makespan = 557
+  Schedule is valid with Makespan = 557
+  Total time: 75.9041 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 556...
+  SAT ! Makespan = 556
+  Schedule is valid with Makespan = 556
+  Total time: 76.0215 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 555...
+  SAT ! Makespan = 555
+  Schedule is valid with Makespan = 555
+  Total time: 76.3977 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 554...
+  SAT ! Makespan = 554
+  Schedule is valid with Makespan = 554
+  Total time: 78.2591 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 553...
+[runlim] sample:		79.98 time, 80.01 real, 332 MB, 1.21 load
+  SAT ! Makespan = 553
+  Schedule is valid with Makespan = 553
+  Total time: 82.0718 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 552...
+  SAT ! Makespan = 552
+  Schedule is valid with Makespan = 552
+  Total time: 83.7931 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 551...
+  SAT ! Makespan = 551
+  Schedule is valid with Makespan = 551
+  Total time: 83.9058 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 550...
+  SAT ! Makespan = 550
+  Schedule is valid with Makespan = 550
+  Total time: 85.4427 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 549...
+[runlim] sample:		89.98 time, 90.01 real, 332 MB, 1.17 load
+  SAT ! Makespan = 549
+  Schedule is valid with Makespan = 549
+  Total time: 93.1764 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 548...
+[runlim] sample:		99.98 time, 100.01 real, 332 MB, 1.15 load
+  SAT ! Makespan = 548
+  Schedule is valid with Makespan = 548
+  Total time: 101.8299 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 547...
+  SAT ! Makespan = 547
+  Schedule is valid with Makespan = 547
+  Total time: 104.0646 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 546...
+[runlim] sample:		109.99 time, 110.01 real, 285 MB, 1.12 load
+  SAT ! Makespan = 546
+  Schedule is valid with Makespan = 546
+  Total time: 110.5486 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 545...
+  SAT ! Makespan = 545
+  Schedule is valid with Makespan = 545
+  Total time: 119.7787 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 544...
+[runlim] sample:		119.98 time, 120.01 real, 328 MB, 1.10 load
+  SAT ! Makespan = 544
+  Schedule is valid with Makespan = 544
+  Total time: 122.4328 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 543...
+  SAT ! Makespan = 543
+  Schedule is valid with Makespan = 543
+  Total time: 129.3509 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 542...
+[runlim] sample:		129.98 time, 130.01 real, 303 MB, 1.17 load
+  SAT ! Makespan = 542
+  Schedule is valid with Makespan = 542
+  Total time: 131.5453 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 541...
+  SAT ! Makespan = 541
+  Schedule is valid with Makespan = 541
+  Total time: 134.4028 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 540...
+[runlim] sample:		139.98 time, 140.01 real, 321 MB, 1.14 load
+[runlim] sample:		149.98 time, 150.01 real, 329 MB, 1.12 load
+[runlim] sample:		159.98 time, 160.01 real, 340 MB, 1.10 load
+[runlim] sample:		169.98 time, 170.01 real, 341 MB, 1.08 load
+  SAT ! Makespan = 540
+  Schedule is valid with Makespan = 540
+  Total time: 178.6227 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 539...
+[runlim] sample:		179.98 time, 180.01 real, 289 MB, 1.07 load
+[runlim] sample:		189.97 time, 190.01 real, 330 MB, 1.06 load
+[runlim] sample:		199.98 time, 200.01 real, 334 MB, 1.05 load
+[runlim] sample:		209.97 time, 210.01 real, 329 MB, 1.04 load
+[runlim] sample:		219.97 time, 220.01 real, 339 MB, 1.04 load
+  SAT ! Makespan = 539
+  Schedule is valid with Makespan = 539
+  Total time: 222.7289 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 538...
+[runlim] sample:		229.97 time, 230.01 real, 337 MB, 1.03 load
+  SAT ! Makespan = 538
+  Schedule is valid with Makespan = 538
+  Total time: 230.7150 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 537...
+  SAT ! Makespan = 537
+  Schedule is valid with Makespan = 537
+  Total time: 230.8353 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 536...
+[runlim] sample:		239.98 time, 240.01 real, 336 MB, 1.02 load
+[runlim] sample:		249.97 time, 250.01 real, 338 MB, 1.10 load
+[runlim] sample:		259.97 time, 260.01 real, 334 MB, 1.16 load
+[runlim] sample:		269.96 time, 270.01 real, 337 MB, 1.13 load
+[runlim] sample:		279.97 time, 280.01 real, 341 MB, 1.11 load
+[runlim] sample:		289.96 time, 290.01 real, 339 MB, 1.10 load
+[runlim] sample:		299.95 time, 300.01 real, 335 MB, 1.16 load
+[runlim] sample:		309.94 time, 310.01 real, 335 MB, 1.14 load
+[runlim] sample:		319.95 time, 320.01 real, 336 MB, 1.11 load
+[runlim] sample:		329.94 time, 330.01 real, 336 MB, 1.10 load
+[runlim] sample:		339.94 time, 340.01 real, 337 MB, 1.08 load
+[runlim] sample:		349.94 time, 350.01 real, 337 MB, 1.07 load
+  SAT ! Makespan = 536
+  Schedule is valid with Makespan = 536
+  Total time: 359.6772 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 535...
+[runlim] sample:		359.93 time, 360.01 real, 292 MB, 1.06 load
+  SAT ! Makespan = 535
+  Schedule is valid with Makespan = 535
+  Total time: 360.4148 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 534...
+  SAT ! Makespan = 534
+  Schedule is valid with Makespan = 534
+  Total time: 362.4993 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 533...
+  SAT ! Makespan = 533
+  Schedule is valid with Makespan = 533
+  Total time: 364.4201 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 532...
+[runlim] sample:		369.93 time, 370.01 real, 312 MB, 1.05 load
+[runlim] sample:		379.93 time, 380.01 real, 313 MB, 1.12 load
+[runlim] sample:		389.93 time, 390.01 real, 310 MB, 1.10 load
+[runlim] sample:		399.93 time, 400.01 real, 332 MB, 1.08 load
+[runlim] sample:		409.92 time, 410.01 real, 341 MB, 1.07 load
+[runlim] sample:		419.93 time, 420.01 real, 340 MB, 1.06 load
+  SAT ! Makespan = 532
+  Schedule is valid with Makespan = 532
+  Total time: 421.4251 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 531...
+[runlim] sample:		429.92 time, 430.01 real, 335 MB, 1.05 load
+[runlim] sample:		439.92 time, 440.01 real, 342 MB, 1.04 load
+[runlim] sample:		449.93 time, 450.01 real, 343 MB, 1.04 load
+[runlim] sample:		459.92 time, 460.01 real, 339 MB, 1.03 load
+[runlim] sample:		469.92 time, 470.01 real, 346 MB, 1.02 load
+[runlim] sample:		479.93 time, 480.01 real, 346 MB, 1.02 load
+[runlim] sample:		489.92 time, 490.01 real, 346 MB, 1.02 load
+[runlim] sample:		499.93 time, 500.01 real, 341 MB, 1.01 load
+[runlim] sample:		509.92 time, 510.01 real, 341 MB, 1.08 load
+[runlim] sample:		519.92 time, 520.01 real, 341 MB, 1.07 load
+[runlim] sample:		529.92 time, 530.01 real, 342 MB, 1.06 load
+[runlim] sample:		539.92 time, 540.01 real, 342 MB, 1.05 load
+[runlim] sample:		549.92 time, 550.01 real, 342 MB, 1.04 load
+  SAT ! Makespan = 531
+  Schedule is valid with Makespan = 531
+  Total time: 551.3057 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 530...
+[runlim] sample:		559.92 time, 560.01 real, 301 MB, 1.04 load
+[runlim] sample:		569.92 time, 570.01 real, 310 MB, 1.03 load
+[runlim] sample:		579.92 time, 580.01 real, 309 MB, 1.02 load
+[runlim] sample:		589.91 time, 590.01 real, 339 MB, 1.02 load
+[runlim] sample:		599.92 time, 600.01 real, 341 MB, 1.02 load
+[runlim] sample:		609.92 time, 610.01 real, 344 MB, 1.01 load
+[runlim] sample:		619.91 time, 620.01 real, 344 MB, 1.01 load
+[runlim] sample:		629.72 time, 630.01 real, 337 MB, 1.80 load
+[runlim] sample:		639.11 time, 640.01 real, 337 MB, 1.98 load
+[runlim] sample:		649.11 time, 650.01 real, 338 MB, 1.97 load
+[runlim] sample:		659.10 time, 660.01 real, 338 MB, 1.82 load
+[runlim] sample:		669.10 time, 670.01 real, 338 MB, 1.70 load
+[runlim] sample:		679.10 time, 680.01 real, 339 MB, 1.59 load
+[runlim] sample:		689.10 time, 690.01 real, 339 MB, 1.50 load
+  SAT ! Makespan = 530
+  Schedule is valid with Makespan = 530
+  Total time: 698.9994 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 529...
+[runlim] sample:		699.10 time, 700.01 real, 346 MB, 1.42 load
+  SAT ! Makespan = 529
+  Schedule is valid with Makespan = 529
+  Total time: 701.7749 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 528...
+[runlim] sample:		709.09 time, 710.01 real, 356 MB, 1.36 load
+[runlim] sample:		719.09 time, 720.01 real, 356 MB, 1.54 load
+[runlim] sample:		729.09 time, 730.01 real, 354 MB, 1.53 load
+[runlim] sample:		739.08 time, 740.01 real, 352 MB, 1.45 load
+[runlim] sample:		749.08 time, 750.01 real, 360 MB, 1.46 load
+[runlim] sample:		759.08 time, 760.01 real, 360 MB, 1.39 load
+[runlim] sample:		769.08 time, 770.01 real, 362 MB, 1.33 load
+[runlim] sample:		779.08 time, 780.01 real, 351 MB, 1.28 load
+[runlim] sample:		789.08 time, 790.01 real, 351 MB, 1.24 load
+[runlim] sample:		799.07 time, 800.01 real, 352 MB, 1.20 load
+[runlim] sample:		809.08 time, 810.01 real, 352 MB, 1.17 load
+[runlim] sample:		819.08 time, 820.01 real, 352 MB, 1.14 load
+[runlim] sample:		829.07 time, 830.01 real, 352 MB, 1.12 load
+[runlim] sample:		839.08 time, 840.01 real, 353 MB, 1.10 load
+[runlim] sample:		849.07 time, 850.01 real, 364 MB, 1.08 load
+[runlim] sample:		859.07 time, 860.01 real, 364 MB, 1.07 load
+[runlim] sample:		869.07 time, 870.01 real, 365 MB, 1.06 load
+[runlim] sample:		879.07 time, 880.01 real, 362 MB, 1.13 load
+[runlim] sample:		889.07 time, 890.01 real, 362 MB, 1.11 load
+[runlim] sample:		899.07 time, 900.01 real, 362 MB, 1.17 load
+[runlim] sample:		909.06 time, 910.01 real, 364 MB, 1.15 load
+[runlim] sample:		919.06 time, 920.01 real, 364 MB, 1.12 load
+[runlim] sample:		929.06 time, 930.01 real, 362 MB, 1.10 load
+[runlim] sample:		939.06 time, 940.01 real, 362 MB, 1.09 load
+[runlim] sample:		949.07 time, 950.01 real, 362 MB, 1.07 load
+[runlim] sample:		959.06 time, 960.01 real, 366 MB, 1.06 load
+[runlim] sample:		969.06 time, 970.01 real, 366 MB, 1.05 load
+[runlim] sample:		979.06 time, 980.01 real, 366 MB, 1.04 load
+[runlim] sample:		989.06 time, 990.01 real, 355 MB, 1.04 load
+[runlim] sample:		999.05 time, 1000.01 real, 355 MB, 1.03 load
+[runlim] sample:		1009.05 time, 1010.01 real, 355 MB, 1.10 load
+[runlim] sample:		1019.05 time, 1020.01 real, 355 MB, 1.08 load
+[runlim] sample:		1029.05 time, 1030.01 real, 356 MB, 1.07 load
+[runlim] sample:		1039.05 time, 1040.01 real, 356 MB, 1.06 load
+[runlim] sample:		1049.05 time, 1050.01 real, 356 MB, 1.05 load
+[runlim] sample:		1059.05 time, 1060.01 real, 358 MB, 1.04 load
+[runlim] sample:		1069.05 time, 1070.01 real, 358 MB, 1.03 load
+[runlim] sample:		1079.05 time, 1080.01 real, 358 MB, 1.03 load
+[runlim] sample:		1089.05 time, 1090.01 real, 358 MB, 1.02 load
+[runlim] sample:		1099.05 time, 1100.01 real, 359 MB, 1.02 load
+[runlim] sample:		1109.04 time, 1110.01 real, 359 MB, 1.02 load
+[runlim] sample:		1119.05 time, 1120.01 real, 359 MB, 1.01 load
+[runlim] sample:		1129.05 time, 1130.01 real, 359 MB, 1.09 load
+[runlim] sample:		1139.04 time, 1140.01 real, 359 MB, 1.08 load
+[runlim] sample:		1149.05 time, 1150.01 real, 359 MB, 1.06 load
+[runlim] sample:		1159.04 time, 1160.01 real, 360 MB, 1.05 load
+[runlim] sample:		1169.04 time, 1170.01 real, 360 MB, 1.05 load
+[runlim] sample:		1179.04 time, 1180.01 real, 360 MB, 1.04 load
+[runlim] sample:		1189.04 time, 1190.01 real, 360 MB, 1.03 load
+[runlim] sample:		1199.04 time, 1200.01 real, 361 MB, 1.03 load
+[runlim] sample:		1209.03 time, 1210.01 real, 361 MB, 1.02 load
+[runlim] sample:		1219.03 time, 1220.01 real, 361 MB, 1.02 load
+[runlim] sample:		1229.03 time, 1230.01 real, 361 MB, 1.02 load
+[runlim] sample:		1239.02 time, 1240.01 real, 361 MB, 1.17 load
+[runlim] sample:		1249.02 time, 1250.01 real, 362 MB, 1.15 load
+[runlim] sample:		1259.02 time, 1260.01 real, 362 MB, 1.79 load
+[runlim] sample:		1269.02 time, 1270.01 real, 362 MB, 1.67 load
+[runlim] sample:		1279.02 time, 1280.01 real, 362 MB, 1.56 load
+[runlim] sample:		1289.02 time, 1290.01 real, 362 MB, 1.48 load
+[runlim] sample:		1299.02 time, 1300.01 real, 362 MB, 1.40 load
+[runlim] sample:		1309.01 time, 1310.01 real, 362 MB, 1.34 load
+[runlim] sample:		1319.02 time, 1320.01 real, 370 MB, 1.29 load
+[runlim] sample:		1329.02 time, 1330.01 real, 370 MB, 1.24 load
+[runlim] sample:		1339.02 time, 1340.01 real, 380 MB, 1.20 load
+  SAT ! Makespan = 528
+  Schedule is valid with Makespan = 528
+  Total time: 1344.7813 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 527...
+[runlim] sample:		1349.02 time, 1350.01 real, 326 MB, 1.17 load
+[runlim] sample:		1359.02 time, 1360.01 real, 363 MB, 1.15 load
+[runlim] sample:		1369.01 time, 1370.01 real, 318 MB, 1.12 load
+[runlim] sample:		1379.01 time, 1380.01 real, 318 MB, 1.18 load
+[runlim] sample:		1389.01 time, 1390.01 real, 311 MB, 1.16 load
+[runlim] sample:		1399.01 time, 1400.01 real, 311 MB, 1.13 load
+[runlim] sample:		1409.01 time, 1410.01 real, 322 MB, 1.11 load
+[runlim] sample:		1419.01 time, 1420.01 real, 322 MB, 1.09 load
+[runlim] sample:		1429.01 time, 1430.01 real, 317 MB, 1.08 load
+[runlim] sample:		1439.01 time, 1440.01 real, 317 MB, 1.07 load
+[runlim] sample:		1449.01 time, 1450.01 real, 355 MB, 1.06 load
+[runlim] sample:		1459.01 time, 1460.01 real, 347 MB, 1.05 load
+[runlim] sample:		1469.00 time, 1470.01 real, 347 MB, 1.04 load
+[runlim] sample:		1479.00 time, 1480.01 real, 347 MB, 1.03 load
+[runlim] sample:		1489.01 time, 1490.01 real, 348 MB, 1.03 load
+[runlim] sample:		1498.98 time, 1500.01 real, 348 MB, 1.10 load
+  SAT ! Makespan = 527
+  Schedule is valid with Makespan = 527
+  Total time: 1508.0617 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 526...
+[runlim] sample:		1508.97 time, 1510.01 real, 314 MB, 1.16 load
+[runlim] sample:		1518.97 time, 1520.01 real, 314 MB, 1.14 load
+[runlim] sample:		1528.97 time, 1530.01 real, 314 MB, 1.11 load
+[runlim] sample:		1538.96 time, 1540.01 real, 318 MB, 1.10 load
+[runlim] sample:		1548.96 time, 1550.01 real, 318 MB, 1.08 load
+[runlim] sample:		1558.97 time, 1560.01 real, 358 MB, 1.07 load
+[runlim] sample:		1568.97 time, 1570.01 real, 358 MB, 1.06 load
+[runlim] sample:		1578.96 time, 1580.01 real, 368 MB, 1.05 load
+[runlim] sample:		1588.96 time, 1590.01 real, 368 MB, 1.04 load
+[runlim] sample:		1598.96 time, 1600.01 real, 368 MB, 1.03 load
+[runlim] sample:		1608.96 time, 1610.01 real, 354 MB, 1.03 load
+[runlim] sample:		1618.96 time, 1620.01 real, 354 MB, 1.02 load
+[runlim] sample:		1628.96 time, 1630.01 real, 354 MB, 1.10 load
+[runlim] sample:		1638.96 time, 1640.01 real, 352 MB, 1.08 load
+[runlim] sample:		1648.96 time, 1650.01 real, 352 MB, 1.07 load
+[runlim] sample:		1658.96 time, 1660.01 real, 352 MB, 1.06 load
+[runlim] sample:		1668.95 time, 1670.01 real, 353 MB, 1.05 load
+[runlim] sample:		1678.95 time, 1680.01 real, 353 MB, 1.04 load
+[runlim] sample:		1688.95 time, 1690.01 real, 365 MB, 1.04 load
+[runlim] sample:		1698.95 time, 1700.01 real, 365 MB, 1.03 load
+  SAT ! Makespan = 526
+  Schedule is valid with Makespan = 526
+  Total time: 1704.9410 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 525...
+[runlim] sample:		1708.95 time, 1710.01 real, 329 MB, 1.02 load
+[runlim] sample:		1718.95 time, 1720.01 real, 329 MB, 1.02 load
+[runlim] sample:		1728.95 time, 1730.01 real, 329 MB, 1.02 load
+[runlim] sample:		1738.95 time, 1740.01 real, 318 MB, 1.01 load
+[runlim] sample:		1748.95 time, 1750.01 real, 318 MB, 1.01 load
+[runlim] sample:		1758.94 time, 1760.01 real, 366 MB, 1.08 load
+[runlim] sample:		1768.94 time, 1770.01 real, 366 MB, 1.07 load
+[runlim] sample:		1778.94 time, 1780.01 real, 366 MB, 1.06 load
+[runlim] sample:		1788.95 time, 1790.01 real, 369 MB, 1.05 load
+[runlim] sample:		1798.95 time, 1800.01 real, 369 MB, 1.04 load
+[runlim] sample:		1808.94 time, 1810.01 real, 369 MB, 1.03 load
+[runlim] sample:		1818.94 time, 1820.01 real, 357 MB, 1.03 load
+[runlim] sample:		1828.94 time, 1830.01 real, 357 MB, 1.02 load
+[runlim] sample:		1838.94 time, 1840.01 real, 357 MB, 1.02 load
+[runlim] sample:		1848.94 time, 1850.01 real, 357 MB, 1.02 load
+[runlim] sample:		1858.94 time, 1860.01 real, 357 MB, 1.01 load
+[runlim] sample:		1868.94 time, 1870.01 real, 357 MB, 1.01 load
+  SAT ! Makespan = 525
+  Schedule is valid with Makespan = 525
+  Total time: 1877.7862 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 524...
+[runlim] sample:		1878.94 time, 1880.01 real, 317 MB, 1.73 load
+[runlim] sample:		1888.94 time, 1890.01 real, 357 MB, 1.62 load
+[runlim] sample:		1898.94 time, 1900.01 real, 359 MB, 1.52 load
+[runlim] sample:		1908.93 time, 1910.01 real, 320 MB, 1.44 load
+[runlim] sample:		1918.93 time, 1920.01 real, 321 MB, 1.37 load
+[runlim] sample:		1928.94 time, 1930.01 real, 323 MB, 1.31 load
+[runlim] sample:		1938.93 time, 1940.01 real, 322 MB, 1.27 load
+[runlim] sample:		1948.93 time, 1950.01 real, 322 MB, 1.22 load
+[runlim] sample:		1958.93 time, 1960.01 real, 334 MB, 1.19 load
+[runlim] sample:		1968.93 time, 1970.01 real, 334 MB, 1.16 load
+[runlim] sample:		1978.93 time, 1980.01 real, 334 MB, 1.13 load
+[runlim] sample:		1988.93 time, 1990.01 real, 334 MB, 1.11 load
+[runlim] sample:		1998.92 time, 2000.01 real, 316 MB, 1.10 load
+[runlim] sample:		2008.93 time, 2010.01 real, 357 MB, 1.08 load
+[runlim] sample:		2018.93 time, 2020.01 real, 357 MB, 1.07 load
+[runlim] sample:		2028.92 time, 2030.01 real, 358 MB, 1.06 load
+[runlim] sample:		2038.92 time, 2040.01 real, 358 MB, 1.05 load
+[runlim] sample:		2048.92 time, 2050.01 real, 358 MB, 1.04 load
+[runlim] sample:		2058.93 time, 2060.01 real, 362 MB, 1.03 load
+  SAT ! Makespan = 524
+  Schedule is valid with Makespan = 524
+  Total time: 2065.5984 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 523...
+[runlim] sample:		2068.92 time, 2070.01 real, 319 MB, 1.03 load
+[runlim] sample:		2078.92 time, 2080.01 real, 321 MB, 1.02 load
+[runlim] sample:		2088.92 time, 2090.01 real, 326 MB, 1.02 load
+[runlim] sample:		2098.90 time, 2100.01 real, 326 MB, 1.02 load
+[runlim] sample:		2108.90 time, 2110.01 real, 326 MB, 1.01 load
+[runlim] sample:		2118.90 time, 2120.01 real, 323 MB, 1.01 load
+[runlim] sample:		2128.90 time, 2130.01 real, 364 MB, 1.16 load
+[runlim] sample:		2138.90 time, 2140.01 real, 364 MB, 1.14 load
+[runlim] sample:		2148.90 time, 2150.01 real, 327 MB, 1.12 load
+[runlim] sample:		2158.90 time, 2160.01 real, 329 MB, 1.10 load
+[runlim] sample:		2168.89 time, 2170.01 real, 329 MB, 1.08 load
+[runlim] sample:		2178.90 time, 2180.01 real, 318 MB, 1.07 load
+[runlim] sample:		2188.90 time, 2190.01 real, 318 MB, 1.06 load
+[runlim] sample:		2198.89 time, 2200.01 real, 318 MB, 1.05 load
+[runlim] sample:		2208.89 time, 2210.01 real, 318 MB, 1.04 load
+[runlim] sample:		2218.90 time, 2220.01 real, 319 MB, 1.03 load
+[runlim] sample:		2228.90 time, 2230.01 real, 319 MB, 1.03 load
+[runlim] sample:		2238.90 time, 2240.01 real, 319 MB, 1.02 load
+[runlim] sample:		2248.89 time, 2250.01 real, 323 MB, 1.02 load
+[runlim] sample:		2258.89 time, 2260.01 real, 365 MB, 1.09 load
+[runlim] sample:		2268.89 time, 2270.01 real, 365 MB, 1.08 load
+[runlim] sample:		2278.89 time, 2280.01 real, 376 MB, 1.06 load
+[runlim] sample:		2288.88 time, 2290.01 real, 376 MB, 1.05 load
+[runlim] sample:		2298.89 time, 2300.01 real, 466 MB, 1.04 load
+[runlim] sample:		2308.89 time, 2310.01 real, 378 MB, 1.04 load
+[runlim] sample:		2318.89 time, 2320.01 real, 378 MB, 1.03 load
+[runlim] sample:		2328.89 time, 2330.01 real, 382 MB, 1.03 load
+[runlim] sample:		2338.89 time, 2340.01 real, 382 MB, 1.02 load
+[runlim] sample:		2348.88 time, 2350.01 real, 382 MB, 1.02 load
+[runlim] sample:		2358.88 time, 2360.01 real, 375 MB, 1.01 load
+[runlim] sample:		2368.88 time, 2370.01 real, 375 MB, 1.01 load
+[runlim] sample:		2378.88 time, 2380.01 real, 375 MB, 1.09 load
+[runlim] sample:		2388.88 time, 2390.01 real, 387 MB, 1.08 load
+[runlim] sample:		2398.88 time, 2400.01 real, 387 MB, 1.06 load
+[runlim] sample:		2408.88 time, 2410.01 real, 387 MB, 1.05 load
+[runlim] sample:		2418.88 time, 2420.01 real, 362 MB, 1.04 load
+[runlim] sample:		2428.88 time, 2430.01 real, 362 MB, 1.04 load
+[runlim] sample:		2438.88 time, 2440.01 real, 362 MB, 1.03 load
+[runlim] sample:		2448.88 time, 2450.01 real, 362 MB, 1.03 load
+[runlim] sample:		2458.88 time, 2460.01 real, 363 MB, 1.02 load
+[runlim] sample:		2468.88 time, 2470.01 real, 363 MB, 1.02 load
+[runlim] sample:		2478.88 time, 2480.01 real, 363 MB, 1.01 load
+[runlim] sample:		2488.87 time, 2490.01 real, 363 MB, 1.01 load
+[runlim] sample:		2498.88 time, 2500.01 real, 364 MB, 1.01 load
+[runlim] sample:		2508.88 time, 2510.01 real, 364 MB, 1.67 load
+[runlim] sample:		2518.88 time, 2520.01 real, 364 MB, 1.57 load
+[runlim] sample:		2528.87 time, 2530.01 real, 365 MB, 1.48 load
+[runlim] sample:		2538.87 time, 2540.01 real, 365 MB, 1.41 load
+[runlim] sample:		2548.87 time, 2550.01 real, 366 MB, 1.34 load
+[runlim] sample:		2558.87 time, 2560.01 real, 366 MB, 1.29 load
+[runlim] sample:		2568.87 time, 2570.01 real, 366 MB, 1.24 load
+[runlim] sample:		2578.87 time, 2580.01 real, 366 MB, 1.21 load
+[runlim] sample:		2588.87 time, 2590.01 real, 367 MB, 1.17 load
+[runlim] sample:		2598.87 time, 2600.01 real, 367 MB, 1.15 load
+[runlim] sample:		2608.87 time, 2610.01 real, 367 MB, 1.12 load
+[runlim] sample:		2618.87 time, 2620.01 real, 367 MB, 1.10 load
+[runlim] sample:		2628.87 time, 2630.01 real, 367 MB, 1.17 load
+[runlim] sample:		2638.87 time, 2640.01 real, 367 MB, 1.14 load
+[runlim] sample:		2648.87 time, 2650.01 real, 367 MB, 1.12 load
+[runlim] sample:		2658.87 time, 2660.01 real, 367 MB, 1.10 load
+[runlim] sample:		2668.87 time, 2670.01 real, 367 MB, 1.08 load
+[runlim] sample:		2678.87 time, 2680.01 real, 368 MB, 1.07 load
+[runlim] sample:		2688.87 time, 2690.01 real, 368 MB, 1.06 load
+[runlim] sample:		2698.86 time, 2700.01 real, 368 MB, 1.05 load
+[runlim] sample:		2708.87 time, 2710.01 real, 368 MB, 1.04 load
+[runlim] sample:		2718.86 time, 2720.01 real, 368 MB, 1.04 load
+[runlim] sample:		2728.86 time, 2730.01 real, 369 MB, 1.03 load
+[runlim] sample:		2738.86 time, 2740.01 real, 369 MB, 1.02 load
+[runlim] sample:		2748.86 time, 2750.01 real, 369 MB, 1.02 load
+[runlim] sample:		2758.86 time, 2760.01 real, 369 MB, 1.09 load
+[runlim] sample:		2768.86 time, 2770.01 real, 370 MB, 1.08 load
+[runlim] sample:		2778.85 time, 2780.01 real, 370 MB, 1.06 load
+[runlim] sample:		2788.85 time, 2790.01 real, 370 MB, 1.05 load
+[runlim] sample:		2798.85 time, 2800.01 real, 370 MB, 1.04 load
+[runlim] sample:		2808.85 time, 2810.01 real, 370 MB, 1.04 load
+[runlim] sample:		2818.85 time, 2820.01 real, 369 MB, 1.03 load
+[runlim] sample:		2828.85 time, 2830.01 real, 369 MB, 1.03 load
+[runlim] sample:		2838.85 time, 2840.01 real, 369 MB, 1.02 load
+[runlim] sample:		2848.85 time, 2850.01 real, 384 MB, 1.02 load
+[runlim] sample:		2858.85 time, 2860.01 real, 384 MB, 1.01 load
+[runlim] sample:		2868.85 time, 2870.01 real, 384 MB, 1.01 load
+[runlim] sample:		2878.86 time, 2880.01 real, 384 MB, 1.09 load
+[runlim] sample:		2888.85 time, 2890.01 real, 384 MB, 1.08 load
+[runlim] sample:		2898.85 time, 2900.01 real, 384 MB, 1.06 load
+[runlim] sample:		2908.85 time, 2910.01 real, 384 MB, 1.05 load
+[runlim] sample:		2918.85 time, 2920.01 real, 383 MB, 1.04 load
+[runlim] sample:		2928.85 time, 2930.01 real, 383 MB, 1.04 load
+[runlim] sample:		2938.85 time, 2940.01 real, 383 MB, 1.03 load
+[runlim] sample:		2948.85 time, 2950.01 real, 389 MB, 1.03 load
+[runlim] sample:		2958.84 time, 2960.01 real, 389 MB, 1.02 load
+[runlim] sample:		2968.84 time, 2970.01 real, 389 MB, 1.02 load
+[runlim] sample:		2978.84 time, 2980.01 real, 386 MB, 1.01 load
+[runlim] sample:		2988.84 time, 2990.01 real, 386 MB, 1.01 load
+[runlim] sample:		2998.84 time, 3000.01 real, 386 MB, 1.01 load
+[runlim] sample:		3008.84 time, 3010.01 real, 391 MB, 1.01 load
+[runlim] sample:		3018.84 time, 3020.01 real, 391 MB, 1.01 load
+[runlim] sample:		3028.84 time, 3030.01 real, 391 MB, 1.00 load
+[runlim] sample:		3038.84 time, 3040.01 real, 391 MB, 1.00 load
+[runlim] sample:		3048.84 time, 3050.01 real, 391 MB, 1.00 load
+[runlim] sample:		3058.84 time, 3060.01 real, 391 MB, 1.00 load
+[runlim] sample:		3068.84 time, 3070.01 real, 391 MB, 1.00 load
+[runlim] sample:		3078.84 time, 3080.01 real, 391 MB, 1.00 load
+[runlim] sample:		3088.84 time, 3090.01 real, 391 MB, 1.00 load
+[runlim] sample:		3098.84 time, 3100.01 real, 386 MB, 1.00 load
+[runlim] sample:		3108.84 time, 3110.01 real, 386 MB, 1.00 load
+[runlim] sample:		3118.84 time, 3120.01 real, 386 MB, 1.00 load
+[runlim] sample:		3128.83 time, 3130.01 real, 391 MB, 1.72 load
+[runlim] sample:		3138.84 time, 3140.01 real, 392 MB, 1.61 load
+[runlim] sample:		3148.84 time, 3150.01 real, 392 MB, 1.52 load
+[runlim] sample:		3158.84 time, 3160.01 real, 392 MB, 1.44 load
+[runlim] sample:		3168.84 time, 3170.01 real, 387 MB, 1.37 load
+[runlim] sample:		3178.84 time, 3180.01 real, 387 MB, 1.31 load
+[runlim] sample:		3188.84 time, 3190.01 real, 387 MB, 1.26 load
+[runlim] sample:		3198.83 time, 3200.01 real, 385 MB, 1.22 load
+[runlim] sample:		3208.83 time, 3210.01 real, 385 MB, 1.19 load
+[runlim] sample:		3218.83 time, 3220.01 real, 385 MB, 1.16 load
+[runlim] sample:		3228.83 time, 3230.01 real, 385 MB, 1.13 load
+[runlim] sample:		3238.83 time, 3240.01 real, 395 MB, 1.11 load
+[runlim] sample:		3248.83 time, 3250.01 real, 395 MB, 1.10 load
+[runlim] sample:		3258.83 time, 3260.01 real, 395 MB, 1.15 load
+[runlim] sample:		3268.83 time, 3270.01 real, 395 MB, 1.13 load
+[runlim] sample:		3278.83 time, 3280.01 real, 400 MB, 1.11 load
+[runlim] sample:		3288.83 time, 3290.01 real, 400 MB, 1.09 load
+[runlim] sample:		3298.83 time, 3300.01 real, 400 MB, 1.08 load
+[runlim] sample:		3308.83 time, 3310.01 real, 400 MB, 1.07 load
+[runlim] sample:		3318.82 time, 3320.01 real, 401 MB, 1.06 load
+[runlim] sample:		3328.82 time, 3330.01 real, 401 MB, 1.05 load
+[runlim] sample:		3338.82 time, 3340.01 real, 401 MB, 1.04 load
+[runlim] sample:		3348.82 time, 3350.01 real, 401 MB, 1.03 load
+[runlim] sample:		3358.81 time, 3360.01 real, 405 MB, 1.03 load
+[runlim] sample:		3368.81 time, 3370.01 real, 405 MB, 1.02 load
+[runlim] sample:		3378.81 time, 3380.01 real, 405 MB, 1.10 load
+[runlim] sample:		3388.82 time, 3390.01 real, 386 MB, 1.08 load
+[runlim] sample:		3398.81 time, 3400.01 real, 386 MB, 1.07 load
+[runlim] sample:		3408.82 time, 3410.01 real, 386 MB, 1.06 load
+[runlim] sample:		3418.82 time, 3420.01 real, 390 MB, 1.05 load
+[runlim] sample:		3428.82 time, 3430.01 real, 391 MB, 1.04 load
+[runlim] sample:		3438.81 time, 3440.01 real, 391 MB, 1.03 load
+[runlim] sample:		3448.81 time, 3450.01 real, 391 MB, 1.03 load
+[runlim] sample:		3458.81 time, 3460.01 real, 385 MB, 1.02 load
+[runlim] sample:		3468.81 time, 3470.01 real, 385 MB, 1.02 load
+[runlim] sample:		3478.81 time, 3480.01 real, 385 MB, 1.02 load
+[runlim] sample:		3488.81 time, 3490.01 real, 385 MB, 1.01 load
+[runlim] sample:		3498.81 time, 3500.01 real, 385 MB, 1.01 load
+[runlim] sample:		3508.81 time, 3510.01 real, 374 MB, 1.08 load
+[runlim] sample:		3518.81 time, 3520.01 real, 374 MB, 1.07 load
+[runlim] sample:		3528.81 time, 3530.01 real, 374 MB, 1.06 load
+[runlim] sample:		3538.81 time, 3540.01 real, 374 MB, 1.05 load
+[runlim] sample:		3548.81 time, 3550.01 real, 374 MB, 1.04 load
+[runlim] sample:		3558.81 time, 3560.01 real, 374 MB, 1.03 load
+[runlim] sample:		3568.81 time, 3570.01 real, 374 MB, 1.03 load
+[runlim] sample:		3578.81 time, 3580.01 real, 374 MB, 1.02 load
+[runlim] sample:		3588.81 time, 3590.01 real, 374 MB, 1.02 load
+[runlim] sample:		3598.80 time, 3600.01 real, 374 MB, 1.02 load
+[runlim] end:			Fri Aug 14 11:53:01 2026
+[runlim] status:		out of time
+[runlim] result:		2
+[runlim] children:		1
+[runlim] processes:		2
+[runlim] real:			3601.04 seconds
+[runlim] time:			3598.80 seconds
+[runlim] space:			515 MB
+[runlim] load:			2.06 maximum
+[runlim] samples:		36000
