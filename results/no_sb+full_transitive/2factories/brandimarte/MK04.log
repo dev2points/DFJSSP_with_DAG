@@ -1,0 +1,109 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			fjssp-instance1
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	3600 seconds
+[runlim] space limit:		14000 MB
+[runlim] argv[0]:		python3
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		main.py
+[runlim] argv[3]:		--input
+[runlim] argv[4]:		datasets/brandimarte/MK04
+[runlim] argv[5]:		--factories
+[runlim] argv[6]:		2
+[runlim] argv[7]:		--full_transitive
+[runlim] start:			Sat Aug 15 07:26:27 2026
+[runlim] child:			109595
+[*] Loading data from file: datasets/brandimarte/MK04
+[*] Running D-FJSSP SAT Solver with 2 factories, Symmetry Breaking = OFF, Transitive E* = FULL
+===========================================================================
+ D-FJSSP SAT SOLVER - PARALLEL FACTORIES SCHEDULING
+===========================================================================
+  -> Operations: 90 | Jobs: 15 | Machines: 8 | Factories: 2
+
+[*] Running Greedy Heuristic...
+  -> Greedy Solution: Makespan = 50 (0.0002s)
+
+[*] Initializing and solving the SAT model...
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 50...
+  SAT ! Makespan = 50
+  Schedule is valid with Makespan = 50
+  Total time: 0.0938 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 49...
+  SAT ! Makespan = 49
+  Schedule is valid with Makespan = 49
+  Total time: 0.0970 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 48...
+  SAT ! Makespan = 48
+  Schedule is valid with Makespan = 48
+  Total time: 0.0999 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 47...
+  SAT ! Makespan = 47
+  Schedule is valid with Makespan = 47
+  Total time: 0.1016 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 46...
+  SAT ! Makespan = 46
+  Schedule is valid with Makespan = 46
+  Total time: 0.1033 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 45...
+  SAT ! Makespan = 45
+  Schedule is valid with Makespan = 45
+  Total time: 0.1073 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 44...
+  SAT ! Makespan = 44
+  Schedule is valid with Makespan = 44
+  Total time: 0.1118 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 43...
+  SAT ! Makespan = 43
+  Schedule is valid with Makespan = 43
+  Total time: 0.1307 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 42...
+  SAT ! Makespan = 42
+  Schedule is valid with Makespan = 42
+  Total time: 0.1583 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 41...
+  SAT ! Makespan = 41
+  Schedule is valid with Makespan = 41
+  Total time: 0.1645 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 40...
+  SAT ! Makespan = 40
+  Schedule is valid with Makespan = 40
+  Total time: 0.1662 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 39...
+  SAT ! Makespan = 39
+  Schedule is valid with Makespan = 39
+  Total time: 0.2961 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 38...
+   UNSAT
+
+ Optimal Makespan = 39
+
+ Summary:
+  - Optimal Makespan   : 39
+  - Greedy Time        : 0.0002s
+  - SAT Time           : 0.4351s
+  - Total Time         : 0.4358s
+  - Schedule Status    : VALID
+===========================================================================
+[runlim] end:			Sat Aug 15 07:26:27 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] processes:		2
+[runlim] real:			0.47 seconds
+[runlim] time:			0.40 seconds
+[runlim] space:			39 MB
+[runlim] load:			0.25 maximum
+[runlim] samples:		5
