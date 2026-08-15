@@ -1,5 +1,5 @@
 [runlim] version:		2.0.0rc12
-[runlim] host:			fjssp-instance
+[runlim] host:			fjssp-instance1
 [runlim] time limit:		311040000 seconds
 [runlim] real time limit:	3600 seconds
 [runlim] space limit:		14000 MB
@@ -11,8 +11,8 @@
 [runlim] argv[5]:		--factories
 [runlim] argv[6]:		2
 [runlim] argv[7]:		--half_transitive
-[runlim] start:			Fri Aug 14 05:29:52 2026
-[runlim] child:			243340
+[runlim] start:			Fri Aug 14 16:08:44 2026
+[runlim] child:			43595
 [*] Loading data from file: datasets/fmj/mfjs01
 [*] Running D-FJSSP SAT Solver with 2 factories, Symmetry Breaking = OFF, Transitive E* = HALF
 ===========================================================================
@@ -28,17 +28,17 @@
 [*] Trying with Upper Bound = 416...
   SAT ! Makespan = 416
   Schedule is valid with Makespan = 416
-  Total time: 0.0152 seconds
+  Total time: 0.0151 seconds
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 415...
   SAT ! Makespan = 415
   Schedule is valid with Makespan = 415
-  Total time: 0.0156 seconds
+  Total time: 0.0155 seconds
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 414...
   SAT ! Makespan = 414
   Schedule is valid with Makespan = 414
-  Total time: 0.0163 seconds
+  Total time: 0.0162 seconds
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 413...
   SAT ! Makespan = 413
@@ -48,7 +48,7 @@
 [*] Trying with Upper Bound = 412...
   SAT ! Makespan = 412
   Schedule is valid with Makespan = 412
-  Total time: 0.0169 seconds
+  Total time: 0.0168 seconds
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 411...
   SAT ! Makespan = 411
@@ -58,7 +58,7 @@
 [*] Trying with Upper Bound = 410...
   SAT ! Makespan = 410
   Schedule is valid with Makespan = 410
-  Total time: 0.0176 seconds
+  Total time: 0.0175 seconds
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 409...
   SAT ! Makespan = 409
@@ -73,12 +73,12 @@
 [*] Trying with Upper Bound = 407...
   SAT ! Makespan = 407
   Schedule is valid with Makespan = 407
-  Total time: 0.0185 seconds
+  Total time: 0.0186 seconds
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 406...
   SAT ! Makespan = 406
   Schedule is valid with Makespan = 406
-  Total time: 0.0188 seconds
+  Total time: 0.0189 seconds
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 405...
   SAT ! Makespan = 405
@@ -88,12 +88,12 @@
 [*] Trying with Upper Bound = 404...
   SAT ! Makespan = 404
   Schedule is valid with Makespan = 404
-  Total time: 0.0195 seconds
+  Total time: 0.0196 seconds
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 403...
   SAT ! Makespan = 403
   Schedule is valid with Makespan = 403
-  Total time: 0.0198 seconds
+  Total time: 0.0200 seconds
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 402...
    UNSAT
@@ -103,11 +103,11 @@
  Summary:
   - Optimal Makespan   : 403
   - Greedy Time        : 0.0001s
-  - SAT Time           : 0.0200s
-  - Total Time         : 0.0202s
+  - SAT Time           : 0.0201s
+  - Total Time         : 0.0204s
   - Schedule Status    : VALID
 ===========================================================================
-[runlim] end:			Fri Aug 14 05:29:53 2026
+[runlim] end:			Fri Aug 14 16:08:44 2026
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		0
@@ -115,5 +115,5 @@
 [runlim] real:			0.06 seconds
 [runlim] time:			0.00 seconds
 [runlim] space:			0 MB
-[runlim] load:			0.53 maximum
+[runlim] load:			0.04 maximum
 [runlim] samples:		1
