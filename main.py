@@ -570,7 +570,7 @@ def build_constraints(solver, num_ops, num_jobs, num_factories, precedence_list,
             for q in range(min(j1, j2, num_factories - 1) + 1):
                 cnf.append([-f[(j1, q)], -f[(j2, q)], sf[(j1, j2)]])
                 cnf.append([-sf[(j1, j2)], -f[(j1, q)], f[(j2, q)]])
-                cnf.append([-sf[(j1, j2)], -f[(j2, q)], f[(j1, q)]])
+                # cnf.append([-sf[(j1, j2)], -f[(j2, q)], f[(j1, q)]])
 
     # Overlap constraints
     for i in range(num_ops):

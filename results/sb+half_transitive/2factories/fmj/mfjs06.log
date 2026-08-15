@@ -1,5 +1,5 @@
 [runlim] version:		2.0.0rc12
-[runlim] host:			fjssp-instance1
+[runlim] host:			fjssp-instance
 [runlim] time limit:		311040000 seconds
 [runlim] real time limit:	3600 seconds
 [runlim] space limit:		14000 MB
@@ -12,8 +12,8 @@
 [runlim] argv[6]:		--factories
 [runlim] argv[7]:		2
 [runlim] argv[8]:		--half_transitive
-[runlim] start:			Fri Aug 14 05:31:51 2026
-[runlim] child:			2761
+[runlim] start:			Fri Aug 14 16:07:41 2026
+[runlim] child:			278359
 [*] Loading data from file: datasets/fmj/mfjs06
 [*] Running D-FJSSP SAT Solver with 2 factories, Symmetry Breaking = ON, Transitive E* = HALF
 ===========================================================================
@@ -29,7 +29,7 @@
 [*] Trying with Upper Bound = 614...
   SAT ! Makespan = 614
   Schedule is valid with Makespan = 614
-  Total time: 0.0988 seconds
+  Total time: 0.0994 seconds
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 613...
    UNSAT
@@ -39,17 +39,17 @@
  Summary:
   - Optimal Makespan   : 614
   - Greedy Time        : 0.0001s
-  - SAT Time           : 0.1012s
-  - Total Time         : 0.1021s
+  - SAT Time           : 0.1021s
+  - Total Time         : 0.1024s
   - Schedule Status    : VALID
 ===========================================================================
-[runlim] end:			Fri Aug 14 05:31:51 2026
+[runlim] end:			Fri Aug 14 16:07:42 2026
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		1
 [runlim] processes:		2
 [runlim] real:			0.14 seconds
 [runlim] time:			0.10 seconds
-[runlim] space:			47 MB
-[runlim] load:			0.44 maximum
+[runlim] space:			48 MB
+[runlim] load:			0.17 maximum
 [runlim] samples:		2
