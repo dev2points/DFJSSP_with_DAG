@@ -1,37 +1,34 @@
-TO=600
+TO=3600
 MO=14000
-
 NUM_FACTORIES=2
 
+# YDATA_DIR=datasets/yfjs
+# DADATA_DIR=Datasets/dafjs
+FMJDATA_DIR=datasets/fmj
 MKDATA_DIR=datasets/brandimarte
-LADATA_DIR=datasets/rdata
-MKRESULT_DIR=results/test
+RDATA_DIR=datasets/rdata
 
-mkdir -p $MKRESULT_DIR
+# YRESULT_DIR=results/yfjs
+# DARESULT_DIR=results/dafjs
 
-# ./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK10 --factories $NUM_FACTORIES  2>&1 | tee $MKRESULT_DIR/MK10._defaultlog
-# ./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK10 --factories $NUM_FACTORIES  --sb 2>&1 | tee $MKRESULT_DIR/MK10_sb.log
-# ./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK05 --factories $NUM_FACTORIES  --full_transitive 2>&1 | tee $MKRESULT_DIR/MK5_full_transitive.log
-# ./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK05 --factories $NUM_FACTORIES  --sb --full_transitive 2>&1 | tee $MKRESULT_DIR/MK5_sb_full_transitive.log
-# ./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK07 --factories $NUM_FACTORIES  --full_transitive 2>&1 | tee $MKRESULT_DIR/MK7_full_transitive.log
-# ./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK07 --factories $NUM_FACTORIES  --sb --full_transitive 2>&1 | tee $MKRESULT_DIR/MK7_sb_full_transitive.log
-# ./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK08 --factories $NUM_FACTORIES  --full_transitive 2>&1 | tee $MKRESULT_DIR/MK8_full_transitive.log
-# ./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK08 --factories $NUM_FACTORIES  --sb --full_transitive 2>&1 | tee $MKRESULT_DIR/MK8_sb_full_transitive.log
+FMJRESULT_DIR=results/test/2factories/fmj
+MKRESULT_DIR=results/test/2factories/brandimarte
+RRESULT_DIR=results/test/2factories/rdata
 
-# ./runlim -r $TO -s $MO  python3 -u main.py --input $LADATA_DIR/la11.txt --factories $NUM_FACTORIES  --full_transitive 2>&1 | tee $MKRESULT_DIR/la11_full_transitive.log
-# ./runlim -r $TO -s $MO  python3 -u main.py --input $LADATA_DIR/la11.txt --factories $NUM_FACTORIES  --sb --full_transitive 2>&1 | tee $MKRESULT_DIR/la11_sb_full_transitive.log
-# ./runlim -r $TO -s $MO  python3 -u main.py --input $LADATA_DIR/la12.txt --factories $NUM_FACTORIES  --full_transitive 2>&1 | tee $MKRESULT_DIR/la12_full_transitive.log
-# ./runlim -r $TO -s $MO  python3 -u main.py --input $LADATA_DIR/la12.txt --factories $NUM_FACTORIES  --sb --full_transitive 2>&1 | tee $MKRESULT_DIR/la12_sb_full_transitive.log
-# ./runlim -r $TO -s $MO  python3 -u main.py --input $LADATA_DIR/la13.txt --factories $NUM_FACTORIES  --full_transitive 2>&1 | tee $MKRESULT_DIR/la13_full_transitive.log
-# ./runlim -r $TO -s $MO  python3 -u main.py --input $LADATA_DIR/la13.txt --factories $NUM_FACTORIES  --sb --full_transitive 2>&1 | tee $MKRESULT_DIR/la13_sb_full_transitive.log
-# ./runlim -r $TO -s $MO  python3 -u main.py --input $LADATA_DIR/la14.txt --factories $NUM_FACTORIES  --full_transitive 2>&1 | tee $MKRESULT_DIR/la14_full_transitive.log
-# ./runlim -r $TO -s $MO  python3 -u main.py --input $LADATA_DIR/la14.txt --factories $NUM_FACTORIES  --sb --full_transitive 2>&1 | tee $MKRESULT_DIR/la14_sb_full_transitive.log
-# ./runlim -r $TO -s $MO  python3 -u main.py --input $LADATA_DIR/la15.txt --factories $NUM_FACTORIES  --full_transitive 2>&1 | tee $MKRESULT_DIR/la15_full_transitive.log
-./runlim -r $TO -s $MO  python3 -u main.py --input $LADATA_DIR/la15.txt --factories $NUM_FACTORIES  --sb --full_transitive 2>&1 | tee $MKRESULT_DIR/la15_sb_full_transitive.log
-./runlim -r $TO -s $MO  python3 -u main.py --input $LADATA_DIR/mt20.txt --factories $NUM_FACTORIES  --full_transitive 2>&1 | tee $MKRESULT_DIR/mt20_full_transitive.log
-./runlim -r $TO -s $MO  python3 -u main.py --input $LADATA_DIR/mt20.txt --factories $NUM_FACTORIES  --sb --full_transitive 2>&1 | tee $MKRESULT_DIR/mt20_sb_full_transitive.log
-# ./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK10 --factories $NUM_FACTORIES  --full_transitive 2>&1 | tee $MKRESULT_DIR/MK10_full_transitive.log
-# ./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK10 --factories $NUM_FACTORIES  --sb --full_transitive 2>&1 | tee $MKRESULT_DIR/MK10_sb_full_transitive.log
+# mkdir -p $YRESULT_DIR
+# mkdir -p $DARESULT_DIR
+# mkdir -p $FMJRESULT_DIR
+# mkdir -p $MKRESULT_DIR
+mkdir -p $RRESULT_DIR
+
+./runlim -r $TO -s $MO  python3 -u test.py --input $RDATA_DIR/la11.txt --sb --full_transitive --factories $NUM_FACTORIES  --solver cadical300 2>&1 | tee $RRESULT_DIR/la11_cadical300.log
+./runlim -r $TO -s $MO  python3 -u test.py --input $RDATA_DIR/la11.txt --sb --full_transitive --factories $NUM_FACTORIES  --solver glucose4 2>&1 | tee $RRESULT_DIR/la11_glucose4.log
+./runlim -r $TO -s $MO  python3 -u test.py --input $RDATA_DIR/la11.txt --sb --full_transitive --factories $NUM_FACTORIES  --solver maplechrono 2>&1 | tee $RRESULT_DIR/la11_maplechrono.log
+./runlim -r $TO -s $MO  python3 -u test.py --input $RDATA_DIR/la11.txt --sb --full_transitive --factories $NUM_FACTORIES  --solver minisat22 2>&1 | tee $RRESULT_DIR/la11_minisat22.log
+
+
+
+
 
 
 

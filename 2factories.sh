@@ -13,6 +13,7 @@ RDATA_DIR=datasets/rdata
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 FMJRESULT_DIR=results/sb+full_transitive/2factories/fmj
 MKRESULT_DIR=results/sb+full_transitive/2factories/brandimarte
 RRESULT_DIR=results/sb+full_transitive/2factories/rdata
@@ -22,6 +23,9 @@ MKRESULT_DIR=results/no_sb+full_transitive/2factories/brandimarte
 RRESULT_DIR=results/no_sb+full_transitive/2factories/rdata
 >>>>>>> 9949524 (run no_sb+full_transitive)
 =======
+=======
+
+>>>>>>> 4181f95 (test multi solver)
 FMJRESULT_DIR=results/sb/2factories/fmj
 MKRESULT_DIR=results/sb/2factories/brandimarte
 RRESULT_DIR=results/sb/2factories/rdata
@@ -32,12 +36,13 @@ MKRESULT_DIR=results/no_sb/2factories/brandimarte
 RRESULT_DIR=results/no_sb/2factories/rdata
 >>>>>>> e311845 (run no sb)
 
-mkdir -p $YRESULT_DIR
-mkdir -p $DARESULT_DIR
-mkdir -p $FMJRESULT_DIR
-mkdir -p $MKRESULT_DIR
+# mkdir -p $YRESULT_DIR
+# mkdir -p $DARESULT_DIR
+# mkdir -p $FMJRESULT_DIR
+# mkdir -p $MKRESULT_DIR
 mkdir -p $RRESULT_DIR
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -52,6 +57,8 @@ mkdir -p $RRESULT_DIR
 ./runlim -r $TO -s $MO  python3 -u main.py --input $FMJDATA_DIR/mfjs09 --sb --factories $NUM_FACTORIES  --full_transitive 2>&1 | tee $FMJRESULT_DIR/mfjs09.log
 ./runlim -r $TO -s $MO  python3 -u main.py --input $FMJDATA_DIR/mfjs10 --sb --factories $NUM_FACTORIES  --full_transitive 2>&1 | tee $FMJRESULT_DIR/mfjs10.log
 =======
+=======
+>>>>>>> 4181f95 (test multi solver)
 ./runlim -r $TO -s $MO  python3 -u main.py --input $FMJDATA_DIR/mfjs01 --sb --factories $NUM_FACTORIES   2>&1 | tee $FMJRESULT_DIR/mfjs01.log
 ./runlim -r $TO -s $MO  python3 -u main.py --input $FMJDATA_DIR/mfjs02 --sb --factories $NUM_FACTORIES   2>&1 | tee $FMJRESULT_DIR/mfjs02.log
 ./runlim -r $TO -s $MO  python3 -u main.py --input $FMJDATA_DIR/mfjs03 --sb --factories $NUM_FACTORIES   2>&1 | tee $FMJRESULT_DIR/mfjs03.log
@@ -62,7 +69,6 @@ mkdir -p $RRESULT_DIR
 ./runlim -r $TO -s $MO  python3 -u main.py --input $FMJDATA_DIR/mfjs08 --sb --factories $NUM_FACTORIES   2>&1 | tee $FMJRESULT_DIR/mfjs08.log
 ./runlim -r $TO -s $MO  python3 -u main.py --input $FMJDATA_DIR/mfjs09 --sb --factories $NUM_FACTORIES   2>&1 | tee $FMJRESULT_DIR/mfjs09.log
 ./runlim -r $TO -s $MO  python3 -u main.py --input $FMJDATA_DIR/mfjs10 --sb --factories $NUM_FACTORIES   2>&1 | tee $FMJRESULT_DIR/mfjs10.log
->>>>>>> 5db83f1 (run sb)
 
 ./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK01 --sb --factories $NUM_FACTORIES   2>&1 | tee $MKRESULT_DIR/MK01.log
 ./runlim -r $TO -s $MO  python3 -u main.py --input $MKDATA_DIR/MK02 --sb --factories $NUM_FACTORIES   2>&1 | tee $MKRESULT_DIR/MK02.log

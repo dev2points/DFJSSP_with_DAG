@@ -8,53 +8,211 @@ from pysat.solvers import Solver
 
 
 def read_edge_format(file_path):
+    with open(file_path, "r", encoding="utf-8") as f:
+        lines = [
+            line.strip()
+            for line in f
+            if line.strip() and not line.lstrip().startswith("#")
+        ]
 
-    with open(file_path, 'r', encoding='utf-8') as f:
-        lines = [line.strip() for line in f if line.strip() and not line.startswith('#')]
+    if not lines:
+        raise ValueError(f"Empty dataset: {file_path}")
 
-    # Header: [num_operations, num_edges, num_machines]
     header = list(map(int, lines[0].split()))
-    num_operations, num_edges, num_machines = header[0], header[1], header[2]
+
+    if len(header) < 3:
+        raise ValueError(
+            f"Invalid header in {file_path}: {lines[0]}"
+        )
+
+    num_operations = header[0]
+    num_edges = header[1]
+    num_machines = header[2]
 
     idx = 1
-    # 1. Đọc danh sách precedence
     precedence_list = []
-    for _ in range(num_edges):
-        u, v = map(int, lines[idx].split())
+
+    for edge_id in range(num_edges):
+        if idx >= len(lines):
+            raise ValueError(
+                f"Unexpected EOF while reading precedence edges in {file_path}"
+            )
+
+        data = list(map(int, lines[idx].split()))
+
+        if len(data) != 2:
+            raise ValueError(
+                f"Invalid precedence edge at line {idx + 1}: {lines[idx]}"
+            )
+
+        u, v = data
+
+        if not (0 <= u < num_operations):
+            raise ValueError(f"Invalid operation {u} in edge ({u}, {v})")
+
+        if not (0 <= v < num_operations):
+            raise ValueError(f"Invalid operation {v} in edge ({u}, {v})")
+
         precedence_list.append((u, v))
         idx += 1
 
-    # 2. Đọc danh sách máy & thời gian gia công cho từng Op
     request_list = []
-    for _ in range(num_operations):
+
+    for op in range(num_operations):
+        if idx >= len(lines):
+            raise ValueError(f"Unexpected EOF while reading operation {op}")
+
         data = list(map(int, lines[idx].split()))
         idx += 1
+
+        if not data:
+            raise ValueError(f"Empty operation description for operation {op}")
+
         num_resources = data[0]
+        expected_length = 1 + 2 * num_resources
+
+        if len(data) != expected_length:
+            raise ValueError(
+                f"Invalid operation {op}: expected {expected_length} integers, got {len(data)}\n"
+                f"Line: {lines[idx - 1]}"
+            )
+
         map_machine = {}
+
         for i in range(num_resources):
             machine = data[1 + 2 * i]
             process_time = data[2 + 2 * i]
+
+            if not (0 <= machine < num_machines):
+                raise ValueError(
+                    f"Invalid machine {machine} for operation {op}. Valid range: 0..{num_machines - 1}"
+                )
+
+            if process_time <= 0:
+                raise ValueError(
+                    f"Invalid processing time {process_time} for operation {op}"
+                )
+
             map_machine[machine] = process_time
-        
-        # Sắp xếp máy theo thời gian gia công tăng dần
+
         sorted_map = dict(sorted(map_machine.items(), key=lambda x: x[1]))
         request_list.append(sorted_map)
 
-    # Trong DAG thuần, mỗi Op mặc định xem như 1 Job độc lập
-    job_of = {i: i for i in range(num_operations)}
-    num_jobs = len(job_of)
+    if idx != len(lines):
+        print(f"[Warning] {len(lines) - idx} extra lines at the end of {file_path}")
 
-    return num_operations, num_machines, precedence_list, request_list, num_jobs, job_of
+    parent = list(range(num_operations))
+
+    def find(x):
+        while parent[x] != x:
+            parent[x] = parent[parent[x]]
+            x = parent[x]
+        return x
+
+    def union(a, b):
+        root_a = find(a)
+        root_b = find(b)
+        if root_a != root_b:
+            parent[root_b] = root_a
+
+    for u, v in precedence_list:
+        union(u, v)
+
+    root_to_job = {}
+    job_of = {}
+    next_job = 0
+
+    for op in range(num_operations):
+        root = find(op)
+        if root not in root_to_job:
+            root_to_job[root] = next_job
+            next_job += 1
+        job_of[op] = root_to_job[root]
+
+    num_jobs = next_job
+
+    if len(request_list) != num_operations:
+        raise AssertionError(
+            f"request_list has {len(request_list)} operations, expected {num_operations}"
+        )
+
+    if len(precedence_list) != num_edges:
+        raise AssertionError(
+            f"precedence_list has {len(precedence_list)} edges, expected {num_edges}"
+        )
+
+    return (
+        num_operations,
+        num_machines,
+        precedence_list,
+        request_list,
+        num_jobs,
+        job_of,
+        None,
+    )
 
 
-def read_job_format(file_path):
+def validate_linear_graph(num_operations, precedence_list, job_of, num_jobs):
+    out_degree = defaultdict(int)
+    in_degree = defaultdict(int)
 
+    for u, v in precedence_list:
+        out_degree[u] += 1
+        in_degree[v] += 1
+
+        if job_of[u] != job_of[v]:
+            raise ValueError(
+                f"Non-linear precedence graph: edge ({u}, {v}) crosses jobs "
+                f"{job_of[u]} -> {job_of[v]}. Only supports a linear precedence chain within each job."
+            )
+
+    for op in range(num_operations):
+        if out_degree[op] > 1:
+            raise ValueError(
+                f"Non-linear precedence graph: operation {op} has {out_degree[op]} successors."
+            )
+        if in_degree[op] > 1:
+            raise ValueError(
+                f"Non-linear precedence graph: operation {op} has {in_degree[op]} predecessors."
+            )
+
+    job_op_count = defaultdict(int)
+    for op in range(num_operations):
+        job_op_count[job_of[op]] += 1
+
+    job_edge_count = defaultdict(int)
+    for u, v in precedence_list:
+        job_edge_count[job_of[u]] += 1
+
+    for j_id in range(num_jobs):
+        n_ops = job_op_count[j_id]
+        n_edges = job_edge_count[j_id]
+        expected_edges = max(n_ops - 1, 0)
+        if n_edges != expected_edges:
+            raise ValueError(
+                f"Non-linear precedence graph: job {j_id} has {n_ops} operations "
+                f"but {n_edges} precedence edges (expected {expected_edges} for a linear chain)."
+            )
+
+
+def read_job_format(file_path, is_flexibility=False):
     with open(file_path, 'r', encoding='utf-8') as f:
         lines = [line.strip() for line in f if line.strip() and not line.startswith('#')]
 
-    # Header: [num_jobs, num_machines]
+    if not lines:
+        raise ValueError(f"Empty dataset: {file_path}")
+
     header = list(map(int, lines[0].split()))
-    num_jobs, num_machines = header[0], header[1]
+
+    if is_flexibility:
+        if len(header) < 3:
+            raise ValueError(
+                f"Invalid header in {file_path}: expected [num_jobs, num_machines, num_factories], got: {lines[0]}"
+            )
+        num_jobs, num_machines, num_factories = header[0], header[1], header[2]
+    else:
+        num_jobs, num_machines = header[0], header[1]
+        num_factories = None
 
     request_list = []
     precedence_list = []
@@ -76,31 +234,40 @@ def read_job_format(file_path):
                 ptr += 2
                 map_machine[machine] = process_time
 
-            # Sắp xếp máy theo thời gian gia công tăng dần
             sorted_map = dict(sorted(map_machine.items(), key=lambda x: x[1]))
             request_list.append(sorted_map)
 
             job_of[op_id] = j_id
 
-            # Ràng buộc thứ tự tuyến tính giữa các Op trong cùng 1 Job
             if k > 0:
                 precedence_list.append((op_id - 1, op_id))
 
             op_id += 1
 
     num_operations = op_id
+    return num_operations, num_machines, precedence_list, request_list, num_jobs, job_of, num_factories
 
-    return num_operations, num_machines, precedence_list, request_list, num_jobs, job_of
+
+def read_flexibility_format(file_path):
+    return read_job_format(file_path, is_flexibility=True)
 
 
 def load_data(file_path):
- 
     if not os.path.exists(file_path):
         raise FileNotFoundError(f"Can not find file: {file_path}")
 
-    if 'brandimarte' in file_path.lower() or 'fmj' in file_path.lower() or 'yfjs' in file_path.lower() or 'dafjs' in file_path.lower():
-        return read_edge_format(file_path)
-    return read_job_format(file_path)
+    file_path_lower = file_path.lower()
+    if 'flexibilitydata' in file_path_lower:
+        return read_flexibility_format(file_path)
+    elif 'brandimarte' in file_path_lower or 'fmj' in file_path_lower or 'yfjs' in file_path_lower or 'dafjs' in file_path_lower:
+        n_ops, n_mac, prec, req, n_jobs, j_of, _ = read_edge_format(file_path)
+        validate_linear_graph(n_ops, prec, j_of, n_jobs)
+        return n_ops, n_mac, prec, req, n_jobs, j_of, None
+    else:
+        n_ops, n_mac, prec, req, n_jobs, j_of, _ = read_job_format(file_path)
+        validate_linear_graph(n_ops, prec, j_of, n_jobs)
+        return n_ops, n_mac, prec, req, n_jobs, j_of, None
+
 
 def extract_data(num_operations, precedence_list):
     in_degree = {i: 0 for i in range(num_operations)}
@@ -112,7 +279,6 @@ def extract_data(num_operations, precedence_list):
     first_ops = [i for i in range(num_operations) if in_degree[i] == 0]
     last_ops = [i for i in range(num_operations) if out_degree[i] == 0]
     return first_ops, last_ops
-
 
 
 def compute_E_star(num_ops, precedence_list, request_list):
@@ -346,10 +512,9 @@ def build_constraints(solver, num_ops, num_jobs, num_factories, precedence_list,
         cnf.append([x[(i, ES[i])]])
         for t in range(ES[i], LS[i]):
             cnf.append([-x[(i, t + 1)], x[(i, t)]])
-
             cnf.append([-s[(i, t)], x[(i, t)]])
             cnf.append([-s[(i, t)], -x[(i, t + 1)]])
-            cnf.append([-x[(i,t)], x[(i, t + 1)], s[(i, t)]])
+            cnf.append([-x[(i, t)], x[(i, t + 1)], s[(i, t)]])
 
         cnf.append([-s[(i, LS[i])], x[(i, LS[i])]])
         cnf.append([s[(i, LS[i])], -x[(i, LS[i])]])
@@ -362,7 +527,6 @@ def build_constraints(solver, num_ops, num_jobs, num_factories, precedence_list,
             next_machine = request_machines[idx + 1]
 
             cnf.append([-xm[(i, next_machine)], xm[(i, machine)]])
-
             cnf.append([-m[(i, machine)], xm[(i, machine)]])
             cnf.append([-m[(i, machine)], -xm[(i, next_machine)]])
             cnf.append([-xm[(i, machine)], m[(i, machine)], xm[(i, next_machine)]])
@@ -370,14 +534,13 @@ def build_constraints(solver, num_ops, num_jobs, num_factories, precedence_list,
         cnf.append([-m[(i, request_machines[-1])], xm[(i, request_machines[-1])]])
         cnf.append([m[(i, request_machines[-1])], -xm[(i, request_machines[-1])]])
 
-    # Ràng buộc precedence (i -> j) 
+    # Ràng buộc precedence (i -> j)
     for i, j in precedence_list:
         request_machines_i = list(request_list[i].keys())
         m_0 = request_machines_i[0]
         min_p = request_list[i][m_0]
 
         for t in range(ES[i], LS[i] + 1):
-            # 1. Trường hợp cơ sở: Máy có thời gian gia công nhỏ nhất (máy đầu tiên)
             finish_time = t + min_p
             if finish_time > LS[j]:
                 cnf.append([-s[(i, t)]])
@@ -385,7 +548,6 @@ def build_constraints(solver, num_ops, num_jobs, num_factories, precedence_list,
             elif finish_time > ES[j]:
                 cnf.append([-s[(i, t)], x[(j, finish_time)]])
 
-            # 2. Xử lý tăng cống cho các máy tiếp theo theo chuỗi xm
             pre_proc_time = min_p
             for idx in range(1, len(request_machines_i)):
                 machine = request_machines_i[idx]
@@ -396,7 +558,7 @@ def build_constraints(solver, num_ops, num_jobs, num_factories, precedence_list,
 
                     if finish_time > LS[j]:
                         cnf.append([-s[(i, t)], -xm[(i, machine)]])
-                        break  # Các máy sau có proc_time còn lớn hơn nên dừng sớm
+                        break
                     elif finish_time > ES[j]:
                         cnf.append([-s[(i, t)], -xm[(i, machine)], x[(j, finish_time)]])
 
@@ -408,7 +570,7 @@ def build_constraints(solver, num_ops, num_jobs, num_factories, precedence_list,
             for q in range(min(j1, j2, num_factories - 1) + 1):
                 cnf.append([-f[(j1, q)], -f[(j2, q)], sf[(j1, j2)]])
                 cnf.append([-sf[(j1, j2)], -f[(j1, q)], f[(j2, q)]])
-
+                # cnf.append([-sf[(j1, j2)], -f[(j2, q)], f[(j1, q)]])
 
     # Overlap constraints
     for i in range(num_ops):
@@ -422,15 +584,11 @@ def build_constraints(solver, num_ops, num_jobs, num_factories, precedence_list,
                         cnf.append([-m[(i, k)], -m[(j, k)], sm[(i, j, k)]])
                         cnf.append([-sm[(i, j, k)], m[(i, k)]])
                         cnf.append([-sm[(i, j, k)], m[(j, k)]])
-                        if job_of[i] != job_of[j]:
-                            j1, j2 = min(job_of[i], job_of[j]), max(job_of[i], job_of[j])
-                            cnf.append([-sm[(i, j, k)], -sf[(j1, j2)], sfm[(i, j, k)]])
-                            cnf.append([-sfm[(i, j, k)], sm[(i, j, k)]])
-                            cnf.append([-sfm[(i, j, k)], sf[(j1, j2)]])
-                            same_lit = sfm[(i, j, k)]
-                        else:
-                            same_lit = sm[(i, j, k)]
-
+                        j1, j2 = min(job_of[i], job_of[j]), max(job_of[i], job_of[j])
+                        cnf.append([-sm[(i, j, k)], -sf[(j1, j2)], sfm[(i, j, k)]])
+                        cnf.append([-sfm[(i, j, k)], sm[(i, j, k)]])
+                        cnf.append([-sfm[(i, j, k)], sf[(j1, j2)]])
+                        same_lit = sfm[(i, j, k)]
                         for t in range(ES[i], LS[i] + 1):
                             clause = [-same_lit, -s[(i, t)]]
 
@@ -445,18 +603,18 @@ def build_constraints(solver, num_ops, num_jobs, num_factories, precedence_list,
                             if before_i >= ES[j]:
                                 clause.append(-x[(j, before_i + 1)])
                             cnf.append(clause)
-                            
-    # E*
-    for (u, v), w in E_star.items():
-        if (u, v) not in precedence_list:
-            if not getattr(args, 'full_transitive', False) and u not in first_ops:
-                continue  
-            for t in range(ES[u], LS[u] + 1):
-                finish_time = t + w
-                if finish_time > LS[v]:
-                    cnf.append([-s[(u, t)]])
-                elif finish_time > ES[v]:
-                    cnf.append([-s[(u, t)], x[(v, finish_time)]])
+
+    # Ràng buộc bắc cầu E* (Xử lý tùy chọn --full_transitive và --half_transitive)
+    if getattr(args, 'full_transitive', False) or getattr(args, 'half_transitive', False):
+        for (u, v), w in E_star.items():
+            if (u, v) not in precedence_list:
+                if getattr(args, 'full_transitive', False) or u in first_ops:
+                    for t in range(ES[u], LS[u] + 1):
+                        finish_time = t + w
+                        if finish_time > LS[v]:
+                            cnf.append([-s[(u, t)]])
+                        elif finish_time > ES[v]:
+                            cnf.append([-s[(u, t)], x[(v, finish_time)]])
 
     # Symmetry Breaking (nếu được bật)
     if args.sb:
@@ -486,21 +644,19 @@ def add_upper_bound_constraints(solver, last_ops, request_list, ES, LS, x, m, UB
                     solver.add_clause([-m[(i, k)], -x[(i, latest_start + 1)]])
 
 
-
-def solve_and_print(num_ops, num_jobs, num_factories, precedence_list, request_list, job_of, E_star, initial_UB, args):
+def solve_and_print(num_ops, num_jobs, num_factories, precedence_list, request_list, job_of, E_star, initial_UB, args, real_start_time):
     first_ops, last_ops = extract_data(num_ops, precedence_list)
     p_min = [min(req.values()) for req in request_list]
     current_UB = initial_UB
     best_schedule = None
     best_makespan = None
 
-
     ES, LS = compute_bounds(num_ops, precedence_list, p_min, current_UB)
     s, x, f, m, xm, sf, sm, sfm, _ = create_var(
         num_ops, num_jobs, num_factories, request_list, job_of, E_star, ES, LS
     )
 
-    solver = Solver(name='cadical195')
+    solver = Solver(name=args.solver if hasattr(args, 'solver') and args.solver else 'cadical195')
     build_constraints(
         solver, num_ops, num_jobs, num_factories, precedence_list, request_list,
         job_of, E_star, ES, LS, first_ops, s, x, f, m, xm, sf, sm, sfm, args
@@ -552,7 +708,7 @@ def solve_and_print(num_ops, num_jobs, num_factories, precedence_list, request_l
         print(f"  SAT ! Makespan = {best_makespan}")
         if verify_schedule(best_schedule, precedence_list, best_makespan):
             print(f"  Schedule is valid with Makespan = {best_makespan}")
-
+        print(f"  Total time: {(time.time() - real_start_time):.4f} seconds")
         current_UB = best_makespan - 1
 
     if best_schedule is None:
@@ -560,14 +716,6 @@ def solve_and_print(num_ops, num_jobs, num_factories, precedence_list, request_l
         return None, None
 
     print(f"\n Optimal Makespan = {best_makespan}\n")
-    # print("=" * 75)
-    # print(f"{'Op ID':<8}{'Job ID':<8}{'Factory':<10}{'Machine':<10}{'Start':<8}{'Duration':<10}{'End':<8}")
-    # print("=" * 75)
-    # for op_id in sorted(best_schedule.keys()):
-    #     info = best_schedule[op_id]
-    #     print(f"{op_id:<8}{info['job']:<8}{info['factory']:<10}{info['machine']:<10}{info['start']:<8}{info['duration']:<10}{info['end']:<8}")
-    # print("=" * 75)
-
     return best_makespan, best_schedule
 
 
@@ -611,29 +759,40 @@ def verify_schedule(schedule, precedence_list, C_max):
                 return False
     return True
 
-# =========================================================
-# 5. HÀM CHÍNH (MAIN)
-# =========================================================
 
 def main():
     parser = argparse.ArgumentParser(description="D-FJSSP SAT Solver")
     parser.add_argument("--input", "-i", type=str, required=True, help="Path to the data file")
-    parser.add_argument("--factories", "-num_f", type=int, default=2, help="Number of factories (default: 2)")
+    parser.add_argument("--factories", "-num_f", type=int, default=2, help="Number of factories (ignored if flexibilitydata is present)")
     parser.add_argument("--sb", action="store_true", help="Enable Symmetry Breaking")
-    parser.add_argument("--full_transitive", action="store_true", help="Enable full transitive constraints E*")
+    parser.add_argument("--half_transitive", action="store_true", help="Enable half transitive constraints E* (first op of each job only)")
+    parser.add_argument("--full_transitive", action="store_true", help="Enable full transitive constraints E* (all new edges)")
+    parser.add_argument("--solver", type=str, choices=["cadical300", "glucose4", "maplechrono", "minisat22"], help="Choose the SAT solver to use")
     args = parser.parse_args()
-
-    print(f"[*] Running D-FJSSP SAT Solver with {args.factories} factories, Symmetry Breaking = {'ON' if args.sb else 'OFF'}, Full Transitive E* = {'ON' if args.full_transitive else 'OFF'}")
-    print("=" * 75)
-    print(" D-FJSSP SAT SOLVER - PARALLEL FACTORIES SCHEDULING")
-    print("=" * 75)
 
     start_time = time.time()
     print(f"[*] Loading data from file: {args.input}")
     
-    n_ops, n_machines, precedence_list, request_list, num_jobs, job_of = load_data(args.input)
+    n_ops, n_machines, precedence_list, request_list, num_jobs, job_of, file_factories = load_data(args.input)
 
-    print(f"  -> Operations: {n_ops} | Jobs: {num_jobs} | Machines: {n_machines} | Factories: {args.factories}")
+    if file_factories is not None:
+        num_factories = file_factories
+    else:
+        num_factories = args.factories
+
+    if args.full_transitive:
+        transitive_mode = "FULL"
+    elif args.half_transitive:
+        transitive_mode = "HALF"
+    else:
+        transitive_mode = "OFF"
+
+    print(f"[*] Running D-FJSSP SAT Solver with {num_factories} factories, Symmetry Breaking = {'ON' if args.sb else 'OFF'}, Transitive E* = {transitive_mode}")
+    print("=" * 75)
+    print(" D-FJSSP SAT SOLVER - PARALLEL FACTORIES SCHEDULING")
+    print("=" * 75)
+
+    print(f"  -> Operations: {n_ops} | Jobs: {num_jobs} | Machines: {n_machines} | Factories: {num_factories}")
 
     E_star = compute_E_star(n_ops, precedence_list, request_list)
     print("\n[*] Running Greedy Heuristic...")
@@ -641,7 +800,7 @@ def main():
     g_makespan, g_schedule = greedy_solve(
         num_ops=n_ops,
         num_machines=n_machines,
-        num_factories=args.factories,
+        num_factories=num_factories,
         precedence_list=precedence_list,
         request_list=request_list,
         job_of=job_of,
@@ -655,13 +814,14 @@ def main():
     best_makespan, best_schedule = solve_and_print(
         num_ops=n_ops,
         num_jobs=num_jobs,
-        num_factories=args.factories,
+        num_factories=num_factories,
         precedence_list=precedence_list,
         request_list=request_list,
         job_of=job_of,
         E_star=E_star,
         initial_UB=g_makespan,
-        args=args
+        args=args, 
+        real_start_time=start_time
     )
     sat_time = time.time() - sat_start
 
