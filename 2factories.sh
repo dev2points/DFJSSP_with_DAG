@@ -10,31 +10,15 @@ RDATA_DIR=datasets/rdata
 
 # YRESULT_DIR=results/yfjs
 # DARESULT_DIR=results/dafjs
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 FMJRESULT_DIR=results/sb+full_transitive/2factories/fmj
 MKRESULT_DIR=results/sb+full_transitive/2factories/brandimarte
 RRESULT_DIR=results/sb+full_transitive/2factories/rdata
-=======
-FMJRESULT_DIR=results/no_sb+full_transitive/2factories/fmj
-MKRESULT_DIR=results/no_sb+full_transitive/2factories/brandimarte
-RRESULT_DIR=results/no_sb+full_transitive/2factories/rdata
->>>>>>> 9949524 (run no_sb+full_transitive)
-=======
-=======
 
->>>>>>> 4181f95 (test multi solver)
-FMJRESULT_DIR=results/sb/2factories/fmj
-MKRESULT_DIR=results/sb/2factories/brandimarte
-RRESULT_DIR=results/sb/2factories/rdata
->>>>>>> 5db83f1 (run sb)
-=======
+
 FMJRESULT_DIR=results/no_sb/2factories/fmj
 MKRESULT_DIR=results/no_sb/2factories/brandimarte
 RRESULT_DIR=results/no_sb/2factories/rdata
->>>>>>> e311845 (run no sb)
 
 # mkdir -p $YRESULT_DIR
 # mkdir -p $DARESULT_DIR
@@ -42,10 +26,7 @@ RRESULT_DIR=results/no_sb/2factories/rdata
 # mkdir -p $MKRESULT_DIR
 mkdir -p $RRESULT_DIR
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 ./runlim -r $TO -s $MO  python3 -u main.py --input $FMJDATA_DIR/mfjs01 --sb --factories $NUM_FACTORIES  --full_transitive 2>&1 | tee $FMJRESULT_DIR/mfjs01.log
 ./runlim -r $TO -s $MO  python3 -u main.py --input $FMJDATA_DIR/mfjs02 --sb --factories $NUM_FACTORIES  --full_transitive 2>&1 | tee $FMJRESULT_DIR/mfjs02.log
 ./runlim -r $TO -s $MO  python3 -u main.py --input $FMJDATA_DIR/mfjs03 --sb --factories $NUM_FACTORIES  --full_transitive 2>&1 | tee $FMJRESULT_DIR/mfjs03.log
