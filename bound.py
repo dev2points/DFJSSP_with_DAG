@@ -1,5 +1,6 @@
 import argparse
 from collections import defaultdict, deque
+import math
 import os
 import time
 from pysat.card import CardEnc, EncType
@@ -499,6 +500,84 @@ def greedy_solve(num_ops, num_machines, num_factories, precedence_list, request_
 
     return best_mk, best_sched
 
+def generate_lower_bound(num_ops, num_machines, num_factories, precedence_list, request_list, job_of, num_jobs):
+    """
+    Tính Cận Dưới Chặt (Tight Lower Bound) cho bài toán DFJSP.
+    
+    Trả về:
+        overall_lb (int/float): Giá trị Lower Bound lớn nhất.
+        details (dict): Chi tiết giá trị của từng loại Cận dưới.
+    """
+    if num_ops == 0:
+        return 0, {}
+
+    # 1. Thời gian gia công ngắn nhất cho mỗi công đoạn p_min
+    p_min = [min(request_list[i].values()) for i in range(num_ops)]
+
+    # 2. Xây dựng Đồ thị Phụ thuộc (DAG)
+    adj = defaultdict(list)
+    preds = defaultdict(list)
+    in_degree = [0] * num_ops
+
+    for u, v in precedence_list:
+        adj[u].append(v)
+        preds[v].append(u)
+        in_degree[v] += 1
+
+    queue = deque([i for i in range(num_ops) if in_degree[i] == 0])
+    topo_order = []
+
+    while queue:
+        u = queue.popleft()
+        topo_order.append(u)
+        for v in adj[u]:
+            in_degree[v] -= 1
+            if in_degree[v] == 0:
+                queue.append(v)
+
+    # 3. Tính Head[u] (Thời điểm sớm nhất có thể bắt đầu u)
+    head = [0] * num_ops
+    for u in topo_order:
+        if preds[u]:
+            head[u] = max(head[p] + p_min[p] for p in preds[u])
+
+    # 4. Tính Tail[u] (Thời gian còn lại từ u đến cuối)
+    tail = [0] * num_ops
+    for u in reversed(topo_order):
+        if adj[u]:
+            tail[u] = max(tail[v] + p_min[v] for v in adj[u])
+
+    # ------------------------------------------------------------------
+    # CẬN 1: Critical Path Bound (Đường găng phụ thuộc)
+    # ------------------------------------------------------------------
+    lb_cp = max(head[i] + p_min[i] + tail[i] for i in range(num_ops))
+
+    # ------------------------------------------------------------------
+    # CẬN 2: Max Job Workload Bound (Job dài nhất)
+    # ------------------------------------------------------------------
+    job_ops = defaultdict(list)
+    for op, j_id in job_of.items():
+        job_ops[j_id].append(op)
+
+    lb_job = max(sum(p_min[op] for op in job_ops[j]) for j in range(num_jobs)) if num_jobs > 0 else 0
+
+    # ------------------------------------------------------------------
+    # CẬN 3: Global Capacity Bound (Tổng tải chia đều toàn bộ F x M máy)
+    # ------------------------------------------------------------------
+    total_workload = sum(p_min)
+    total_system_machines = num_factories * num_machines  # CHUẨN: F x M
+    
+    lb_load = math.ceil(total_workload / total_system_machines) if total_system_machines > 0 else 0
+
+    # LOWER BOUND TỔNG: Giá trị lớn nhất trong các cận hợp lệ
+    overall_lb = max(lb_cp, lb_job, lb_load)
+
+    return overall_lb, {
+        'LB_CP (Đường găng)': lb_cp,
+        'LB_Job (Job dài nhất)': lb_job,
+        'LB_Load (Tổng tải/Máy)': lb_load
+    }
+
 
 def compute_bounds(num_ops, precedence_list, p_min, UB):
     adj = defaultdict(list)
@@ -893,9 +972,12 @@ def main():
         job_of=job_of,
         num_jobs=num_jobs
     )
+    lb, details = generate_lower_bound(n_ops, n_machines, num_factories, precedence_list, request_list, job_of, num_jobs )
     g_time = time.time() - g_start
     print(f"  -> Greedy Solution: Makespan = {g_makespan} ({g_time:.4f}s)")
-
+    print(f"  -> Lowerbound generate: {lb}")
+    init_ub = lb + int((g_makespan-lb)/4)
+    print(f"Init upper bound = {init_ub}")
     print("\n[*] Initializing and solving the SAT model...")
     sat_start = time.time()
     best_makespan, best_schedule = solve_and_print(
@@ -906,7 +988,7 @@ def main():
         request_list=request_list,
         job_of=job_of,
         E_star=E_star,
-        initial_UB=g_makespan,
+        initial_UB=init_ub,
         args=args, 
         real_start_time=start_time
     )
