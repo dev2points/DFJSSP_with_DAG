@@ -28,7 +28,14 @@ mkdir -p $RRESULT_DIR
 
 
 
+<<<<<<< HEAD
 
+=======
+# ./runlim -r $TO -s $MO python3 -u main.py --factories $NUM_FACTORIES --input $MKDATA_DIR/MK05 --sb --full_transitive 2>&1 | tee $MKRESULT_DIR/MK05.log
+# ./runlim -r $TO -s $MO python3 -u main.py --factories $NUM_FACTORIES --input $MKDATA_DIR/MK07 --sb --full_transitive 2>&1 | tee $MKRESULT_DIR/MK07.log
+# ./runlim -r $TO -s $MO python3 -u main.py --factories $NUM_FACTORIES --input $MKDATA_DIR/MK10 --sb --full_transitive 2>&1 | tee $MKRESULT_DIR/MK10.log
+./runlim -r $TO -s $MO python3 -u main.py --factories $NUM_FACTORIES --input $LADATA_DIR/la13.txt --sb --full_transitive 2>&1 | tee $MKRESULT_DIR/la13.log
+>>>>>>> 66068d6 (test transitive u->v and v->l so add u->l)
 
 
 
