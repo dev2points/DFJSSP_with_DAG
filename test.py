@@ -604,19 +604,6 @@ def build_constraints(solver, num_ops, num_jobs, num_factories, precedence_list,
                                 clause.append(-x[(j, before_i + 1)])
                             cnf.append(clause)
 
-<<<<<<< HEAD
-    # Ràng buộc bắc cầu E* (Xử lý tùy chọn --full_transitive và --half_transitive)
-    if getattr(args, 'full_transitive', False) or getattr(args, 'half_transitive', False):
-        for (u, v), w in E_star.items():
-            if (u, v) not in precedence_list:
-                if getattr(args, 'full_transitive', False) or u in first_ops:
-                    for t in range(ES[u], LS[u] + 1):
-                        finish_time = t + w
-                        if finish_time > LS[v]:
-                            cnf.append([-s[(u, t)]])
-                        elif finish_time > ES[v]:
-                            cnf.append([-s[(u, t)], x[(v, finish_time)]])
-=======
     # Ràng buộc bắc cầu 2 bước: nếu có u->v và v->l thì thêm ràng buộc cho u->l.
     if getattr(args, 'full_transitive', False) or getattr(args, 'half_transitive', False):
         p_min = [min(req.values()) for req in request_list]
@@ -641,7 +628,6 @@ def build_constraints(solver, num_ops, num_jobs, num_factories, precedence_list,
                             cnf.append([-s[(u, t)]])
                         elif finish_time > ES[l]:
                             cnf.append([-s[(u, t)], x[(l, finish_time)]])
->>>>>>> 66068d6 (test transitive u->v and v->l so add u->l)
 
     # Symmetry Breaking (nếu được bật)
     if args.sb:
@@ -794,10 +780,6 @@ def main():
     parser.add_argument("--sb", action="store_true", help="Enable Symmetry Breaking")
     parser.add_argument("--half_transitive", action="store_true", help="Enable half transitive constraints E* (first op of each job only)")
     parser.add_argument("--full_transitive", action="store_true", help="Enable full transitive constraints E* (all new edges)")
-<<<<<<< HEAD
-    parser.add_argument("--solver", type=str, choices=["cadical300", "glucose4", "maplechrono", "minisat22"], help="Choose the SAT solver to use")
-=======
->>>>>>> 66068d6 (test transitive u->v and v->l so add u->l)
     args = parser.parse_args()
 
     start_time = time.time()

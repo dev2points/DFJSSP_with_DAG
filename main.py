@@ -327,177 +327,92 @@ def greedy_solve(num_ops, num_machines, num_factories, precedence_list, request_
     for op, j_id in job_of.items():
         job_ops[j_id].append(op)
 
-    # ------------------------------------------------------------------
-    # CORE SCHEDULER: 100% Logic gốc của bạn + Tie-breaking & Hole Insertion
-    # ------------------------------------------------------------------
-    def evaluate_schedule(job_factory_assignment):
-        assigned_jobs = set(job_factory_assignment.keys())
-        assigned_ops = set(op for j_id in assigned_jobs for op in job_ops[j_id])
+    job_workload = {}
+    for j_id in range(num_jobs):
+        job_workload[j_id] = sum(min(request_list[op].values()) for op in job_ops[j_id])
 
-        if not assigned_ops:
-            return 0, {}
-
-        adj = defaultdict(list)
-        preds = defaultdict(list)
-        in_degree = {op: 0 for op in assigned_ops}
-        p_min = {op: min(request_list[op].values()) for op in assigned_ops}
-
-        for u, v in precedence_list:
-            if u in assigned_ops and v in assigned_ops:
-                adj[u].append(v)
-                preds[v].append(u)
-                in_degree[v] += 1
-
-        queue = deque([i for i in assigned_ops if in_degree[i] == 0])
-        topo_order = []
-        in_degree_copy = dict(in_degree)
-
-        while queue:
-            u = queue.popleft()
-            topo_order.append(u)
-            for v in adj[u]:
-                in_degree_copy[v] -= 1
-                if in_degree_copy[v] == 0:
-                    queue.append(v)
-
-        # Cốt lõi Tail Length của bạn
-        tail_length = {i: p_min[i] for i in assigned_ops}
-        for u in reversed(topo_order):
-            if adj[u]:
-                tail_length[u] = p_min[u] + max(tail_length[v] for v in adj[u])
-
-        # Quản lý khoảng thời gian rảnh trên máy (Active Insertion)
-        machine_intervals = defaultdict(lambda: defaultdict(list))
-        op_end_time = {}
-        schedule = {}
-
-        def find_earliest_slot(intervals, ready_time, duration):
-            curr = ready_time
-            for s, e in intervals:
-                if curr + duration <= s:
-                    return curr
-                curr = max(curr, e)
-            return curr
-
-        ready_ops = [i for i in assigned_ops if in_degree[i] == 0]
-
-        while ready_ops:
-            ready_ops.sort(key=lambda op: tail_length[op], reverse=True)
-            u = ready_ops.pop(0)
-
-            j_id = job_of[u]
-            factory = job_factory_assignment[j_id]
-            ready_time = max([op_end_time[p] for p in preds[u]], default=0)
-
-            best_machine = None
-            best_start = float('inf')
-            best_end = float('inf')
-            best_p_uk = float('inf')
-
-            for k, p_uk in request_list[u].items():
-                intervals = machine_intervals[factory][k]
-                start_t = find_earliest_slot(intervals, ready_time, p_uk)
-                end_t = start_t + p_uk
-
-                # Tie-breaking: Chọn end_t nhỏ hơn. Nếu bằng nhau, chọn máy có p_uk nhỏ hơn
-                if end_t < best_end - 1e-9:
-                    best_end = end_t
-                    best_start = start_t
-                    best_machine = k
-                    best_p_uk = p_uk
-                elif abs(end_t - best_end) < 1e-9 and p_uk < best_p_uk:
-                    best_end = end_t
-                    best_start = start_t
-                    best_machine = k
-                    best_p_uk = p_uk
-
-            schedule[u] = {
-                'factory': factory,
-                'machine': best_machine,
-                'start': best_start,
-                'duration': request_list[u][best_machine],
-                'end': best_end
-            }
-            op_end_time[u] = best_end
-            
-            # Lưu và sắp xếp khoảng bận trên máy
-            machine_intervals[factory][best_machine].append((best_start, best_end))
-            machine_intervals[factory][best_machine].sort(key=lambda x: x[0])
-
-            for v in adj[u]:
-                in_degree[v] -= 1
-                if in_degree[v] == 0:
-                    ready_ops.append(v)
-
-        makespan = max(info['end'] for info in schedule.values()) if schedule else 0
-        return makespan, schedule
-
-    # ------------------------------------------------------------------
-    # BƯỚC 1: Distributed NEH (Khởi tạo gán Factory)
-    # ------------------------------------------------------------------
-    job_workload = {
-        j_id: sum(min(request_list[op].values()) for op in job_ops[j_id])
-        for j_id in range(num_jobs)
-    }
     sorted_jobs = sorted(range(num_jobs), key=lambda j: job_workload[j], reverse=True)
-
+    factory_workload = [0] * num_factories
     job_factory = {}
+
     for j_id in sorted_jobs:
-        best_f = 0
-        best_mk = float('inf')
-        for f in range(num_factories):
-            temp_assign = dict(job_factory)
-            temp_assign[j_id] = f
-            mk, _ = evaluate_schedule(temp_assign)
-            if mk < best_mk:
-                best_mk = mk
-                best_f = f
-        job_factory[j_id] = best_f
+        min_f = min(range(num_factories), key=lambda f: factory_workload[f])
+        job_factory[j_id] = min_f
+        factory_workload[min_f] += job_workload[j_id]
 
-    best_mk, best_sched = evaluate_schedule(job_factory)
+    adj = defaultdict(list)
+    preds = defaultdict(list)
+    in_degree = [0] * num_ops
+    p_min = [min(request_list[i].values()) for i in range(num_ops)]
 
-    # ------------------------------------------------------------------
-    # BƯỚC 2: Local Search 2 Tầng (Re-insertion + Pairwise Swap)
-    # ------------------------------------------------------------------
-    # Tầng A: Re-insertion (Di chuyển 1 Job)
-    for j_id in sorted_jobs:
-        current_f = job_factory[j_id]
-        for f in range(num_factories):
-            if f == current_f:
-                continue
-            temp_assign = dict(job_factory)
-            temp_assign[j_id] = f
-            mk, sched = evaluate_schedule(temp_assign)
-            if mk < best_mk:
-                best_mk = mk
-                best_sched = sched
-                job_factory[j_id] = f
+    for u, v in precedence_list:
+        adj[u].append(v)
+        preds[v].append(u)
+        in_degree[v] += 1
 
-    # Tầng B: Pairwise Job Swap (Tráo đổi 2 Job thuộc 2 Nhà máy khác nhau)
-    improved = True
-    while improved:
-        improved = False
-        for i in range(num_jobs):
-            for j in range(i + 1, num_jobs):
-                f1, f2 = job_factory[i], job_factory[j]
-                if f1 == f2:
-                    continue
-                
-                # Thử tráo đổi nhà máy giữa Job i và Job j
-                temp_assign = dict(job_factory)
-                temp_assign[i], temp_assign[j] = f2, f1
-                
-                mk, sched = evaluate_schedule(temp_assign)
-                if mk < best_mk:
-                    best_mk = mk
-                    best_sched = sched
-                    job_factory[i], job_factory[j] = f2, f1
-                    improved = True
-                    break
-            if improved:
-                break
+    queue = deque([i for i in range(num_ops) if in_degree[i] == 0])
+    topo_order = []
+    in_degree_copy = list(in_degree)
 
-    return best_mk, best_sched
+    while queue:
+        u = queue.popleft()
+        topo_order.append(u)
+        for v in adj[u]:
+            in_degree_copy[v] -= 1
+            if in_degree_copy[v] == 0:
+                queue.append(v)
+
+    tail_length = {i: p_min[i] for i in range(num_ops)}
+    for u in reversed(topo_order):
+        if adj[u]:
+            tail_length[u] = p_min[u] + max(tail_length[v] for v in adj[u])
+
+    machine_avail = defaultdict(lambda: defaultdict(int))
+    op_end_time = {}
+    schedule = {}
+
+    ready_ops = [i for i in range(num_ops) if in_degree[i] == 0]
+
+    while ready_ops:
+        ready_ops.sort(key=lambda op: tail_length[op], reverse=True)
+        u = ready_ops.pop(0)
+
+        j_id = job_of[u]
+        factory = job_factory[j_id]
+
+        ready_time = max([op_end_time[p] for p in preds[u]], default=0)
+
+        best_machine = None
+        best_start = float('inf')
+        best_end = float('inf')
+
+        for k, p_uk in request_list[u].items():
+            avail_k = machine_avail[factory][k]
+            start_t = max(ready_time, avail_k)
+            end_t = start_t + p_uk
+
+            if end_t < best_end:
+                best_end = end_t
+                best_start = start_t
+                best_machine = k
+
+        schedule[u] = {
+            'factory': factory,
+            'machine': best_machine,
+            'start': best_start,
+            'duration': request_list[u][best_machine],
+            'end': best_end
+        }
+        op_end_time[u] = best_end
+        machine_avail[factory][best_machine] = best_end
+
+        for v in adj[u]:
+            in_degree[v] -= 1
+            if in_degree[v] == 0:
+                ready_ops.append(v)
+
+    makespan = max(info['end'] for info in schedule.values()) if schedule else 0
+    return makespan, schedule
 
 
 def compute_bounds(num_ops, precedence_list, p_min, UB):
@@ -637,6 +552,20 @@ def build_constraints(solver, num_ops, num_jobs, num_factories, precedence_list,
                 cnf.append([-s[(i, t)], x[(j, finish_time)]])
 
             pre_proc_time = min_p
+
+            for idx in range(1, len(request_machines_i)):
+                machine = request_machines_i[idx]
+                proc_time = request_list[i][machine]
+
+                if proc_time > pre_proc_time:
+                    finish_time = t + proc_time
+
+                    if finish_time > LS[j]:
+                        cnf.append([-s[(i, t)], -m[(i, machine)]])
+                        break
+                    elif finish_time > ES[j]:
+                        cnf.append([-s[(i, t)], -m[(i, machine)], x[(j, finish_time)]])
+
             for idx in range(1, len(request_machines_i)):
                 machine = request_machines_i[idx]
                 proc_time = request_list[i][machine]
