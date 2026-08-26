@@ -11,11 +11,11 @@
 [runlim] argv[5]:		--sb
 [runlim] argv[6]:		--factories
 [runlim] argv[7]:		2
-[runlim] argv[8]:		--full_transitive
-[runlim] start:			Wed Aug 26 03:12:44 2026
-[runlim] child:			20168
+[runlim] argv[8]:		--half_transitive
+[runlim] start:			Wed Aug 26 09:51:04 2026
+[runlim] child:			35533
 [*] Loading data from file: datasets/brandimarte/MK02
-[*] Running D-FJSSP SAT Solver with 2 factories, Symmetry Breaking = ON, Transitive E* = FULL
+[*] Running D-FJSSP SAT Solver with 2 factories, Symmetry Breaking = ON, Transitive E* = HALF
 ===========================================================================
  D-FJSSP SAT SOLVER - PARALLEL FACTORIES SCHEDULING
 ===========================================================================
@@ -29,27 +29,27 @@
 [*] Trying with Upper Bound = 23...
   SAT ! Makespan = 23
   Schedule is valid with Makespan = 23
-  Total time: 0.0689 seconds
+  Total time: 0.0742 seconds
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 22...
   SAT ! Makespan = 22
   Schedule is valid with Makespan = 22
-  Total time: 0.0710 seconds
+  Total time: 0.0761 seconds
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 21...
   SAT ! Makespan = 21
   Schedule is valid with Makespan = 21
-  Total time: 0.0744 seconds
+  Total time: 0.0775 seconds
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 20...
   SAT ! Makespan = 20
   Schedule is valid with Makespan = 20
-  Total time: 0.0760 seconds
+  Total time: 0.0792 seconds
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 19...
   SAT ! Makespan = 19
   Schedule is valid with Makespan = 19
-  Total time: 0.0775 seconds
+  Total time: 0.0810 seconds
 ------------------------------------------------------------------
 [*] Trying with Upper Bound = 18...
    UNSAT
@@ -59,17 +59,17 @@
  Summary:
   - Optimal Makespan   : 19
   - Greedy Time        : 0.0002s
-  - SAT Time           : 0.0797s
-  - Total Time         : 0.0803s
+  - SAT Time           : 0.0835s
+  - Total Time         : 0.0841s
   - Schedule Status    : VALID
 ===========================================================================
-[runlim] end:			Wed Aug 26 03:12:44 2026
+[runlim] end:			Wed Aug 26 09:51:05 2026
 [runlim] status:		ok
 [runlim] result:		0
 [runlim] children:		1
 [runlim] processes:		2
-[runlim] real:			0.11 seconds
-[runlim] time:			0.09 seconds
-[runlim] space:			32 MB
-[runlim] load:			0.15 maximum
+[runlim] real:			0.12 seconds
+[runlim] time:			0.10 seconds
+[runlim] space:			33 MB
+[runlim] load:			0.74 maximum
 [runlim] samples:		2
