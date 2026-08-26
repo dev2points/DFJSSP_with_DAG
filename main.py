@@ -505,6 +505,8 @@ def create_var(num_ops, num_jobs, num_factories, request_list, job_of, E_star, E
 def build_constraints(solver, num_ops, num_jobs, num_factories, precedence_list, request_list, job_of, E_star, ES, LS, first_ops, s, x, f, m, xm, sf, sm, sfm, args):
     cnf = CNF()
 
+    
+
     # Exactly one factory per job
     for j in range(num_jobs):
         clauses = CardEnc.equals(lits=[f[(j, q)] for q in range(min(j, num_factories - 1) + 1)], bound=1, encoding=EncType.pairwise)
@@ -587,7 +589,7 @@ def build_constraints(solver, num_ops, num_jobs, num_factories, precedence_list,
             for q in range(min(j1, j2, num_factories - 1) + 1):
                 cnf.append([-f[(j1, q)], -f[(j2, q)], sf[(j1, j2)]])
                 cnf.append([-sf[(j1, j2)], -f[(j1, q)], f[(j2, q)]])
-                cnf.append([-sf[(j1, j2)], -f[(j2, q)], f[(j1, q)]])
+                # cnf.append([-sf[(j1, j2)], -f[(j2, q)], f[(j1, q)]])
 
     # Overlap constraints
     for i in range(num_ops):
@@ -646,6 +648,9 @@ def build_constraints(solver, num_ops, num_jobs, num_factories, precedence_list,
                         clause.append(f[(j, factory - 1)])
 
                 cnf.append(clause)
+        # At least one first operation starts at time 0
+        cnf.append([s[(i, 0)] for i in first_ops])
+            
 
     solver.append_formula(cnf)
 
