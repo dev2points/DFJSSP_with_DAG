@@ -1,0 +1,128 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			fjssp-instance1
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	3600 seconds
+[runlim] space limit:		14000 MB
+[runlim] argv[0]:		python3
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		mip.py
+[runlim] argv[3]:		--input
+[runlim] argv[4]:		datasets/rdata/la03.txt
+[runlim] argv[5]:		--factories
+[runlim] argv[6]:		4
+[runlim] start:			Wed Sep  2 06:04:07 2026
+[runlim] child:			9630
+======================================================================
+INSTANCE
+======================================================================
+File       : datasets/rdata/la03.txt
+Operations : 50
+Jobs       : 10
+Machines   : 5
+Factories  : 4
+Edges      : 40
+
+======================================================================
+GREEDY HEURISTIC
+======================================================================
+Greedy UB   : 428
+Greedy time : 0.000173 sec
+
+======================================================================
+MODEL 1 PARAMETERS
+======================================================================
+Greedy UB = 428
+First operations = 10
+Last operations  = 10
+
+Adding greedy MIP start...
+
+======================================================================
+MODEL STATISTICS
+======================================================================
+Variables    : 4251
+Constraints : 7818
+Greedy UB   : 428
+
+======================================================================
+START CPLEX
+======================================================================
+Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
+CPXPARAM_Read_DataCheck                          1
+1 of 1 MIP starts provided solutions.
+MIP start 'm1' defined initial solution with objective 428.0000.
+Tried aggregator 2 times.
+MIP Presolve eliminated 10 rows and 0 columns.
+MIP Presolve modified 492 coefficients.
+Aggregator did 56 substitutions.
+Reduced MIP has 7752 rows, 4195 columns, and 39052 nonzeros.
+Reduced MIP has 4144 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.02 sec. (30.69 ticks)
+Probing time = 0.01 sec. (7.07 ticks)
+Cover probing fixed 0 vars, tightened 46 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve modified 18888 coefficients.
+Reduced MIP has 7752 rows, 4195 columns, and 38988 nonzeros.
+Reduced MIP has 4144 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.02 sec. (27.66 ticks)
+Probing time = 0.00 sec. (5.97 ticks)
+Clique table members: 3750.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 2 threads.
+Root relaxation solution time = 0.01 sec. (23.89 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          428.0000      172.0000            59.81%
+      0     0      349.0000    38      428.0000      349.0000      130   18.46%
+*     0+    0                          349.0000      349.0000             0.00%
+      0     0        cutoff            349.0000      349.0000      155    0.00%
+Elapsed time = 0.21 sec. (404.30 ticks, tree = 0.01 MB, solutions = 2)
+
+Clique cuts applied:  1
+Cover cuts applied:  2
+Implied bound cuts applied:  1
+Flow cuts applied:  3
+Mixed integer rounding cuts applied:  35
+Zero-half cuts applied:  3
+Lift and project cuts applied:  1
+Gomory fractional cuts applied:  9
+
+Root node processing (before b&c):
+  Real time             =    0.21 sec. (404.61 ticks)
+Parallel b&c, 2 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.21 sec. (404.61 ticks)
+
+======================================================================
+RESULT
+======================================================================
+Status     : integer optimal solution
+Time       : 0.214
+Makespan   : 349.000000
+Best bound : 349.000000
+Gap        : 0.0000%
+
+======================================================================
+FINAL SUMMARY
+======================================================================
+Greedy UB : 428
+CPLEX     : 349.000000
+Bound     : 349.000000
+Time      : 0.214
+[runlim] end:			Wed Sep  2 06:04:07 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] processes:		2
+[runlim] real:			0.61 seconds
+[runlim] time:			0.52 seconds
+[runlim] space:			95 MB
+[runlim] load:			2.18 maximum
+[runlim] samples:		6

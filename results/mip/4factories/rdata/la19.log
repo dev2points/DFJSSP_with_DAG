@@ -1,0 +1,117 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			fjssp-instance1
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	3600 seconds
+[runlim] space limit:		14000 MB
+[runlim] argv[0]:		python3
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		mip.py
+[runlim] argv[3]:		--input
+[runlim] argv[4]:		datasets/rdata/la19.txt
+[runlim] argv[5]:		--factories
+[runlim] argv[6]:		4
+[runlim] start:			Wed Sep  2 06:06:42 2026
+[runlim] child:			9765
+======================================================================
+INSTANCE
+======================================================================
+File       : datasets/rdata/la19.txt
+Operations : 100
+Jobs       : 10
+Machines   : 10
+Factories  : 4
+Edges      : 90
+
+======================================================================
+GREEDY HEURISTIC
+======================================================================
+Greedy UB   : 617
+Greedy time : 0.000290 sec
+
+======================================================================
+MODEL 1 PARAMETERS
+======================================================================
+Greedy UB = 617
+First operations = 10
+Last operations  = 10
+
+Adding greedy MIP start...
+
+======================================================================
+MODEL STATISTICS
+======================================================================
+Variables    : 8277
+Constraints : 15264
+Greedy UB   : 617
+
+======================================================================
+START CPLEX
+======================================================================
+Version identifier: 22.2.0.0 | 2026-05-04 | 5dff98e58
+CPXPARAM_Read_DataCheck                          1
+1 of 1 MIP starts provided solutions.
+MIP start 'm1' defined initial solution with objective 617.0000.
+Tried aggregator 2 times.
+MIP Presolve eliminated 14 rows and 4 columns.
+MIP Presolve modified 3992 coefficients.
+Aggregator did 136 substitutions.
+Reduced MIP has 15114 rows, 8137 columns, and 76208 nonzeros.
+Reduced MIP has 8036 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.04 sec. (67.36 ticks)
+Probing time = 0.03 sec. (11.55 ticks)
+Cover probing fixed 0 vars, tightened 157 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 4 rows and 0 columns.
+MIP Presolve modified 68276 coefficients.
+Reduced MIP has 15110 rows, 8137 columns, and 75944 nonzeros.
+Reduced MIP has 8036 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.05 sec. (59.42 ticks)
+Probing time = 0.01 sec. (9.12 ticks)
+Clique table members: 5958.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 2 threads.
+Root relaxation solution time = 0.02 sec. (38.17 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                          617.0000      316.0000            48.78%
+      0     0        cutoff            617.0000                    227    0.00%
+
+Root node processing (before b&c):
+  Real time             =    0.17 sec. (230.10 ticks)
+Parallel b&c, 2 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.17 sec. (230.10 ticks)
+
+======================================================================
+RESULT
+======================================================================
+Status     : integer optimal solution
+Time       : 0.185
+Makespan   : 617.000000
+Best bound : 617.000000
+Gap        : 0.0000%
+
+======================================================================
+FINAL SUMMARY
+======================================================================
+Greedy UB : 617
+CPLEX     : 617.000000
+Bound     : 617.000000
+Time      : 0.185
+[runlim] end:			Wed Sep  2 06:06:43 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] processes:		2
+[runlim] real:			0.84 seconds
+[runlim] time:			0.82 seconds
+[runlim] space:			93 MB
+[runlim] load:			1.96 maximum
+[runlim] samples:		9
