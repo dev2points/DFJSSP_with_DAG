@@ -1,0 +1,86 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			fjssp-instance
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	3600 seconds
+[runlim] space limit:		14000 MB
+[runlim] argv[0]:		python3
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		cp.py
+[runlim] argv[3]:		--input
+[runlim] argv[4]:		datasets/fmj/mfjs08
+[runlim] argv[5]:		--factories
+[runlim] argv[6]:		2
+[runlim] start:			Tue Sep  1 00:38:26 2026
+[runlim] child:			2889
+[*] Loading: datasets/fmj/mfjs08
+======================================================================
+DFJSP CP MODEL - MENG ET AL. (2020)
+======================================================================
+Operations : 36
+Jobs       : 9
+Machines   : 8
+Factories  : 2
+Horizon    : 6354
+
+[*] Starting CP Optimizer...
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 224 variables, 133 constraints
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 426.7 (before), 426.7 (after)
+ !  . Memory usage      : 1.3 MB (before), 1.3 MB (after)
+ ! Using parallel search with 2 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        224                 -
+ + New bound is 764
+ *          1406      135  0.04s        1      (gap is 45.66%)
+ *          1381      276  0.04s        1      (gap is 44.68%)
+ *          1202      348  0.04s        1      (gap is 36.44%)
+ *          1118      420  0.04s        1      (gap is 31.66%)
+ *          1039      492  0.04s        1      (gap is 26.47%)
+ *          1029      606  0.04s        1      (gap is 25.75%)
+ *          1018      678  0.04s        1      (gap is 24.95%)
+ *          1016      750  0.04s        1      (gap is 24.80%)
+ *           983      884  0.04s        1      (gap is 22.28%)
+ *           820      922  0.04s        1      (gap is 6.83%)
+ *           808     1051  0.04s        1      (gap is 5.45%)
+ ! Using failure-directed search.
+ *           800     1530  0.04s        1      (gap is 4.50%)
+ *           764     1646  0.04s        1      (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 13 solutions found.
+ ! Best objective         : 764 (optimal - effective tol. is 0)
+ ! Best bound             : 764
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 2798
+ ! Number of fails        : 311
+ ! Total memory usage     : 5.4 MB (5.3 MB CP Optimizer + 0.1 MB Concert)
+ ! Time spent in solve    : 0.04s (0.03s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 93266.7
+ ! ----------------------------------------------------------------------------
+
+======================================================================
+SOLUTION FOUND
+======================================================================
+Makespan : 764
+Time     : 0.0472 seconds
+
+[*] Verifying solution...
+[✓] Schedule is VALID
+
+======================================================================
+FINAL RESULT
+======================================================================
+Makespan : 764
+Status    : VALID
+[runlim] end:			Tue Sep  1 00:38:26 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] processes:		2
+[runlim] real:			0.13 seconds
+[runlim] time:			0.06 seconds
+[runlim] space:			28 MB
+[runlim] load:			0.68 maximum
+[runlim] samples:		2

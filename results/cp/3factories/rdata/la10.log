@@ -1,0 +1,81 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			fjssp-instance
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	3600 seconds
+[runlim] space limit:		14000 MB
+[runlim] argv[0]:		python3
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		cp.py
+[runlim] argv[3]:		--input
+[runlim] argv[4]:		datasets/rdata/la10.txt
+[runlim] argv[5]:		--factories
+[runlim] argv[6]:		3
+[runlim] start:			Tue Sep  1 13:47:58 2026
+[runlim] child:			2923
+[*] Loading: datasets/rdata/la10.txt
+======================================================================
+DFJSP CP MODEL - MENG ET AL. (2020)
+======================================================================
+Operations : 75
+Jobs       : 15
+Machines   : 5
+Factories  : 3
+Horizon    : 4020
+
+[*] Starting CP Optimizer...
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 531 variables, 330 constraints
+ ! Presolve      : 6 extractables eliminated
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 649.7 (before), 649.7 (after)
+ !  . Memory usage      : 2.5 MB (before), 2.5 MB (after)
+ ! Using parallel search with 2 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        531                 -
+ + New bound is 443
+ *           587      230  0.03s        1      (gap is 24.53%)
+ *           578      509  0.03s        1      (gap is 23.36%)
+ *           560      761  0.03s        1      (gap is 20.89%)
+ *           559      911  0.03s        1      (gap is 20.75%)
+ *           552     1061  0.03s        1      (gap is 19.75%)
+ *           544     1403  0.03s        1      (gap is 18.57%)
+ *           521     1679  0.03s        1      (gap is 14.97%)
+ *           443     1755  0.03s        1      (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 8 solutions found.
+ ! Best objective         : 443 (optimal - effective tol. is 0)
+ ! Best bound             : 443
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 3503
+ ! Number of fails        : 15
+ ! Total memory usage     : 10.6 MB (10.4 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 0.03s (0.02s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 175150.0
+ ! ----------------------------------------------------------------------------
+
+======================================================================
+SOLUTION FOUND
+======================================================================
+Makespan : 443
+Time     : 0.0465 seconds
+
+[*] Verifying solution...
+[✓] Schedule is VALID
+
+======================================================================
+FINAL RESULT
+======================================================================
+Makespan : 443
+Status    : VALID
+[runlim] end:			Tue Sep  1 13:47:58 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] processes:		2
+[runlim] real:			0.12 seconds
+[runlim] time:			0.06 seconds
+[runlim] space:			29 MB
+[runlim] load:			1.99 maximum
+[runlim] samples:		2

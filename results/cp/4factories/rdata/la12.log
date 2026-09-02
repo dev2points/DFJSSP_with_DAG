@@ -1,0 +1,96 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			fjssp-instance
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	3600 seconds
+[runlim] space limit:		14000 MB
+[runlim] argv[0]:		python3
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		cp.py
+[runlim] argv[3]:		--input
+[runlim] argv[4]:		datasets/rdata/la12.txt
+[runlim] argv[5]:		--factories
+[runlim] argv[6]:		4
+[runlim] start:			Wed Sep  2 01:57:46 2026
+[runlim] child:			3588
+[*] Loading: datasets/rdata/la12.txt
+======================================================================
+DFJSP CP MODEL - MENG ET AL. (2020)
+======================================================================
+Operations : 100
+Jobs       : 20
+Machines   : 5
+Factories  : 4
+Horizon    : 4676
+
+[*] Starting CP Optimizer...
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 916 variables, 520 constraints
+ ! Presolve      : 40 extractables eliminated
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 950.1 (before), 950.1 (after)
+ !  . Memory usage      : 4.1 MB (before), 4.1 MB (after)
+ ! Using parallel search with 2 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        916                 -
+ + New bound is 408
+ *           565      394  0.06s        1      (gap is 27.79%)
+ *           564      879  0.06s        1      (gap is 27.66%)
+ *           557     1079  0.06s        1      (gap is 26.75%)
+ *           552     1279  0.06s        1      (gap is 26.09%)
+ *           549     1479  0.06s        1      (gap is 25.68%)
+ *           540     1791  0.06s        1      (gap is 24.44%)
+ *           531     1991  0.06s        1      (gap is 23.16%)
+ *           505     2191  0.06s        1      (gap is 19.21%)
+ *           500     1026  0.06s        2      (gap is 18.40%)
+ *           492     1226  0.06s        2      (gap is 17.07%)
+ *           487     1426  0.06s        2      (gap is 16.22%)
+ *           485     1912  0.06s        2      (gap is 15.88%)
+ *           444     2525  0.11s        1      (gap is 8.11%)
+ *           439     2626  0.11s        1      (gap is 7.06%)
+ *           437     2902  0.11s        1      (gap is 6.64%)
+ *           433     3003  0.11s        1      (gap is 5.77%)
+ *           426     3208  0.11s        1      (gap is 4.23%)
+ *           418     2744  0.11s        2      (gap is 2.39%)
+ *           412     3454  0.11s        1      (gap is 0.97%)
+ ! Time = 0.11s, Average fail depth = 28, Memory usage = 18.2 MB
+ ! Current bound is 408 (gap is 0.97%)
+ !          Best Branches  Non-fixed    W       Branch decision
+ *           408     3913  0.11s        1      (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 20 solutions found.
+ ! Best objective         : 408 (optimal - effective tol. is 0)
+ ! Best bound             : 408
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 7428
+ ! Number of fails        : 676
+ ! Total memory usage     : 18.2 MB (17.8 MB CP Optimizer + 0.4 MB Concert)
+ ! Time spent in solve    : 0.11s (0.10s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 74280.0
+ ! ----------------------------------------------------------------------------
+
+======================================================================
+SOLUTION FOUND
+======================================================================
+Makespan : 408
+Time     : 0.1403 seconds
+
+[*] Verifying solution...
+[✓] Schedule is VALID
+
+======================================================================
+FINAL RESULT
+======================================================================
+Makespan : 408
+Status    : VALID
+[runlim] end:			Wed Sep  2 01:57:47 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		2
+[runlim] processes:		3
+[runlim] real:			0.22 seconds
+[runlim] time:			0.11 seconds
+[runlim] space:			65 MB
+[runlim] load:			1.88 maximum
+[runlim] samples:		3

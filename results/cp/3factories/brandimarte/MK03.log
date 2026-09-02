@@ -1,0 +1,112 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			fjssp-instance
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	3600 seconds
+[runlim] space limit:		14000 MB
+[runlim] argv[0]:		python3
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		cp.py
+[runlim] argv[3]:		--input
+[runlim] argv[4]:		datasets/brandimarte/MK03
+[runlim] argv[5]:		--factories
+[runlim] argv[6]:		3
+[runlim] start:			Tue Sep  1 09:54:10 2026
+[runlim] child:			14942
+[*] Loading: datasets/brandimarte/MK03
+======================================================================
+DFJSP CP MODEL - MENG ET AL. (2020)
+======================================================================
+Operations : 150
+Jobs       : 15
+Machines   : 8
+Factories  : 3
+Horizon    : 2205
+
+[*] Starting CP Optimizer...
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 1527 variables, 714 constraints
+ ! Presolve      : 3 extractables eliminated
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 1967.8 (before), 1967.8 (after)
+ !  . Memory usage      : 6.6 MB (before), 6.6 MB (after)
+ ! Using parallel search with 2 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0       1527                 -
+ + New bound is 63
+ *           181      359  0.06s        1      (gap is 65.19%)
+ *           180     1045  0.06s        1      (gap is 65.00%)
+ *           175     1551  0.06s        1      (gap is 64.00%)
+ *           174     1851  0.06s        1      (gap is 63.79%)
+ *           143     1528  0.06s        2      (gap is 55.94%)
+ *           142     1828  0.06s        2      (gap is 55.63%)
+ *           137     2560  0.10s        2      (gap is 54.01%)
+ *           134     3210  0.10s        2      (gap is 52.99%)
+ *           133     4021  0.12s        1      (gap is 52.63%)
+ *           130     3816  0.12s        2      (gap is 51.54%)
+ *           129     3966  0.12s        2      (gap is 51.16%)
+ *           128     4659  0.14s        1      (gap is 50.78%)
+ *           110     4616  0.14s        2      (gap is 42.73%)
+ *           105     6980  0.20s        2      (gap is 40.00%)
+ *           103     7871  0.22s        2      (gap is 38.83%)
+ ! Using failure-directed search.
+ *            99     8883  0.31s        2      (gap is 36.36%)
+ *            96     9372  0.31s        2      (gap is 34.38%)
+ *            95    10801  0.33s        2      (gap is 33.68%)
+ *            93    11756  0.36s        2      (gap is 32.26%)
+ ! Time = 0.36s, Average fail depth = 53, Memory usage = 27.6 MB
+ ! Current bound is 63 (gap is 32.26%)
+ !          Best Branches  Non-fixed    W       Branch decision
+ *            90     8320  0.40s        1      (gap is 30.00%)
+ *            88    17401  0.45s        2      (gap is 28.41%)
+ *            87    15207  0.56s        1      (gap is 27.59%)
+ *            86    19194  0.62s        1      (gap is 26.74%)
+ *            85    30141  0.69s        2      (gap is 25.88%)
+ *            84    32963  0.73s        2      (gap is 25.00%)
+ *            82    34227  0.76s        2      (gap is 23.17%)
+ *            79    51379  1.15s        2      (gap is 20.25%)
+ *            78    71801  1.44s        2      (gap is 19.23%)
+ *            77    42809  1.97s        1      (gap is 18.18%)
+ *            76    45057  2.12s        1      (gap is 17.11%)
+ *            75    47495  2.30s        1      (gap is 16.00%)
+              75    48566          2    1   F          presenceOf(mode_116_0_4)
+ + New bound is 73 (gap is 2.67%)
+              75    48830          2    1   F         !presenceOf(mode_66_1_4)
+ + New bound is 75 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 31 solutions found.
+ ! Best objective         : 75 (optimal - effective tol. is 0)
+ ! Best bound             : 75
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 157574
+ ! Number of fails        : 77890
+ ! Total memory usage     : 28.3 MB (27.6 MB CP Optimizer + 0.6 MB Concert)
+ ! Time spent in solve    : 2.40s (2.38s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 66207.6
+ ! ----------------------------------------------------------------------------
+
+======================================================================
+SOLUTION FOUND
+======================================================================
+Makespan : 75
+Time     : 2.4367 seconds
+
+[*] Verifying solution...
+[✓] Schedule is VALID
+
+======================================================================
+FINAL RESULT
+======================================================================
+Makespan : 75
+Status    : VALID
+[runlim] end:			Tue Sep  1 09:54:12 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		2
+[runlim] processes:		3
+[runlim] real:			2.53 seconds
+[runlim] time:			4.37 seconds
+[runlim] space:			113 MB
+[runlim] load:			1.90 maximum
+[runlim] samples:		26

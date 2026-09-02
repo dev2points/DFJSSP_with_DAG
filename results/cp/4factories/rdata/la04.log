@@ -1,0 +1,74 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			fjssp-instance
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	3600 seconds
+[runlim] space limit:		14000 MB
+[runlim] argv[0]:		python3
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		cp.py
+[runlim] argv[3]:		--input
+[runlim] argv[4]:		datasets/rdata/la04.txt
+[runlim] argv[5]:		--factories
+[runlim] argv[6]:		4
+[runlim] start:			Wed Sep  2 01:57:45 2026
+[runlim] child:			3524
+[*] Loading: datasets/rdata/la04.txt
+======================================================================
+DFJSP CP MODEL - MENG ET AL. (2020)
+======================================================================
+Operations : 50
+Jobs       : 10
+Machines   : 5
+Factories  : 4
+Horizon    : 2507
+
+[*] Starting CP Optimizer...
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 474 variables, 270 constraints
+ ! Presolve      : 8 extractables eliminated
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 427.0 (before), 427.0 (after)
+ !  . Memory usage      : 2.3 MB (before), 2.3 MB (after)
+ ! Using parallel search with 2 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        474                 -
+ + New bound is 369
+ *           369      125  0.02s        1      (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 1 solution found.
+ ! Best objective         : 369 (optimal - effective tol. is 0)
+ ! Best bound             : 369
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 254
+ ! Number of fails        : 26
+ ! Total memory usage     : 9.5 MB (9.3 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 0.02s (0.02s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 25400.0
+ ! ----------------------------------------------------------------------------
+
+======================================================================
+SOLUTION FOUND
+======================================================================
+Makespan : 369
+Time     : 0.0318 seconds
+
+[*] Verifying solution...
+[✓] Schedule is VALID
+
+======================================================================
+FINAL RESULT
+======================================================================
+Makespan : 369
+Status    : VALID
+[runlim] end:			Wed Sep  2 01:57:45 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] processes:		0
+[runlim] real:			0.11 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0 MB
+[runlim] load:			1.88 maximum
+[runlim] samples:		1

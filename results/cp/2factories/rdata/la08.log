@@ -1,0 +1,111 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			fjssp-instance
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	3600 seconds
+[runlim] space limit:		14000 MB
+[runlim] argv[0]:		python3
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		cp.py
+[runlim] argv[3]:		--input
+[runlim] argv[4]:		datasets/rdata/la08.txt
+[runlim] argv[5]:		--factories
+[runlim] argv[6]:		2
+[runlim] start:			Tue Sep  1 03:48:37 2026
+[runlim] child:			6947
+[*] Loading: datasets/rdata/la08.txt
+======================================================================
+DFJSP CP MODEL - MENG ET AL. (2020)
+======================================================================
+Operations : 75
+Jobs       : 15
+Machines   : 5
+Factories  : 2
+Horizon    : 3825
+
+[*] Starting CP Optimizer...
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 375 variables, 265 constraints
+ ! Presolve      : 20 extractables eliminated
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.01s (0.01s extraction + 0.00s propagation)
+ !  . Log search space  : 603.4 (before), 603.4 (after)
+ !  . Memory usage      : 1.8 MB (before), 1.8 MB (after)
+ ! Using parallel search with 2 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        375                 -
+ + New bound is 369
+ *           910      165  0.04s        1      (gap is 59.45%)
+ *           749      411  0.04s        1      (gap is 50.73%)
+ *           707      561  0.04s        1      (gap is 47.81%)
+ *           706      711  0.04s        1      (gap is 47.73%)
+ *           684      861  0.04s        1      (gap is 46.05%)
+ *           654     1081  0.04s        1      (gap is 43.58%)
+ *           618     1231  0.04s        1      (gap is 40.29%)
+ *           611     1381  0.04s        1      (gap is 39.61%)
+ *           469     1677  0.04s        1      (gap is 21.32%)
+ *           467     1936  0.04s        1      (gap is 20.99%)
+ *           462     3034  0.06s        1      (gap is 20.13%)
+ *           445     2912  0.06s        2      (gap is 17.08%)
+ *           438     3789  0.06s        2      (gap is 15.75%)
+ ! Using failure-directed search.
+ *           413     6870  0.09s        2      (gap is 10.65%)
+ *           412     9111  0.11s        2      (gap is 10.44%)
+ *           411    10114  0.28s        1      (gap is 10.22%)
+ *           408    10917  0.30s        1      (gap is 9.56%)
+ *           407    11010  0.30s        1      (gap is 9.34%)
+ *           404    34561  0.72s        1      (gap is 8.66%)
+ ! Time = 0.72s, Average fail depth = 24, Memory usage = 8.1 MB
+ ! Current bound is 369 (gap is 8.66%)
+ !          Best Branches  Non-fixed    W       Branch decision
+ *           403    36270  0.78s        1      (gap is 8.44%)
+ *           400    50776  1.00s        1      (gap is 7.75%)
+ *           399    53875  1.08s        1      (gap is 7.52%)
+ *           398    54235  1.09s        1      (gap is 7.29%)
+ *           395     205k  1.83s        2      (gap is 6.58%)
+ *           391     600k  9.85s        1      (gap is 5.63%)
+[runlim] sample:		18.63 time, 10.01 real, 64 MB, 2.04 load
+[runlim] sample:		37.23 time, 20.01 real, 64 MB, 2.03 load
+[runlim] sample:		55.79 time, 30.01 real, 64 MB, 2.03 load
+             391    1456k        161    1   F         !presenceOf(mode_29_0_1)
+ + New bound is 371 (gap is 5.12%)
+             391    1457k        158    1             !presenceOf(mode_73_0_2)
+ + New bound is 379 (gap is 3.07%)
+             391    1457k        158    1   F    87 <= startOf(op_46)
+ + New bound is 391 (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 25 solutions found.
+ ! Best objective         : 391 (optimal - effective tol. is 0)
+ ! Best bound             : 391
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 4781376
+ ! Number of fails        : 2205073
+ ! Total memory usage     : 9.9 MB (9.7 MB CP Optimizer + 0.2 MB Concert)
+ ! Time spent in solve    : 38.92s (38.91s engine + 0.01s extraction)
+ ! Search speed (br. / s) : 122914.6
+ ! ----------------------------------------------------------------------------
+
+======================================================================
+SOLUTION FOUND
+======================================================================
+Makespan : 391
+Time     : 38.9173 seconds
+
+[*] Verifying solution...
+[✓] Schedule is VALID
+
+======================================================================
+FINAL RESULT
+======================================================================
+Makespan : 391
+Status    : VALID
+[runlim] end:			Tue Sep  1 03:49:16 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		2
+[runlim] processes:		3
+[runlim] real:			39.00 seconds
+[runlim] time:			72.29 seconds
+[runlim] space:			64 MB
+[runlim] load:			2.04 maximum
+[runlim] samples:		390

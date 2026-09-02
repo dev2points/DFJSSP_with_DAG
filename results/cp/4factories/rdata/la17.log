@@ -1,0 +1,76 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			fjssp-instance
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	3600 seconds
+[runlim] space limit:		14000 MB
+[runlim] argv[0]:		python3
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		cp.py
+[runlim] argv[3]:		--input
+[runlim] argv[4]:		datasets/rdata/la17.txt
+[runlim] argv[5]:		--factories
+[runlim] argv[6]:		4
+[runlim] start:			Wed Sep  2 01:57:47 2026
+[runlim] child:			3631
+[*] Loading: datasets/rdata/la17.txt
+======================================================================
+DFJSP CP MODEL - MENG ET AL. (2020)
+======================================================================
+Operations : 100
+Jobs       : 10
+Machines   : 10
+Factories  : 4
+Horizon    : 4676
+
+[*] Starting CP Optimizer...
+ ! --------------------------------------------------- CP Optimizer 22.2.0.0 --
+ ! Minimization problem - 912 variables, 590 constraints
+ ! Presolve      : 24 extractables eliminated
+ ! LogVerbosity         = Terse
+ ! Initial process time : 0.02s (0.02s extraction + 0.00s propagation)
+ !  . Log search space  : 946.2 (before), 946.2 (after)
+ !  . Memory usage      : 4.2 MB (before), 4.2 MB (after)
+ ! Using parallel search with 2 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        912                 -
+ + New bound is 646
+ *           792      339  0.04s        1      (gap is 18.43%)
+ *           698      701  0.04s        1      (gap is 7.45%)
+ *           646      901  0.04s        1      (gap is 0.00%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 3 solutions found.
+ ! Best objective         : 646 (optimal - effective tol. is 0)
+ ! Best bound             : 646
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 2006
+ ! Number of fails        : 21
+ ! Total memory usage     : 17.1 MB (16.7 MB CP Optimizer + 0.4 MB Concert)
+ ! Time spent in solve    : 0.04s (0.02s engine + 0.02s extraction)
+ ! Search speed (br. / s) : 100300.0
+ ! ----------------------------------------------------------------------------
+
+======================================================================
+SOLUTION FOUND
+======================================================================
+Makespan : 646
+Time     : 0.0548 seconds
+
+[*] Verifying solution...
+[✓] Schedule is VALID
+
+======================================================================
+FINAL RESULT
+======================================================================
+Makespan : 646
+Status    : VALID
+[runlim] end:			Wed Sep  2 01:57:48 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		2
+[runlim] processes:		3
+[runlim] real:			0.13 seconds
+[runlim] time:			0.11 seconds
+[runlim] space:			67 MB
+[runlim] load:			1.88 maximum
+[runlim] samples:		2
