@@ -1,0 +1,5 @@
+# SAT Solvers & Optimization
+python-sat>=0.1.8.dev1
+
+# Data Visualization
+matplotlib>=3.5.0

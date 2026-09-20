@@ -563,19 +563,6 @@ def build_constraints(solver, num_ops, num_jobs, num_factories, precedence_list,
                     finish_time = t + proc_time
 
                     if finish_time > LS[j]:
-                        cnf.append([-s[(i, t)], -m[(i, machine)]])
-                        break
-                    elif finish_time > ES[j]:
-                        cnf.append([-s[(i, t)], -m[(i, machine)], x[(j, finish_time)]])
-
-            for idx in range(1, len(request_machines_i)):
-                machine = request_machines_i[idx]
-                proc_time = request_list[i][machine]
-
-                if proc_time > pre_proc_time:
-                    finish_time = t + proc_time
-
-                    if finish_time > LS[j]:
                         cnf.append([-s[(i, t)], -xm[(i, machine)]])
                         break
                     elif finish_time > ES[j]:
@@ -727,9 +714,11 @@ def solve_and_print(num_ops, num_jobs, num_factories, precedence_list, request_l
 
         best_makespan = max(info['end'] for info in schedule.values())
         best_schedule = schedule
+        print(f" Schedule: {best_schedule}")
         print(f"  SAT ! Makespan = {best_makespan}")
-        if verify_schedule(best_schedule, precedence_list, best_makespan):
-            print(f"  Schedule is valid with Makespan = {best_makespan}")
+
+        # if verify_schedule(best_schedule, precedence_list, best_makespan):
+        #     print(f"  Schedule is valid with Makespan = {best_makespan}")
         print(f"  Total time: {(time.time() - real_start_time):.4f} seconds")
         current_UB = best_makespan - 1
 
