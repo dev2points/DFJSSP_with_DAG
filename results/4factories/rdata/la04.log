@@ -1,0 +1,55 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			fjssp-instance1
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	1800 seconds
+[runlim] space limit:		14000 MB
+[runlim] argv[0]:		python3
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		main.py
+[runlim] argv[3]:		--input
+[runlim] argv[4]:		datasets/rdata/la04.txt
+[runlim] argv[5]:		--sb
+[runlim] argv[6]:		--factories
+[runlim] argv[7]:		4
+[runlim] argv[8]:		--full_transitive
+[runlim] start:			Sun Sep 20 18:35:03 2026
+[runlim] child:			24986
+[*] Loading data from file: datasets/rdata/la04.txt
+[*] Running D-FJSSP SAT Solver with 4 factories, Symmetry Breaking = ON, Transitive E* = FULL
+===========================================================================
+ D-FJSSP SAT SOLVER - PARALLEL FACTORIES SCHEDULING
+===========================================================================
+  -> Operations: 50 | Jobs: 10 | Machines: 5 | Factories: 4
+
+[*] Running Greedy Heuristic...
+  -> Greedy Solution: Makespan = 369 (0.0002s)
+
+[*] Initializing and solving the SAT model...
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 369...
+  SAT ! Makespan = 369
+  Schedule: {0: {'job': 0, 'factory': 0, 'machine': 0, 'start': 71, 'duration': 12, 'end': 83}, 1: {'job': 0, 'factory': 0, 'machine': 2, 'start': 83, 'duration': 94, 'end': 177}, 2: {'job': 0, 'factory': 0, 'machine': 2, 'start': 179, 'duration': 92, 'end': 271}, 3: {'job': 0, 'factory': 0, 'machine': 4, 'start': 271, 'duration': 91, 'end': 362}, 4: {'job': 0, 'factory': 0, 'machine': 1, 'start': 362, 'duration': 7, 'end': 369}, 5: {'job': 1, 'factory': 1, 'machine': 1, 'start': 2, 'duration': 19, 'end': 21}, 6: {'job': 1, 'factory': 1, 'machine': 2, 'start': 56, 'duration': 11, 'end': 67}, 7: {'job': 1, 'factory': 1, 'machine': 1, 'start': 98, 'duration': 66, 'end': 164}, 8: {'job': 1, 'factory': 1, 'machine': 0, 'start': 239, 'duration': 21, 'end': 260}, 9: {'job': 1, 'factory': 1, 'machine': 1, 'start': 260, 'duration': 87, 'end': 347}, 10: {'job': 2, 'factory': 0, 'machine': 1, 'start': 129, 'duration': 14, 'end': 143}, 11: {'job': 2, 'factory': 0, 'machine': 0, 'start': 235, 'duration': 75, 'end': 310}, 12: {'job': 2, 'factory': 0, 'machine': 0, 'start': 310, 'duration': 13, 'end': 323}, 13: {'job': 2, 'factory': 0, 'machine': 0, 'start': 323, 'duration': 16, 'end': 339}, 14: {'job': 2, 'factory': 0, 'machine': 2, 'start': 339, 'duration': 20, 'end': 359}, 15: {'job': 3, 'factory': 2, 'machine': 2, 'start': 86, 'duration': 95, 'end': 181}, 16: {'job': 3, 'factory': 2, 'machine': 4, 'start': 212, 'duration': 66, 'end': 278}, 17: {'job': 3, 'factory': 2, 'machine': 0, 'start': 278, 'duration': 7, 'end': 285}, 18: {'job': 3, 'factory': 2, 'machine': 0, 'start': 285, 'duration': 7, 'end': 292}, 19: {'job': 3, 'factory': 2, 'machine': 1, 'start': 292, 'duration': 77, 'end': 369}, 20: {'job': 4, 'factory': 1, 'machine': 3, 'start': 8, 'duration': 45, 'end': 53}, 21: {'job': 4, 'factory': 1, 'machine': 3, 'start': 53, 'duration': 6, 'end': 59}, 22: {'job': 4, 'factory': 1, 'machine': 4, 'start': 70, 'duration': 89, 'end': 159}, 23: {'job': 4, 'factory': 1, 'machine': 0, 'start': 215, 'duration': 15, 'end': 230}, 24: {'job': 4, 'factory': 1, 'machine': 2, 'start': 311, 'duration': 34, 'end': 345}, 25: {'job': 5, 'factory': 1, 'machine': 1, 'start': 21, 'duration': 77, 'end': 98}, 26: {'job': 5, 'factory': 1, 'machine': 2, 'start': 98, 'duration': 20, 'end': 118}, 27: {'job': 5, 'factory': 1, 'machine': 0, 'start': 139, 'duration': 76, 'end': 215}, 28: {'job': 5, 'factory': 1, 'machine': 4, 'start': 228, 'duration': 88, 'end': 316}, 29: {'job': 5, 'factory': 1, 'machine': 0, 'start': 316, 'duration': 53, 'end': 369}, 30: {'job': 6, 'factory': 3, 'machine': 2, 'start': 38, 'duration': 74, 'end': 112}, 31: {'job': 6, 'factory': 3, 'machine': 4, 'start': 112, 'duration': 88, 'end': 200}, 32: {'job': 6, 'factory': 3, 'machine': 0, 'start': 219, 'duration': 52, 'end': 271}, 33: {'job': 6, 'factory': 3, 'machine': 2, 'start': 311, 'duration': 27, 'end': 338}, 34: {'job': 6, 'factory': 3, 'machine': 4, 'start': 360, 'duration': 9, 'end': 369}, 35: {'job': 7, 'factory': 3, 'machine': 1, 'start': 0, 'duration': 88, 'end': 88}, 36: {'job': 7, 'factory': 3, 'machine': 3, 'start': 88, 'duration': 69, 'end': 157}, 37: {'job': 7, 'factory': 3, 'machine': 0, 'start': 157, 'duration': 62, 'end': 219}, 38: {'job': 7, 'factory': 3, 'machine': 4, 'start': 219, 'duration': 98, 'end': 317}, 39: {'job': 7, 'factory': 3, 'machine': 3, 'start': 317, 'duration': 52, 'end': 369}, 40: {'job': 8, 'factory': 1, 'machine': 0, 'start': 0, 'duration': 61, 'end': 61}, 41: {'job': 8, 'factory': 1, 'machine': 4, 'start': 61, 'duration': 9, 'end': 70}, 42: {'job': 8, 'factory': 1, 'machine': 0, 'start': 77, 'duration': 62, 'end': 139}, 43: {'job': 8, 'factory': 1, 'machine': 1, 'start': 164, 'duration': 52, 'end': 216}, 44: {'job': 8, 'factory': 1, 'machine': 2, 'start': 221, 'duration': 90, 'end': 311}, 45: {'job': 9, 'factory': 1, 'machine': 2, 'start': 0, 'duration': 54, 'end': 54}, 46: {'job': 9, 'factory': 1, 'machine': 4, 'start': 54, 'duration': 5, 'end': 59}, 47: {'job': 9, 'factory': 1, 'machine': 3, 'start': 59, 'duration': 59, 'end': 118}, 48: {'job': 9, 'factory': 1, 'machine': 2, 'start': 118, 'duration': 15, 'end': 133}, 49: {'job': 9, 'factory': 1, 'machine': 2, 'start': 133, 'duration': 88, 'end': 221}}
+  Total time: 0.1140 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 368...
+   UNSAT
+
+ Optimal Makespan = 369
+
+ Summary:
+  - Optimal Makespan   : 369
+  - Greedy Time        : 0.0002s
+  - SAT Time           : 0.1166s
+  - Total Time         : 0.1171s
+  - Schedule Status    : VALID
+===========================================================================
+[runlim] end:			Sun Sep 20 18:35:03 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] processes:		2
+[runlim] real:			0.15 seconds
+[runlim] time:			0.10 seconds
+[runlim] space:			47 MB
+[runlim] load:			1.00 maximum
+[runlim] samples:		2

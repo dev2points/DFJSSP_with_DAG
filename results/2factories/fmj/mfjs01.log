@@ -1,0 +1,120 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			fjssp-instance1
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	1800 seconds
+[runlim] space limit:		14000 MB
+[runlim] argv[0]:		python3
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		main.py
+[runlim] argv[3]:		--input
+[runlim] argv[4]:		datasets/fmj/mfjs01
+[runlim] argv[5]:		--sb
+[runlim] argv[6]:		--factories
+[runlim] argv[7]:		2
+[runlim] argv[8]:		--full_transitive
+[runlim] start:			Sun Sep 20 13:38:29 2026
+[runlim] child:			17013
+[*] Loading data from file: datasets/fmj/mfjs01
+[*] Running D-FJSSP SAT Solver with 2 factories, Symmetry Breaking = ON, Transitive E* = FULL
+===========================================================================
+ D-FJSSP SAT SOLVER - PARALLEL FACTORIES SCHEDULING
+===========================================================================
+  -> Operations: 15 | Jobs: 5 | Machines: 6 | Factories: 2
+
+[*] Running Greedy Heuristic...
+  -> Greedy Solution: Makespan = 416 (0.0001s)
+
+[*] Initializing and solving the SAT model...
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 416...
+  SAT ! Makespan = 416
+  Schedule: {0: {'job': 0, 'factory': 0, 'machine': 1, 'start': 9, 'duration': 123, 'end': 132}, 1: {'job': 0, 'factory': 0, 'machine': 1, 'start': 132, 'duration': 130, 'end': 262}, 2: {'job': 0, 'factory': 0, 'machine': 3, 'start': 262, 'duration': 150, 'end': 412}, 3: {'job': 1, 'factory': 0, 'machine': 2, 'start': 1, 'duration': 150, 'end': 151}, 4: {'job': 1, 'factory': 0, 'machine': 2, 'start': 151, 'duration': 87, 'end': 238}, 5: {'job': 1, 'factory': 0, 'machine': 4, 'start': 238, 'duration': 178, 'end': 416}, 6: {'job': 2, 'factory': 0, 'machine': 0, 'start': 0, 'duration': 87, 'end': 87}, 7: {'job': 2, 'factory': 0, 'machine': 3, 'start': 87, 'duration': 105, 'end': 192}, 8: {'job': 2, 'factory': 0, 'machine': 5, 'start': 216, 'duration': 153, 'end': 369}, 9: {'job': 3, 'factory': 1, 'machine': 1, 'start': 0, 'duration': 65, 'end': 65}, 10: {'job': 3, 'factory': 1, 'machine': 4, 'start': 65, 'duration': 173, 'end': 238}, 11: {'job': 3, 'factory': 1, 'machine': 5, 'start': 280, 'duration': 136, 'end': 416}, 12: {'job': 4, 'factory': 1, 'machine': 0, 'start': 0, 'duration': 128, 'end': 128}, 13: {'job': 4, 'factory': 1, 'machine': 3, 'start': 128, 'duration': 65, 'end': 193}, 14: {'job': 4, 'factory': 1, 'machine': 5, 'start': 195, 'duration': 85, 'end': 280}}
+  Total time: 0.0152 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 415...
+  SAT ! Makespan = 415
+  Schedule: {0: {'job': 0, 'factory': 0, 'machine': 1, 'start': 9, 'duration': 123, 'end': 132}, 1: {'job': 0, 'factory': 0, 'machine': 1, 'start': 132, 'duration': 130, 'end': 262}, 2: {'job': 0, 'factory': 0, 'machine': 3, 'start': 262, 'duration': 150, 'end': 412}, 3: {'job': 1, 'factory': 0, 'machine': 2, 'start': 0, 'duration': 150, 'end': 150}, 4: {'job': 1, 'factory': 0, 'machine': 2, 'start': 150, 'duration': 87, 'end': 237}, 5: {'job': 1, 'factory': 0, 'machine': 4, 'start': 237, 'duration': 178, 'end': 415}, 6: {'job': 2, 'factory': 0, 'machine': 0, 'start': 0, 'duration': 87, 'end': 87}, 7: {'job': 2, 'factory': 0, 'machine': 3, 'start': 87, 'duration': 105, 'end': 192}, 8: {'job': 2, 'factory': 0, 'machine': 5, 'start': 216, 'duration': 153, 'end': 369}, 9: {'job': 3, 'factory': 1, 'machine': 1, 'start': 0, 'duration': 65, 'end': 65}, 10: {'job': 3, 'factory': 1, 'machine': 4, 'start': 65, 'duration': 173, 'end': 238}, 11: {'job': 3, 'factory': 1, 'machine': 5, 'start': 279, 'duration': 136, 'end': 415}, 12: {'job': 4, 'factory': 1, 'machine': 0, 'start': 0, 'duration': 128, 'end': 128}, 13: {'job': 4, 'factory': 1, 'machine': 3, 'start': 128, 'duration': 65, 'end': 193}, 14: {'job': 4, 'factory': 1, 'machine': 5, 'start': 194, 'duration': 85, 'end': 279}}
+  Total time: 0.0156 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 414...
+  SAT ! Makespan = 414
+  Schedule: {0: {'job': 0, 'factory': 0, 'machine': 1, 'start': 9, 'duration': 123, 'end': 132}, 1: {'job': 0, 'factory': 0, 'machine': 1, 'start': 134, 'duration': 130, 'end': 264}, 2: {'job': 0, 'factory': 0, 'machine': 3, 'start': 264, 'duration': 150, 'end': 414}, 3: {'job': 1, 'factory': 1, 'machine': 2, 'start': 0, 'duration': 150, 'end': 150}, 4: {'job': 1, 'factory': 1, 'machine': 1, 'start': 160, 'duration': 66, 'end': 226}, 5: {'job': 1, 'factory': 1, 'machine': 5, 'start': 248, 'duration': 95, 'end': 343}, 6: {'job': 2, 'factory': 0, 'machine': 0, 'start': 0, 'duration': 87, 'end': 87}, 7: {'job': 2, 'factory': 0, 'machine': 3, 'start': 87, 'duration': 105, 'end': 192}, 8: {'job': 2, 'factory': 0, 'machine': 4, 'start': 216, 'duration': 100, 'end': 316}, 9: {'job': 3, 'factory': 1, 'machine': 0, 'start': 0, 'duration': 87, 'end': 87}, 10: {'job': 3, 'factory': 1, 'machine': 4, 'start': 87, 'duration': 173, 'end': 260}, 11: {'job': 3, 'factory': 1, 'machine': 3, 'start': 269, 'duration': 145, 'end': 414}, 12: {'job': 4, 'factory': 1, 'machine': 1, 'start': 1, 'duration': 123, 'end': 124}, 13: {'job': 4, 'factory': 1, 'machine': 3, 'start': 126, 'duration': 65, 'end': 191}, 14: {'job': 4, 'factory': 1, 'machine': 4, 'start': 260, 'duration': 110, 'end': 370}}
+  Total time: 0.0162 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 413...
+  SAT ! Makespan = 413
+  Schedule: {0: {'job': 0, 'factory': 0, 'machine': 1, 'start': 9, 'duration': 123, 'end': 132}, 1: {'job': 0, 'factory': 0, 'machine': 1, 'start': 133, 'duration': 130, 'end': 263}, 2: {'job': 0, 'factory': 0, 'machine': 3, 'start': 263, 'duration': 150, 'end': 413}, 3: {'job': 1, 'factory': 1, 'machine': 2, 'start': 0, 'duration': 150, 'end': 150}, 4: {'job': 1, 'factory': 1, 'machine': 1, 'start': 160, 'duration': 66, 'end': 226}, 5: {'job': 1, 'factory': 1, 'machine': 5, 'start': 248, 'duration': 95, 'end': 343}, 6: {'job': 2, 'factory': 0, 'machine': 0, 'start': 0, 'duration': 87, 'end': 87}, 7: {'job': 2, 'factory': 0, 'machine': 3, 'start': 87, 'duration': 105, 'end': 192}, 8: {'job': 2, 'factory': 0, 'machine': 4, 'start': 216, 'duration': 100, 'end': 316}, 9: {'job': 3, 'factory': 1, 'machine': 0, 'start': 0, 'duration': 87, 'end': 87}, 10: {'job': 3, 'factory': 1, 'machine': 4, 'start': 87, 'duration': 173, 'end': 260}, 11: {'job': 3, 'factory': 1, 'machine': 3, 'start': 268, 'duration': 145, 'end': 413}, 12: {'job': 4, 'factory': 1, 'machine': 1, 'start': 1, 'duration': 123, 'end': 124}, 13: {'job': 4, 'factory': 1, 'machine': 3, 'start': 126, 'duration': 65, 'end': 191}, 14: {'job': 4, 'factory': 1, 'machine': 4, 'start': 260, 'duration': 110, 'end': 370}}
+  Total time: 0.0164 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 412...
+  SAT ! Makespan = 412
+  Schedule: {0: {'job': 0, 'factory': 0, 'machine': 1, 'start': 9, 'duration': 123, 'end': 132}, 1: {'job': 0, 'factory': 0, 'machine': 1, 'start': 132, 'duration': 130, 'end': 262}, 2: {'job': 0, 'factory': 0, 'machine': 3, 'start': 262, 'duration': 150, 'end': 412}, 3: {'job': 1, 'factory': 1, 'machine': 2, 'start': 0, 'duration': 150, 'end': 150}, 4: {'job': 1, 'factory': 1, 'machine': 1, 'start': 160, 'duration': 66, 'end': 226}, 5: {'job': 1, 'factory': 1, 'machine': 5, 'start': 248, 'duration': 95, 'end': 343}, 6: {'job': 2, 'factory': 0, 'machine': 0, 'start': 0, 'duration': 87, 'end': 87}, 7: {'job': 2, 'factory': 0, 'machine': 3, 'start': 87, 'duration': 105, 'end': 192}, 8: {'job': 2, 'factory': 0, 'machine': 4, 'start': 216, 'duration': 100, 'end': 316}, 9: {'job': 3, 'factory': 1, 'machine': 0, 'start': 0, 'duration': 87, 'end': 87}, 10: {'job': 3, 'factory': 1, 'machine': 4, 'start': 87, 'duration': 173, 'end': 260}, 11: {'job': 3, 'factory': 1, 'machine': 3, 'start': 267, 'duration': 145, 'end': 412}, 12: {'job': 4, 'factory': 1, 'machine': 1, 'start': 1, 'duration': 123, 'end': 124}, 13: {'job': 4, 'factory': 1, 'machine': 3, 'start': 126, 'duration': 65, 'end': 191}, 14: {'job': 4, 'factory': 1, 'machine': 4, 'start': 260, 'duration': 110, 'end': 370}}
+  Total time: 0.0167 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 411...
+  SAT ! Makespan = 411
+  Schedule: {0: {'job': 0, 'factory': 0, 'machine': 1, 'start': 8, 'duration': 123, 'end': 131}, 1: {'job': 0, 'factory': 0, 'machine': 1, 'start': 131, 'duration': 130, 'end': 261}, 2: {'job': 0, 'factory': 0, 'machine': 3, 'start': 261, 'duration': 150, 'end': 411}, 3: {'job': 1, 'factory': 1, 'machine': 2, 'start': 0, 'duration': 150, 'end': 150}, 4: {'job': 1, 'factory': 1, 'machine': 1, 'start': 160, 'duration': 66, 'end': 226}, 5: {'job': 1, 'factory': 1, 'machine': 5, 'start': 248, 'duration': 95, 'end': 343}, 6: {'job': 2, 'factory': 0, 'machine': 0, 'start': 0, 'duration': 87, 'end': 87}, 7: {'job': 2, 'factory': 0, 'machine': 3, 'start': 87, 'duration': 105, 'end': 192}, 8: {'job': 2, 'factory': 0, 'machine': 4, 'start': 216, 'duration': 100, 'end': 316}, 9: {'job': 3, 'factory': 1, 'machine': 0, 'start': 0, 'duration': 87, 'end': 87}, 10: {'job': 3, 'factory': 1, 'machine': 4, 'start': 87, 'duration': 173, 'end': 260}, 11: {'job': 3, 'factory': 1, 'machine': 3, 'start': 266, 'duration': 145, 'end': 411}, 12: {'job': 4, 'factory': 1, 'machine': 1, 'start': 1, 'duration': 123, 'end': 124}, 13: {'job': 4, 'factory': 1, 'machine': 3, 'start': 126, 'duration': 65, 'end': 191}, 14: {'job': 4, 'factory': 1, 'machine': 4, 'start': 260, 'duration': 110, 'end': 370}}
+  Total time: 0.0170 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 410...
+  SAT ! Makespan = 410
+  Schedule: {0: {'job': 0, 'factory': 0, 'machine': 1, 'start': 7, 'duration': 123, 'end': 130}, 1: {'job': 0, 'factory': 0, 'machine': 1, 'start': 130, 'duration': 130, 'end': 260}, 2: {'job': 0, 'factory': 0, 'machine': 3, 'start': 260, 'duration': 150, 'end': 410}, 3: {'job': 1, 'factory': 1, 'machine': 2, 'start': 0, 'duration': 150, 'end': 150}, 4: {'job': 1, 'factory': 1, 'machine': 1, 'start': 160, 'duration': 66, 'end': 226}, 5: {'job': 1, 'factory': 1, 'machine': 5, 'start': 248, 'duration': 95, 'end': 343}, 6: {'job': 2, 'factory': 0, 'machine': 0, 'start': 0, 'duration': 87, 'end': 87}, 7: {'job': 2, 'factory': 0, 'machine': 3, 'start': 87, 'duration': 105, 'end': 192}, 8: {'job': 2, 'factory': 0, 'machine': 4, 'start': 216, 'duration': 100, 'end': 316}, 9: {'job': 3, 'factory': 1, 'machine': 0, 'start': 0, 'duration': 87, 'end': 87}, 10: {'job': 3, 'factory': 1, 'machine': 4, 'start': 87, 'duration': 173, 'end': 260}, 11: {'job': 3, 'factory': 1, 'machine': 3, 'start': 265, 'duration': 145, 'end': 410}, 12: {'job': 4, 'factory': 1, 'machine': 1, 'start': 1, 'duration': 123, 'end': 124}, 13: {'job': 4, 'factory': 1, 'machine': 3, 'start': 126, 'duration': 65, 'end': 191}, 14: {'job': 4, 'factory': 1, 'machine': 4, 'start': 260, 'duration': 110, 'end': 370}}
+  Total time: 0.0174 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 409...
+  SAT ! Makespan = 409
+  Schedule: {0: {'job': 0, 'factory': 0, 'machine': 1, 'start': 6, 'duration': 123, 'end': 129}, 1: {'job': 0, 'factory': 0, 'machine': 1, 'start': 129, 'duration': 130, 'end': 259}, 2: {'job': 0, 'factory': 0, 'machine': 3, 'start': 259, 'duration': 150, 'end': 409}, 3: {'job': 1, 'factory': 1, 'machine': 2, 'start': 0, 'duration': 150, 'end': 150}, 4: {'job': 1, 'factory': 1, 'machine': 1, 'start': 160, 'duration': 66, 'end': 226}, 5: {'job': 1, 'factory': 1, 'machine': 5, 'start': 248, 'duration': 95, 'end': 343}, 6: {'job': 2, 'factory': 0, 'machine': 0, 'start': 0, 'duration': 87, 'end': 87}, 7: {'job': 2, 'factory': 0, 'machine': 3, 'start': 87, 'duration': 105, 'end': 192}, 8: {'job': 2, 'factory': 0, 'machine': 4, 'start': 216, 'duration': 100, 'end': 316}, 9: {'job': 3, 'factory': 1, 'machine': 0, 'start': 0, 'duration': 87, 'end': 87}, 10: {'job': 3, 'factory': 1, 'machine': 4, 'start': 87, 'duration': 173, 'end': 260}, 11: {'job': 3, 'factory': 1, 'machine': 3, 'start': 264, 'duration': 145, 'end': 409}, 12: {'job': 4, 'factory': 1, 'machine': 1, 'start': 1, 'duration': 123, 'end': 124}, 13: {'job': 4, 'factory': 1, 'machine': 3, 'start': 126, 'duration': 65, 'end': 191}, 14: {'job': 4, 'factory': 1, 'machine': 4, 'start': 260, 'duration': 110, 'end': 370}}
+  Total time: 0.0177 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 408...
+  SAT ! Makespan = 408
+  Schedule: {0: {'job': 0, 'factory': 0, 'machine': 1, 'start': 5, 'duration': 123, 'end': 128}, 1: {'job': 0, 'factory': 0, 'machine': 1, 'start': 128, 'duration': 130, 'end': 258}, 2: {'job': 0, 'factory': 0, 'machine': 3, 'start': 258, 'duration': 150, 'end': 408}, 3: {'job': 1, 'factory': 1, 'machine': 2, 'start': 0, 'duration': 150, 'end': 150}, 4: {'job': 1, 'factory': 1, 'machine': 1, 'start': 160, 'duration': 66, 'end': 226}, 5: {'job': 1, 'factory': 1, 'machine': 5, 'start': 248, 'duration': 95, 'end': 343}, 6: {'job': 2, 'factory': 0, 'machine': 0, 'start': 0, 'duration': 87, 'end': 87}, 7: {'job': 2, 'factory': 0, 'machine': 3, 'start': 87, 'duration': 105, 'end': 192}, 8: {'job': 2, 'factory': 0, 'machine': 4, 'start': 216, 'duration': 100, 'end': 316}, 9: {'job': 3, 'factory': 1, 'machine': 0, 'start': 0, 'duration': 87, 'end': 87}, 10: {'job': 3, 'factory': 1, 'machine': 4, 'start': 87, 'duration': 173, 'end': 260}, 11: {'job': 3, 'factory': 1, 'machine': 3, 'start': 263, 'duration': 145, 'end': 408}, 12: {'job': 4, 'factory': 1, 'machine': 1, 'start': 1, 'duration': 123, 'end': 124}, 13: {'job': 4, 'factory': 1, 'machine': 3, 'start': 126, 'duration': 65, 'end': 191}, 14: {'job': 4, 'factory': 1, 'machine': 4, 'start': 260, 'duration': 110, 'end': 370}}
+  Total time: 0.0180 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 407...
+  SAT ! Makespan = 407
+  Schedule: {0: {'job': 0, 'factory': 0, 'machine': 1, 'start': 4, 'duration': 123, 'end': 127}, 1: {'job': 0, 'factory': 0, 'machine': 1, 'start': 127, 'duration': 130, 'end': 257}, 2: {'job': 0, 'factory': 0, 'machine': 3, 'start': 257, 'duration': 150, 'end': 407}, 3: {'job': 1, 'factory': 1, 'machine': 2, 'start': 0, 'duration': 150, 'end': 150}, 4: {'job': 1, 'factory': 1, 'machine': 1, 'start': 160, 'duration': 66, 'end': 226}, 5: {'job': 1, 'factory': 1, 'machine': 5, 'start': 248, 'duration': 95, 'end': 343}, 6: {'job': 2, 'factory': 0, 'machine': 0, 'start': 0, 'duration': 87, 'end': 87}, 7: {'job': 2, 'factory': 0, 'machine': 3, 'start': 87, 'duration': 105, 'end': 192}, 8: {'job': 2, 'factory': 0, 'machine': 4, 'start': 216, 'duration': 100, 'end': 316}, 9: {'job': 3, 'factory': 1, 'machine': 0, 'start': 0, 'duration': 87, 'end': 87}, 10: {'job': 3, 'factory': 1, 'machine': 4, 'start': 87, 'duration': 173, 'end': 260}, 11: {'job': 3, 'factory': 1, 'machine': 3, 'start': 262, 'duration': 145, 'end': 407}, 12: {'job': 4, 'factory': 1, 'machine': 1, 'start': 1, 'duration': 123, 'end': 124}, 13: {'job': 4, 'factory': 1, 'machine': 3, 'start': 126, 'duration': 65, 'end': 191}, 14: {'job': 4, 'factory': 1, 'machine': 4, 'start': 260, 'duration': 110, 'end': 370}}
+  Total time: 0.0183 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 406...
+  SAT ! Makespan = 406
+  Schedule: {0: {'job': 0, 'factory': 0, 'machine': 1, 'start': 3, 'duration': 123, 'end': 126}, 1: {'job': 0, 'factory': 0, 'machine': 1, 'start': 126, 'duration': 130, 'end': 256}, 2: {'job': 0, 'factory': 0, 'machine': 3, 'start': 256, 'duration': 150, 'end': 406}, 3: {'job': 1, 'factory': 1, 'machine': 2, 'start': 0, 'duration': 150, 'end': 150}, 4: {'job': 1, 'factory': 1, 'machine': 1, 'start': 160, 'duration': 66, 'end': 226}, 5: {'job': 1, 'factory': 1, 'machine': 5, 'start': 248, 'duration': 95, 'end': 343}, 6: {'job': 2, 'factory': 0, 'machine': 0, 'start': 0, 'duration': 87, 'end': 87}, 7: {'job': 2, 'factory': 0, 'machine': 3, 'start': 87, 'duration': 105, 'end': 192}, 8: {'job': 2, 'factory': 0, 'machine': 4, 'start': 216, 'duration': 100, 'end': 316}, 9: {'job': 3, 'factory': 1, 'machine': 0, 'start': 0, 'duration': 87, 'end': 87}, 10: {'job': 3, 'factory': 1, 'machine': 4, 'start': 87, 'duration': 173, 'end': 260}, 11: {'job': 3, 'factory': 1, 'machine': 3, 'start': 261, 'duration': 145, 'end': 406}, 12: {'job': 4, 'factory': 1, 'machine': 1, 'start': 1, 'duration': 123, 'end': 124}, 13: {'job': 4, 'factory': 1, 'machine': 3, 'start': 126, 'duration': 65, 'end': 191}, 14: {'job': 4, 'factory': 1, 'machine': 4, 'start': 260, 'duration': 110, 'end': 370}}
+  Total time: 0.0186 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 405...
+  SAT ! Makespan = 405
+  Schedule: {0: {'job': 0, 'factory': 0, 'machine': 1, 'start': 2, 'duration': 123, 'end': 125}, 1: {'job': 0, 'factory': 0, 'machine': 1, 'start': 125, 'duration': 130, 'end': 255}, 2: {'job': 0, 'factory': 0, 'machine': 3, 'start': 255, 'duration': 150, 'end': 405}, 3: {'job': 1, 'factory': 1, 'machine': 2, 'start': 0, 'duration': 150, 'end': 150}, 4: {'job': 1, 'factory': 1, 'machine': 1, 'start': 160, 'duration': 66, 'end': 226}, 5: {'job': 1, 'factory': 1, 'machine': 5, 'start': 248, 'duration': 95, 'end': 343}, 6: {'job': 2, 'factory': 0, 'machine': 0, 'start': 0, 'duration': 87, 'end': 87}, 7: {'job': 2, 'factory': 0, 'machine': 3, 'start': 87, 'duration': 105, 'end': 192}, 8: {'job': 2, 'factory': 0, 'machine': 4, 'start': 216, 'duration': 100, 'end': 316}, 9: {'job': 3, 'factory': 1, 'machine': 0, 'start': 0, 'duration': 87, 'end': 87}, 10: {'job': 3, 'factory': 1, 'machine': 4, 'start': 87, 'duration': 173, 'end': 260}, 11: {'job': 3, 'factory': 1, 'machine': 3, 'start': 260, 'duration': 145, 'end': 405}, 12: {'job': 4, 'factory': 1, 'machine': 1, 'start': 1, 'duration': 123, 'end': 124}, 13: {'job': 4, 'factory': 1, 'machine': 3, 'start': 126, 'duration': 65, 'end': 191}, 14: {'job': 4, 'factory': 1, 'machine': 4, 'start': 260, 'duration': 110, 'end': 370}}
+  Total time: 0.0189 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 404...
+  SAT ! Makespan = 404
+  Schedule: {0: {'job': 0, 'factory': 0, 'machine': 1, 'start': 0, 'duration': 123, 'end': 123}, 1: {'job': 0, 'factory': 0, 'machine': 1, 'start': 123, 'duration': 130, 'end': 253}, 2: {'job': 0, 'factory': 0, 'machine': 3, 'start': 254, 'duration': 150, 'end': 404}, 3: {'job': 1, 'factory': 1, 'machine': 2, 'start': 9, 'duration': 150, 'end': 159}, 4: {'job': 1, 'factory': 1, 'machine': 1, 'start': 160, 'duration': 66, 'end': 226}, 5: {'job': 1, 'factory': 1, 'machine': 5, 'start': 248, 'duration': 95, 'end': 343}, 6: {'job': 2, 'factory': 0, 'machine': 0, 'start': 0, 'duration': 87, 'end': 87}, 7: {'job': 2, 'factory': 0, 'machine': 3, 'start': 87, 'duration': 105, 'end': 192}, 8: {'job': 2, 'factory': 0, 'machine': 4, 'start': 216, 'duration': 100, 'end': 316}, 9: {'job': 3, 'factory': 1, 'machine': 1, 'start': 21, 'duration': 65, 'end': 86}, 10: {'job': 3, 'factory': 1, 'machine': 4, 'start': 86, 'duration': 173, 'end': 259}, 11: {'job': 3, 'factory': 1, 'machine': 3, 'start': 259, 'duration': 145, 'end': 404}, 12: {'job': 4, 'factory': 1, 'machine': 0, 'start': 37, 'duration': 128, 'end': 165}, 13: {'job': 4, 'factory': 1, 'machine': 3, 'start': 182, 'duration': 65, 'end': 247}, 14: {'job': 4, 'factory': 1, 'machine': 4, 'start': 260, 'duration': 110, 'end': 370}}
+  Total time: 0.0194 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 403...
+  SAT ! Makespan = 403
+  Schedule: {0: {'job': 0, 'factory': 0, 'machine': 1, 'start': 0, 'duration': 123, 'end': 123}, 1: {'job': 0, 'factory': 0, 'machine': 1, 'start': 123, 'duration': 130, 'end': 253}, 2: {'job': 0, 'factory': 0, 'machine': 3, 'start': 253, 'duration': 150, 'end': 403}, 3: {'job': 1, 'factory': 1, 'machine': 2, 'start': 9, 'duration': 150, 'end': 159}, 4: {'job': 1, 'factory': 1, 'machine': 1, 'start': 159, 'duration': 66, 'end': 225}, 5: {'job': 1, 'factory': 1, 'machine': 5, 'start': 225, 'duration': 95, 'end': 320}, 6: {'job': 2, 'factory': 0, 'machine': 0, 'start': 0, 'duration': 87, 'end': 87}, 7: {'job': 2, 'factory': 0, 'machine': 3, 'start': 87, 'duration': 105, 'end': 192}, 8: {'job': 2, 'factory': 0, 'machine': 4, 'start': 216, 'duration': 100, 'end': 316}, 9: {'job': 3, 'factory': 1, 'machine': 1, 'start': 20, 'duration': 65, 'end': 85}, 10: {'job': 3, 'factory': 1, 'machine': 4, 'start': 85, 'duration': 173, 'end': 258}, 11: {'job': 3, 'factory': 1, 'machine': 3, 'start': 258, 'duration': 145, 'end': 403}, 12: {'job': 4, 'factory': 1, 'machine': 0, 'start': 37, 'duration': 128, 'end': 165}, 13: {'job': 4, 'factory': 1, 'machine': 3, 'start': 182, 'duration': 65, 'end': 247}, 14: {'job': 4, 'factory': 1, 'machine': 4, 'start': 260, 'duration': 110, 'end': 370}}
+  Total time: 0.0197 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 402...
+   UNSAT
+
+ Optimal Makespan = 403
+
+ Summary:
+  - Optimal Makespan   : 403
+  - Greedy Time        : 0.0001s
+  - SAT Time           : 0.0198s
+  - Total Time         : 0.0202s
+  - Schedule Status    : VALID
+===========================================================================
+[runlim] end:			Sun Sep 20 13:38:29 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		0
+[runlim] processes:		0
+[runlim] real:			0.06 seconds
+[runlim] time:			0.00 seconds
+[runlim] space:			0 MB
+[runlim] load:			0.19 maximum
+[runlim] samples:		1

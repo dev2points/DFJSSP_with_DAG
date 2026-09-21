@@ -1,0 +1,55 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			fjssp-instance1
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	1800 seconds
+[runlim] space limit:		14000 MB
+[runlim] argv[0]:		python3
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		main.py
+[runlim] argv[3]:		--input
+[runlim] argv[4]:		datasets/rdata/la17.txt
+[runlim] argv[5]:		--sb
+[runlim] argv[6]:		--factories
+[runlim] argv[7]:		3
+[runlim] argv[8]:		--full_transitive
+[runlim] start:			Sun Sep 20 18:34:15 2026
+[runlim] child:			24880
+[*] Loading data from file: datasets/rdata/la17.txt
+[*] Running D-FJSSP SAT Solver with 3 factories, Symmetry Breaking = ON, Transitive E* = FULL
+===========================================================================
+ D-FJSSP SAT SOLVER - PARALLEL FACTORIES SCHEDULING
+===========================================================================
+  -> Operations: 100 | Jobs: 10 | Machines: 10 | Factories: 3
+
+[*] Running Greedy Heuristic...
+  -> Greedy Solution: Makespan = 646 (0.0003s)
+
+[*] Initializing and solving the SAT model...
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 646...
+  SAT ! Makespan = 646
+  Schedule: {0: {'job': 0, 'factory': 0, 'machine': 4, 'start': 12, 'duration': 18, 'end': 30}, 1: {'job': 0, 'factory': 0, 'machine': 7, 'start': 49, 'duration': 21, 'end': 70}, 2: {'job': 0, 'factory': 0, 'machine': 9, 'start': 89, 'duration': 41, 'end': 130}, 3: {'job': 0, 'factory': 0, 'machine': 2, 'start': 137, 'duration': 45, 'end': 182}, 4: {'job': 0, 'factory': 0, 'machine': 3, 'start': 182, 'duration': 38, 'end': 220}, 5: {'job': 0, 'factory': 0, 'machine': 8, 'start': 252, 'duration': 50, 'end': 302}, 6: {'job': 0, 'factory': 0, 'machine': 5, 'start': 302, 'duration': 84, 'end': 386}, 7: {'job': 0, 'factory': 0, 'machine': 6, 'start': 386, 'duration': 29, 'end': 415}, 8: {'job': 0, 'factory': 0, 'machine': 0, 'start': 415, 'duration': 23, 'end': 438}, 9: {'job': 0, 'factory': 0, 'machine': 6, 'start': 438, 'duration': 82, 'end': 520}, 10: {'job': 1, 'factory': 1, 'machine': 2, 'start': 55, 'duration': 57, 'end': 112}, 11: {'job': 1, 'factory': 1, 'machine': 5, 'start': 134, 'duration': 16, 'end': 150}, 12: {'job': 1, 'factory': 1, 'machine': 1, 'start': 150, 'duration': 52, 'end': 202}, 13: {'job': 1, 'factory': 1, 'machine': 3, 'start': 202, 'duration': 74, 'end': 276}, 14: {'job': 1, 'factory': 1, 'machine': 2, 'start': 276, 'duration': 38, 'end': 314}, 15: {'job': 1, 'factory': 1, 'machine': 3, 'start': 314, 'duration': 54, 'end': 368}, 16: {'job': 1, 'factory': 1, 'machine': 6, 'start': 368, 'duration': 62, 'end': 430}, 17: {'job': 1, 'factory': 1, 'machine': 9, 'start': 430, 'duration': 37, 'end': 467}, 18: {'job': 1, 'factory': 1, 'machine': 4, 'start': 514, 'duration': 54, 'end': 568}, 19: {'job': 1, 'factory': 1, 'machine': 8, 'start': 594, 'duration': 52, 'end': 646}, 20: {'job': 2, 'factory': 2, 'machine': 9, 'start': 0, 'duration': 30, 'end': 30}, 21: {'job': 2, 'factory': 2, 'machine': 4, 'start': 30, 'duration': 79, 'end': 109}, 22: {'job': 2, 'factory': 2, 'machine': 9, 'start': 109, 'duration': 68, 'end': 177}, 23: {'job': 2, 'factory': 2, 'machine': 1, 'start': 177, 'duration': 61, 'end': 238}, 24: {'job': 2, 'factory': 2, 'machine': 8, 'start': 238, 'duration': 11, 'end': 249}, 25: {'job': 2, 'factory': 2, 'machine': 6, 'start': 249, 'duration': 89, 'end': 338}, 26: {'job': 2, 'factory': 2, 'machine': 7, 'start': 338, 'duration': 89, 'end': 427}, 27: {'job': 2, 'factory': 2, 'machine': 0, 'start': 427, 'duration': 81, 'end': 508}, 28: {'job': 2, 'factory': 2, 'machine': 9, 'start': 508, 'duration': 81, 'end': 589}, 29: {'job': 2, 'factory': 2, 'machine': 3, 'start': 589, 'duration': 57, 'end': 646}, 30: {'job': 3, 'factory': 2, 'machine': 0, 'start': 96, 'duration': 91, 'end': 187}, 31: {'job': 3, 'factory': 2, 'machine': 8, 'start': 221, 'duration': 8, 'end': 229}, 32: {'job': 3, 'factory': 2, 'machine': 3, 'start': 229, 'duration': 33, 'end': 262}, 33: {'job': 3, 'factory': 2, 'machine': 2, 'start': 262, 'duration': 55, 'end': 317}, 34: {'job': 3, 'factory': 2, 'machine': 5, 'start': 317, 'duration': 20, 'end': 337}, 35: {'job': 3, 'factory': 2, 'machine': 1, 'start': 337, 'duration': 20, 'end': 357}, 36: {'job': 3, 'factory': 2, 'machine': 2, 'start': 357, 'duration': 32, 'end': 389}, 37: {'job': 3, 'factory': 2, 'machine': 6, 'start': 389, 'duration': 84, 'end': 473}, 38: {'job': 3, 'factory': 2, 'machine': 0, 'start': 556, 'duration': 66, 'end': 622}, 39: {'job': 3, 'factory': 2, 'machine': 9, 'start': 622, 'duration': 24, 'end': 646}, 40: {'job': 4, 'factory': 0, 'machine': 9, 'start': 49, 'duration': 40, 'end': 89}, 41: {'job': 4, 'factory': 0, 'machine': 0, 'start': 89, 'duration': 7, 'end': 96}, 42: {'job': 4, 'factory': 0, 'machine': 3, 'start': 96, 'duration': 19, 'end': 115}, 43: {'job': 4, 'factory': 0, 'machine': 0, 'start': 203, 'duration': 7, 'end': 210}, 44: {'job': 4, 'factory': 0, 'machine': 6, 'start': 210, 'duration': 83, 'end': 293}, 45: {'job': 4, 'factory': 0, 'machine': 2, 'start': 293, 'duration': 64, 'end': 357}, 46: {'job': 4, 'factory': 0, 'machine': 5, 'start': 453, 'duration': 56, 'end': 509}, 47: {'job': 4, 'factory': 0, 'machine': 4, 'start': 514, 'duration': 54, 'end': 568}, 48: {'job': 4, 'factory': 0, 'machine': 6, 'start': 568, 'duration': 8, 'end': 576}, 49: {'job': 4, 'factory': 0, 'machine': 9, 'start': 607, 'duration': 39, 'end': 646}, 50: {'job': 5, 'factory': 0, 'machine': 8, 'start': 22, 'duration': 91, 'end': 113}, 51: {'job': 5, 'factory': 0, 'machine': 7, 'start': 114, 'duration': 64, 'end': 178}, 52: {'job': 5, 'factory': 0, 'machine': 5, 'start': 178, 'duration': 40, 'end': 218}, 53: {'job': 5, 'factory': 0, 'machine': 0, 'start': 218, 'duration': 63, 'end': 281}, 54: {'job': 5, 'factory': 0, 'machine': 7, 'start': 281, 'duration': 98, 'end': 379}, 55: {'job': 5, 'factory': 0, 'machine': 4, 'start': 379, 'duration': 74, 'end': 453}, 56: {'job': 5, 'factory': 0, 'machine': 4, 'start': 453, 'duration': 61, 'end': 514}, 57: {'job': 5, 'factory': 0, 'machine': 1, 'start': 514, 'duration': 6, 'end': 520}, 58: {'job': 5, 'factory': 0, 'machine': 6, 'start': 520, 'duration': 42, 'end': 562}, 59: {'job': 5, 'factory': 0, 'machine': 4, 'start': 631, 'duration': 15, 'end': 646}, 60: {'job': 6, 'factory': 2, 'machine': 1, 'start': 0, 'duration': 80, 'end': 80}, 61: {'job': 6, 'factory': 2, 'machine': 5, 'start': 82, 'duration': 39, 'end': 121}, 62: {'job': 6, 'factory': 2, 'machine': 8, 'start': 121, 'duration': 24, 'end': 145}, 63: {'job': 6, 'factory': 2, 'machine': 8, 'start': 146, 'duration': 75, 'end': 221}, 64: {'job': 6, 'factory': 2, 'machine': 4, 'start': 260, 'duration': 75, 'end': 335}, 65: {'job': 6, 'factory': 2, 'machine': 8, 'start': 335, 'duration': 6, 'end': 341}, 66: {'job': 6, 'factory': 2, 'machine': 0, 'start': 341, 'duration': 44, 'end': 385}, 67: {'job': 6, 'factory': 2, 'machine': 0, 'start': 385, 'duration': 26, 'end': 411}, 68: {'job': 6, 'factory': 2, 'machine': 2, 'start': 411, 'duration': 87, 'end': 498}, 69: {'job': 6, 'factory': 2, 'machine': 2, 'start': 624, 'duration': 22, 'end': 646}, 70: {'job': 7, 'factory': 2, 'machine': 1, 'start': 80, 'duration': 15, 'end': 95}, 71: {'job': 7, 'factory': 2, 'machine': 0, 'start': 187, 'duration': 43, 'end': 230}, 72: {'job': 7, 'factory': 2, 'machine': 2, 'start': 230, 'duration': 20, 'end': 250}, 73: {'job': 7, 'factory': 2, 'machine': 0, 'start': 250, 'duration': 12, 'end': 262}, 74: {'job': 7, 'factory': 2, 'machine': 8, 'start': 262, 'duration': 26, 'end': 288}, 75: {'job': 7, 'factory': 2, 'machine': 5, 'start': 337, 'duration': 61, 'end': 398}, 76: {'job': 7, 'factory': 2, 'machine': 4, 'start': 407, 'duration': 79, 'end': 486}, 77: {'job': 7, 'factory': 2, 'machine': 9, 'start': 486, 'duration': 22, 'end': 508}, 78: {'job': 7, 'factory': 2, 'machine': 5, 'start': 529, 'duration': 8, 'end': 537}, 79: {'job': 7, 'factory': 2, 'machine': 4, 'start': 537, 'duration': 80, 'end': 617}, 80: {'job': 8, 'factory': 2, 'machine': 4, 'start': 198, 'duration': 62, 'end': 260}, 81: {'job': 8, 'factory': 2, 'machine': 9, 'start': 260, 'duration': 96, 'end': 356}, 82: {'job': 8, 'factory': 2, 'machine': 8, 'start': 356, 'duration': 22, 'end': 378}, 83: {'job': 8, 'factory': 2, 'machine': 9, 'start': 378, 'duration': 5, 'end': 383}, 84: {'job': 8, 'factory': 2, 'machine': 8, 'start': 383, 'duration': 63, 'end': 446}, 85: {'job': 8, 'factory': 2, 'machine': 6, 'start': 473, 'duration': 33, 'end': 506}, 86: {'job': 8, 'factory': 2, 'machine': 0, 'start': 508, 'duration': 10, 'end': 518}, 87: {'job': 8, 'factory': 2, 'machine': 8, 'start': 518, 'duration': 18, 'end': 536}, 88: {'job': 8, 'factory': 2, 'machine': 1, 'start': 536, 'duration': 36, 'end': 572}, 89: {'job': 8, 'factory': 2, 'machine': 5, 'start': 572, 'duration': 40, 'end': 612}, 90: {'job': 9, 'factory': 2, 'machine': 0, 'start': 0, 'duration': 96, 'end': 96}, 91: {'job': 9, 'factory': 2, 'machine': 4, 'start': 109, 'duration': 89, 'end': 198}, 92: {'job': 9, 'factory': 2, 'machine': 5, 'start': 253, 'duration': 64, 'end': 317}, 93: {'job': 9, 'factory': 2, 'machine': 3, 'start': 324, 'duration': 95, 'end': 419}, 94: {'job': 9, 'factory': 2, 'machine': 9, 'start': 419, 'duration': 23, 'end': 442}, 95: {'job': 9, 'factory': 2, 'machine': 5, 'start': 442, 'duration': 18, 'end': 460}, 96: {'job': 9, 'factory': 2, 'machine': 8, 'start': 460, 'duration': 15, 'end': 475}, 97: {'job': 9, 'factory': 2, 'machine': 2, 'start': 498, 'duration': 64, 'end': 562}, 98: {'job': 9, 'factory': 2, 'machine': 6, 'start': 562, 'duration': 38, 'end': 600}, 99: {'job': 9, 'factory': 2, 'machine': 4, 'start': 638, 'duration': 8, 'end': 646}}
+  Total time: 0.3130 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 645...
+   UNSAT
+
+ Optimal Makespan = 646
+
+ Summary:
+  - Optimal Makespan   : 646
+  - Greedy Time        : 0.0003s
+  - SAT Time           : 0.3211s
+  - Total Time         : 0.3218s
+  - Schedule Status    : VALID
+===========================================================================
+[runlim] end:			Sun Sep 20 18:34:16 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] processes:		2
+[runlim] real:			0.36 seconds
+[runlim] time:			0.30 seconds
+[runlim] space:			109 MB
+[runlim] load:			1.01 maximum
+[runlim] samples:		4

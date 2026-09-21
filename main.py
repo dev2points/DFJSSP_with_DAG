@@ -319,9 +319,6 @@ def compute_E_star(num_ops, precedence_list, request_list):
     return E_star
 
 
-import heapq
-from collections import defaultdict, deque
-
 def greedy_solve(num_ops, num_machines, num_factories, precedence_list, request_list, job_of, num_jobs):
     job_ops = defaultdict(list)
     for op, j_id in job_of.items():
@@ -505,8 +502,6 @@ def create_var(num_ops, num_jobs, num_factories, request_list, job_of, E_star, E
 def build_constraints(solver, num_ops, num_jobs, num_factories, precedence_list, request_list, job_of, E_star, ES, LS, first_ops, s, x, f, m, xm, sf, sm, sfm, args):
     cnf = CNF()
 
-    
-
     # Exactly one factory per job
     for j in range(num_jobs):
         clauses = CardEnc.equals(lits=[f[(j, q)] for q in range(min(j, num_factories - 1) + 1)], bound=1, encoding=EncType.pairwise)
@@ -554,7 +549,6 @@ def build_constraints(solver, num_ops, num_jobs, num_factories, precedence_list,
                 cnf.append([-s[(i, t)], x[(j, finish_time)]])
 
             pre_proc_time = min_p
-
             for idx in range(1, len(request_machines_i)):
                 machine = request_machines_i[idx]
                 proc_time = request_list[i][machine]
@@ -635,9 +629,6 @@ def build_constraints(solver, num_ops, num_jobs, num_factories, precedence_list,
                         clause.append(f[(j, factory - 1)])
 
                 cnf.append(clause)
-        # At least one first operation starts at time 0
-        cnf.append([s[(i, 0)] for i in first_ops])
-            
 
     solver.append_formula(cnf)
 
@@ -714,9 +705,8 @@ def solve_and_print(num_ops, num_jobs, num_factories, precedence_list, request_l
 
         best_makespan = max(info['end'] for info in schedule.values())
         best_schedule = schedule
-        print(f" Schedule: {best_schedule}")
         print(f"  SAT ! Makespan = {best_makespan}")
-
+        print(f"  Schedule: {best_schedule}")
         # if verify_schedule(best_schedule, precedence_list, best_makespan):
         #     print(f"  Schedule is valid with Makespan = {best_makespan}")
         print(f"  Total time: {(time.time() - real_start_time):.4f} seconds")

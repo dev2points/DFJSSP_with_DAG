@@ -1,0 +1,55 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			fjssp-instance1
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	1800 seconds
+[runlim] space limit:		14000 MB
+[runlim] argv[0]:		python3
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		main.py
+[runlim] argv[3]:		--input
+[runlim] argv[4]:		datasets/fmj/mfjs06
+[runlim] argv[5]:		--sb
+[runlim] argv[6]:		--factories
+[runlim] argv[7]:		4
+[runlim] argv[8]:		--full_transitive
+[runlim] start:			Sun Sep 20 18:34:45 2026
+[runlim] child:			24928
+[*] Loading data from file: datasets/fmj/mfjs06
+[*] Running D-FJSSP SAT Solver with 4 factories, Symmetry Breaking = ON, Transitive E* = FULL
+===========================================================================
+ D-FJSSP SAT SOLVER - PARALLEL FACTORIES SCHEDULING
+===========================================================================
+  -> Operations: 24 | Jobs: 8 | Machines: 7 | Factories: 4
+
+[*] Running Greedy Heuristic...
+  -> Greedy Solution: Makespan = 614 (0.0001s)
+
+[*] Initializing and solving the SAT model...
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 614...
+  SAT ! Makespan = 614
+  Schedule: {0: {'job': 0, 'factory': 0, 'machine': 1, 'start': 90, 'duration': 223, 'end': 313}, 1: {'job': 0, 'factory': 0, 'machine': 3, 'start': 313, 'duration': 140, 'end': 453}, 2: {'job': 0, 'factory': 0, 'machine': 4, 'start': 453, 'duration': 160, 'end': 613}, 3: {'job': 1, 'factory': 1, 'machine': 2, 'start': 19, 'duration': 150, 'end': 169}, 4: {'job': 1, 'factory': 1, 'machine': 1, 'start': 188, 'duration': 66, 'end': 254}, 5: {'job': 1, 'factory': 1, 'machine': 6, 'start': 254, 'duration': 150, 'end': 404}, 6: {'job': 2, 'factory': 0, 'machine': 1, 'start': 12, 'duration': 62, 'end': 74}, 7: {'job': 2, 'factory': 0, 'machine': 6, 'start': 74, 'duration': 145, 'end': 219}, 8: {'job': 2, 'factory': 0, 'machine': 4, 'start': 353, 'duration': 100, 'end': 453}, 9: {'job': 3, 'factory': 2, 'machine': 0, 'start': 7, 'duration': 87, 'end': 94}, 10: {'job': 3, 'factory': 2, 'machine': 2, 'start': 147, 'duration': 250, 'end': 397}, 11: {'job': 3, 'factory': 2, 'machine': 5, 'start': 478, 'duration': 136, 'end': 614}, 12: {'job': 4, 'factory': 2, 'machine': 0, 'start': 94, 'duration': 128, 'end': 222}, 13: {'job': 4, 'factory': 2, 'machine': 6, 'start': 253, 'duration': 86, 'end': 339}, 14: {'job': 4, 'factory': 2, 'machine': 1, 'start': 430, 'duration': 100, 'end': 530}, 15: {'job': 5, 'factory': 2, 'machine': 1, 'start': 21, 'duration': 145, 'end': 166}, 16: {'job': 5, 'factory': 2, 'machine': 3, 'start': 245, 'duration': 150, 'end': 395}, 17: {'job': 5, 'factory': 2, 'machine': 6, 'start': 420, 'duration': 180, 'end': 600}, 18: {'job': 6, 'factory': 2, 'machine': 2, 'start': 2, 'duration': 145, 'end': 147}, 19: {'job': 6, 'factory': 2, 'machine': 4, 'start': 156, 'duration': 168, 'end': 324}, 20: {'job': 6, 'factory': 2, 'machine': 4, 'start': 324, 'duration': 145, 'end': 469}, 21: {'job': 7, 'factory': 2, 'machine': 3, 'start': 0, 'duration': 245, 'end': 245}, 22: {'job': 7, 'factory': 2, 'machine': 5, 'start': 245, 'duration': 224, 'end': 469}, 23: {'job': 7, 'factory': 2, 'machine': 4, 'start': 469, 'duration': 145, 'end': 614}}
+  Total time: 0.0964 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 613...
+   UNSAT
+
+ Optimal Makespan = 614
+
+ Summary:
+  - Optimal Makespan   : 614
+  - Greedy Time        : 0.0001s
+  - SAT Time           : 0.0986s
+  - Total Time         : 0.0990s
+  - Schedule Status    : VALID
+===========================================================================
+[runlim] end:			Sun Sep 20 18:34:45 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] processes:		2
+[runlim] real:			0.13 seconds
+[runlim] time:			0.10 seconds
+[runlim] space:			49 MB
+[runlim] load:			1.00 maximum
+[runlim] samples:		2

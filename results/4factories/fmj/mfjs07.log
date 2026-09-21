@@ -1,0 +1,55 @@
+[runlim] version:		2.0.0rc12
+[runlim] host:			fjssp-instance1
+[runlim] time limit:		311040000 seconds
+[runlim] real time limit:	1800 seconds
+[runlim] space limit:		14000 MB
+[runlim] argv[0]:		python3
+[runlim] argv[1]:		-u
+[runlim] argv[2]:		main.py
+[runlim] argv[3]:		--input
+[runlim] argv[4]:		datasets/fmj/mfjs07
+[runlim] argv[5]:		--sb
+[runlim] argv[6]:		--factories
+[runlim] argv[7]:		4
+[runlim] argv[8]:		--full_transitive
+[runlim] start:			Sun Sep 20 18:34:45 2026
+[runlim] child:			24931
+[*] Loading data from file: datasets/fmj/mfjs07
+[*] Running D-FJSSP SAT Solver with 4 factories, Symmetry Breaking = ON, Transitive E* = FULL
+===========================================================================
+ D-FJSSP SAT SOLVER - PARALLEL FACTORIES SCHEDULING
+===========================================================================
+  -> Operations: 32 | Jobs: 8 | Machines: 7 | Factories: 4
+
+[*] Running Greedy Heuristic...
+  -> Greedy Solution: Makespan = 764 (0.0001s)
+
+[*] Initializing and solving the SAT model...
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 764...
+  SAT ! Makespan = 764
+  Schedule: {0: {'job': 0, 'factory': 0, 'machine': 2, 'start': 73, 'duration': 100, 'end': 173}, 1: {'job': 0, 'factory': 0, 'machine': 3, 'start': 173, 'duration': 140, 'end': 313}, 2: {'job': 0, 'factory': 0, 'machine': 3, 'start': 313, 'duration': 150, 'end': 463}, 3: {'job': 0, 'factory': 0, 'machine': 6, 'start': 552, 'duration': 210, 'end': 762}, 4: {'job': 1, 'factory': 1, 'machine': 2, 'start': 145, 'duration': 150, 'end': 295}, 5: {'job': 1, 'factory': 1, 'machine': 1, 'start': 295, 'duration': 66, 'end': 361}, 6: {'job': 1, 'factory': 1, 'machine': 4, 'start': 361, 'duration': 178, 'end': 539}, 7: {'job': 1, 'factory': 1, 'machine': 4, 'start': 539, 'duration': 120, 'end': 659}, 8: {'job': 2, 'factory': 0, 'machine': 1, 'start': 5, 'duration': 62, 'end': 67}, 9: {'job': 2, 'factory': 0, 'machine': 6, 'start': 67, 'duration': 145, 'end': 212}, 10: {'job': 2, 'factory': 0, 'machine': 4, 'start': 212, 'duration': 100, 'end': 312}, 11: {'job': 2, 'factory': 0, 'machine': 6, 'start': 357, 'duration': 165, 'end': 522}, 12: {'job': 3, 'factory': 2, 'machine': 1, 'start': 30, 'duration': 65, 'end': 95}, 13: {'job': 3, 'factory': 2, 'machine': 4, 'start': 134, 'duration': 173, 'end': 307}, 14: {'job': 3, 'factory': 2, 'machine': 5, 'start': 309, 'duration': 136, 'end': 445}, 15: {'job': 3, 'factory': 2, 'machine': 4, 'start': 445, 'duration': 250, 'end': 695}, 16: {'job': 4, 'factory': 3, 'machine': 0, 'start': 3, 'duration': 128, 'end': 131}, 17: {'job': 4, 'factory': 3, 'machine': 4, 'start': 131, 'duration': 47, 'end': 178}, 18: {'job': 4, 'factory': 3, 'machine': 4, 'start': 187, 'duration': 110, 'end': 297}, 19: {'job': 4, 'factory': 3, 'machine': 5, 'start': 584, 'duration': 180, 'end': 764}, 20: {'job': 5, 'factory': 3, 'machine': 1, 'start': 24, 'duration': 145, 'end': 169}, 21: {'job': 5, 'factory': 3, 'machine': 2, 'start': 169, 'duration': 123, 'end': 292}, 22: {'job': 5, 'factory': 3, 'machine': 4, 'start': 297, 'duration': 120, 'end': 417}, 23: {'job': 5, 'factory': 3, 'machine': 6, 'start': 417, 'duration': 50, 'end': 467}, 24: {'job': 6, 'factory': 1, 'machine': 2, 'start': 0, 'duration': 145, 'end': 145}, 25: {'job': 6, 'factory': 1, 'machine': 4, 'start': 145, 'duration': 168, 'end': 313}, 26: {'job': 6, 'factory': 1, 'machine': 6, 'start': 313, 'duration': 178, 'end': 491}, 27: {'job': 6, 'factory': 1, 'machine': 6, 'start': 491, 'duration': 230, 'end': 721}, 28: {'job': 7, 'factory': 3, 'machine': 3, 'start': 0, 'duration': 245, 'end': 245}, 29: {'job': 7, 'factory': 3, 'machine': 5, 'start': 245, 'duration': 224, 'end': 469}, 30: {'job': 7, 'factory': 3, 'machine': 4, 'start': 469, 'duration': 145, 'end': 614}, 31: {'job': 7, 'factory': 3, 'machine': 6, 'start': 614, 'duration': 150, 'end': 764}}
+  Total time: 0.1484 seconds
+------------------------------------------------------------------
+[*] Trying with Upper Bound = 763...
+   UNSAT
+
+ Optimal Makespan = 764
+
+ Summary:
+  - Optimal Makespan   : 764
+  - Greedy Time        : 0.0001s
+  - SAT Time           : 0.1519s
+  - Total Time         : 0.1523s
+  - Schedule Status    : VALID
+===========================================================================
+[runlim] end:			Sun Sep 20 18:34:45 2026
+[runlim] status:		ok
+[runlim] result:		0
+[runlim] children:		1
+[runlim] processes:		2
+[runlim] real:			0.18 seconds
+[runlim] time:			0.10 seconds
+[runlim] space:			45 MB
+[runlim] load:			1.00 maximum
+[runlim] samples:		2
